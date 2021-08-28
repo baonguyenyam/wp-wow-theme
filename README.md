@@ -9,5 +9,5 @@ Text Domain: wp-wow-theme<br>
 License: GNU General Public License v2 or later<br>
 License URI: http://www.gnu.org/licenses/gpl-2.0.html<br>
 Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready<br>
-WP LIFTCreations Theme, (C) 2021 Nguyen Pham<br>
-WP LIFTCreations Theme is distributed under the terms of the GNU GPL.
+WOW WordPress Theme, (C) 2021 Nguyen Pham<br>
+WOW WordPress Theme is distributed under the terms of the GNU GPL.

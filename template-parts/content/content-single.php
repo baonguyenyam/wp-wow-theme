@@ -28,7 +28,7 @@ $post_post_breadcrumb = $wow_theme['wow-theme-blog-style-breadcrumb'];
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				<?php 
 				if(!isset($post_post_breadcrumb) || $post_post_breadcrumb === '0' || $post_post_breadcrumb == 0){
-					lift_get_breadcrumb(); 
+					wow_get_breadcrumb(); 
 				}?>
 			</div>
 		</div>
@@ -41,7 +41,7 @@ $post_post_breadcrumb = $wow_theme['wow-theme-blog-style-breadcrumb'];
 					<div class="blog-content <?=isset($post_sidebar) && $post_sidebar ==='1' ? 'col-12' : $post_sidebar_content_columns ?><?= isset($post_sidebar_position) && $post_sidebar_position === '1' ? ' order-xl-2': ' order-xl-1'?>">
 					
 					<?php if(!isset($post_post_thumbnail) || $post_post_thumbnail === '0' || $post_post_thumbnail == 0){?>
-					<?php lift_post_thumbnail(); ?>
+					<?php wow_post_thumbnail(); ?>
 					<?php } ?>
 
 					<?php
@@ -57,7 +57,7 @@ $post_post_breadcrumb = $wow_theme['wow-theme-blog-style-breadcrumb'];
 						);
 						?>
 						<footer class="entry-footer default-max-width">
-							<?php lift_entry_meta_footer(); ?>
+							<?php wow_entry_meta_footer(); ?>
 						</footer><!-- .entry-footer -->
 
 						<?php if ( ! is_singular( 'attachment' ) ) : ?>
@@ -84,15 +84,15 @@ $post_post_breadcrumb = $wow_theme['wow-theme-blog-style-breadcrumb'];
 					
 						if(!isset($post_post_nextprev) || $post_post_nextprev === '0' || $post_post_nextprev == 0){
 							// Previous/next post navigation.
-							$wow_theme_next = is_rtl() ? lift_get_icon_svg( 'ui', 'arrow_left' ) : lift_get_icon_svg( 'ui', 'arrow_right' );
-							$wow_theme_prev = is_rtl() ? lift_get_icon_svg( 'ui', 'arrow_right' ) : lift_get_icon_svg( 'ui', 'arrow_left' );
+							$wow_theme_next = is_rtl() ? wow_get_icon_svg( 'ui', 'arrow_left' ) : wow_get_icon_svg( 'ui', 'arrow_right' );
+							$wow_theme_prev = is_rtl() ? wow_get_icon_svg( 'ui', 'arrow_right' ) : wow_get_icon_svg( 'ui', 'arrow_left' );
 						
 							$wow_theme_next_label     = esc_html__( 'Next post', 'wp-wow-theme' );
 							$wow_theme_previous_label = esc_html__( 'Previous post', 'wp-wow-theme' );
 						
 							the_post_navigation(
 								array(
-									'class'				 => 'lift-pagination',
+									'class'				 => 'wow-pagination',
 									'type'				 => 'list',
 									'next_text' => '<p class="meta-nav">' . $wow_theme_next_label . $wow_theme_next . '</p><p class="post-title">%title</p>',
 									'prev_text' => '<p class="meta-nav">' . $wow_theme_prev . $wow_theme_previous_label . '</p><p class="post-title">%title</p>',

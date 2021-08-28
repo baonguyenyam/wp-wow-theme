@@ -61,7 +61,7 @@ if ( have_posts() ) {
 							<?php get_template_part( 'template-parts/content/content',  'excerpt' ); ?>
 						<?php endwhile; ?>
 
-						<?php lift_the_posts_navigation(); ?>	
+						<?php wow_the_posts_navigation(); ?>	
 
 					</div>
 					<?php if(!isset($archive_sidebar) || $archive_sidebar === '0' || $archive_sidebar == 0){?>

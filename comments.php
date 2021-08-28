@@ -22,7 +22,7 @@ if ( post_password_required() ) {
 	return;
 }
 
-$lift_comment_count = get_comments_number();
+$wow_comment_count = get_comments_number();
 ?>
 
 <div id="comments" class="comments-area default-max-width <?php echo get_option( 'show_avatars' ) ? 'show-avatars' : ''; ?>">
@@ -31,14 +31,14 @@ $lift_comment_count = get_comments_number();
 		;
 		?>
 		<h2 class="comments-title">
-			<?php if ( '1' === $lift_comment_count ) : ?>
+			<?php if ( '1' === $wow_comment_count ) : ?>
 				<?php esc_html_e( '1 comment', 'wp-wow-theme' ); ?>
 			<?php else : ?>
 				<?php
 				printf(
 					/* translators: %s: Comment count number. */
-					esc_html( _nx( '%s comment', '%s comments', $lift_comment_count, 'Comments title', 'wp-wow-theme' ) ),
-					esc_html( number_format_i18n( $lift_comment_count ) )
+					esc_html( _nx( '%s comment', '%s comments', $wow_comment_count, 'Comments title', 'wp-wow-theme' ) ),
+					esc_html( number_format_i18n( $wow_comment_count ) )
 				);
 				?>
 			<?php endif; ?>
@@ -63,13 +63,13 @@ $lift_comment_count = get_comments_number();
 				'mid_size'           => 0,
 				'prev_text'          => sprintf(
 					'%s <span class="nav-prev-text">%s</span>',
-					is_rtl() ? lift_get_icon_svg( 'ui', 'arrow_right' ) : lift_get_icon_svg( 'ui', 'arrow_left' ),
+					is_rtl() ? wow_get_icon_svg( 'ui', 'arrow_right' ) : wow_get_icon_svg( 'ui', 'arrow_left' ),
 					esc_html__( 'Older comments', 'wp-wow-theme' )
 				),
 				'next_text'          => sprintf(
 					'<span class="nav-next-text">%s</span> %s',
 					esc_html__( 'Newer comments', 'wp-wow-theme' ),
-					is_rtl() ? lift_get_icon_svg( 'ui', 'arrow_left' ) : lift_get_icon_svg( 'ui', 'arrow_right' )
+					is_rtl() ? wow_get_icon_svg( 'ui', 'arrow_left' ) : wow_get_icon_svg( 'ui', 'arrow_right' )
 				),
 			)
 		);

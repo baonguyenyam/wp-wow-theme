@@ -18,7 +18,7 @@ if ( have_posts() ) {
 	}
 
 	// Previous/next page navigation.
-	lift_the_posts_navigation();
+	wow_the_posts_navigation();
 
 } else {
 

@@ -48,8 +48,8 @@ if(isset($wow_theme['wow-theme-header-row-spacing'])) {
 }
 ?>
 
-<!-- LIFT HEADER -->
-<header id="header" class="lift-header <?php echo esc_attr( $wrapper_classes ); ?><?= isset($header_shadow) && $header_shadow !== '' ? ' '.$header_shadow: ' default'?><?=isset($header_fixed) &&$header_fixed === '1' ? ' fixed-top': ''?><?= isset($header_kind) ? ' menu-layout-'.$header_kind : ''?><?= isset($header_search_type) && $header_search_type !== '' ? ' search-'.$header_search_type: ' search-normal'?><?= isset($header_second_align) && $header_second_align !== '' ? ' secondalign-'.$header_second_align: ' secondalign-right'?><?php echo isset($header_search_sticky) && ($header_search_sticky === '1' || $header_search_sticky == 1) ? ' search-sticky' : ''; ?><?php echo isset($header_offcanvas) && ($header_offcanvas === '1' || $header_offcanvas == 1) ? ' canvased' : ''; ?><?=$header_secondary_menu?>" role="banner">
+<!-- WOW HEADER -->
+<header id="header" class="wow-header <?php echo esc_attr( $wrapper_classes ); ?><?= isset($header_shadow) && $header_shadow !== '' ? ' '.$header_shadow: ' default'?><?=isset($header_fixed) &&$header_fixed === '1' ? ' fixed-top': ''?><?= isset($header_kind) ? ' menu-layout-'.$header_kind : ''?><?= isset($header_search_type) && $header_search_type !== '' ? ' search-'.$header_search_type: ' search-normal'?><?= isset($header_second_align) && $header_second_align !== '' ? ' secondalign-'.$header_second_align: ' secondalign-right'?><?php echo isset($header_search_sticky) && ($header_search_sticky === '1' || $header_search_sticky == 1) ? ' search-sticky' : ''; ?><?php echo isset($header_offcanvas) && ($header_offcanvas === '1' || $header_offcanvas == 1) ? ' canvased' : ''; ?><?=$header_secondary_menu?>" role="banner">
 
 	<div class="header-wrapper"<?= isset($header_row) && $header_row === '1' ? $build_header_spacing : ''?>>
 		<nav class="navbar navbar-expand<?=isset($header_menu_toggle) && $header_menu_toggle  !== '' ? '-'.$header_menu_toggle: '-md'?>">

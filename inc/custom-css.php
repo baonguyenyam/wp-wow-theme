@@ -22,7 +22,7 @@
  *
  * @return string
  */
-function lift_generate_css( $selector, $style, $value, $prefix = '', $suffix = '', $echo = true ) {
+function wow_generate_css( $selector, $style, $value, $prefix = '', $suffix = '', $echo = true ) {
 
 	// Bail early if there is no $selector elements or properties and $value.
 	if ( ! $value || ! $selector ) {

@@ -33,7 +33,7 @@ $archive_breadcrumb = $wow_theme['wow-theme-blog-style-archive-breadcrumb'];
 				<?php endif; ?>
 				<?php 
 				if(!isset($archive_breadcrumb) || $archive_breadcrumb === '0'|| $archive_breadcrumb == 0){
-					lift_get_breadcrumb(); 
+					wow_get_breadcrumb(); 
 				}?>
 			</div>
 		</div>
@@ -50,7 +50,7 @@ $archive_breadcrumb = $wow_theme['wow-theme-blog-style-archive-breadcrumb'];
 							<?php get_template_part( 'template-parts/content/content',  'excerpt' ); ?>
 						<?php endwhile; ?>
 
-						<?php lift_the_posts_navigation(); ?>
+						<?php wow_the_posts_navigation(); ?>
 
 					</div>
 					<?php if(!isset($archive_sidebar) || $archive_sidebar === '0' || $archive_sidebar == 0){?>

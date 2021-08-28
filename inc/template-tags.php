@@ -8,7 +8,7 @@
  * @since 2021
  */
 
-if ( ! function_exists( 'lift_posted_on' ) ) {
+if ( ! function_exists( 'wow_posted_on' ) ) {
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
 	 *
@@ -16,7 +16,7 @@ if ( ! function_exists( 'lift_posted_on' ) ) {
 	 *
 	 * @return void
 	 */
-	function lift_posted_on() {
+	function wow_posted_on() {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
 		$time_string = sprintf(
@@ -34,7 +34,7 @@ if ( ! function_exists( 'lift_posted_on' ) ) {
 	}
 }
 
-if ( ! function_exists( 'lift_posted_by' ) ) {
+if ( ! function_exists( 'wow_posted_by' ) ) {
 	/**
 	 * Prints HTML with meta information about theme author.
 	 *
@@ -42,7 +42,7 @@ if ( ! function_exists( 'lift_posted_by' ) ) {
 	 *
 	 * @return void
 	 */
-	function lift_posted_by() {
+	function wow_posted_by() {
 		if ( ! get_the_author_meta( 'description' ) && post_type_supports( get_post_type(), 'author' ) ) {
 			echo '<div class="byline">';
 			printf(
@@ -55,7 +55,7 @@ if ( ! function_exists( 'lift_posted_by' ) ) {
 	}
 }
 
-if ( ! function_exists( 'lift_entry_meta_footer' ) ) {
+if ( ! function_exists( 'wow_entry_meta_footer' ) ) {
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 * Footer entry meta is displayed differently in archives and single posts.
@@ -64,7 +64,7 @@ if ( ! function_exists( 'lift_entry_meta_footer' ) ) {
 	 *
 	 * @return void
 	 */
-	function lift_entry_meta_footer() {
+	function wow_entry_meta_footer() {
 
 		global $wow_theme;
 		$content_tag = $wow_theme['wow-theme-blog-style-content-tag'];
@@ -90,12 +90,12 @@ if ( ! function_exists( 'lift_entry_meta_footer' ) ) {
 
 			$post_format = get_post_format();
 			if ( 'aside' === $post_format || 'status' === $post_format ) {
-				echo '<div class="featured-post"><a href="' . esc_url( get_permalink() ) . '">' . lift_continue_reading_text() . '</a></div>'; // phpcs:ignore WordPress.Security.EscapeOutput
+				echo '<div class="featured-post"><a href="' . esc_url( get_permalink() ) . '">' . wow_continue_reading_text() . '</a></div>'; // phpcs:ignore WordPress.Security.EscapeOutput
 			}
 
 			// Posted on.
 			if(!isset($archive_date) || $archive_date === '0' || $archive_date == 0) {
-				lift_posted_on();
+				wow_posted_on();
 			}
 
 			if ( has_category() || has_tag() ) {
@@ -144,11 +144,11 @@ if ( ! function_exists( 'lift_entry_meta_footer' ) ) {
 			echo '<div class="posted-by">';
 			// Posted on.
 			if(!isset($content_date) || $content_date === '0' || $content_date == 0) {
-				lift_posted_on();
+				wow_posted_on();
 			}
 			// Posted by.
 			if(!isset($content_author) || $content_author === '0' || $content_author == 0) {
-				lift_posted_by();
+				wow_posted_by();
 			}
 			
 
@@ -201,7 +201,7 @@ if ( ! function_exists( 'lift_entry_meta_footer' ) ) {
 	}
 }
 
-if ( ! function_exists( 'lift_post_thumbnail' ) ) {
+if ( ! function_exists( 'wow_post_thumbnail' ) ) {
 	/**
 	 * Displays an optional post thumbnail.
 	 *
@@ -212,9 +212,9 @@ if ( ! function_exists( 'lift_post_thumbnail' ) ) {
 	 *
 	 * @return void
 	 */
-	function lift_post_thumbnail() {
+	function wow_post_thumbnail() {
 				
-		if ( ! lift_can_show_post_thumbnail() ) {
+		if ( ! wow_can_show_post_thumbnail() ) {
 			return;
 		}
 		?>
@@ -247,7 +247,7 @@ if ( ! function_exists( 'lift_post_thumbnail' ) ) {
 	}
 }
 
-if ( ! function_exists( 'lift_the_posts_navigation' ) ) {
+if ( ! function_exists( 'wow_the_posts_navigation' ) ) {
 	/**
 	 * Print the next and previous posts navigation.
 	 *
@@ -255,16 +255,16 @@ if ( ! function_exists( 'lift_the_posts_navigation' ) ) {
 	 *
 	 * @return void
 	 */
-	function lift_the_posts_navigation() {
+	function wow_the_posts_navigation() {
 		the_posts_pagination(
 			array(
 				// 'before_page_number' => esc_html__( 'Page', 'wp-wow-theme' ) . ' ',
 				'mid_size'           => 0,
 				'type'				 => 'list',
-				'class'				 => 'lift-pagination',
+				'class'				 => 'wow-pagination',
 				'prev_text'          => sprintf(
 					'%s <span class="nav-prev-text">%s</span>',
-					is_rtl() ? lift_get_icon_svg( 'ui', 'arrow_right' ) : lift_get_icon_svg( 'ui', 'arrow_left' ),
+					is_rtl() ? wow_get_icon_svg( 'ui', 'arrow_right' ) : wow_get_icon_svg( 'ui', 'arrow_left' ),
 					wp_kses(
 						__( '<span class="text">Previous</span><span class="nav-short"></span>', 'wp-wow-theme' ),
 						array(
@@ -284,7 +284,7 @@ if ( ! function_exists( 'lift_the_posts_navigation' ) ) {
 							),
 						)
 					),
-					is_rtl() ? lift_get_icon_svg( 'ui', 'arrow_left' ) : lift_get_icon_svg( 'ui', 'arrow_right' )
+					is_rtl() ? wow_get_icon_svg( 'ui', 'arrow_left' ) : wow_get_icon_svg( 'ui', 'arrow_right' )
 				),
 			)
 		);

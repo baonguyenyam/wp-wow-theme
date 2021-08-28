@@ -31,7 +31,7 @@ while ( have_posts() ) {
 					 *
 					 * @param string $image_size Image size. Default 'large'.
 					 */
-					$image_size = apply_filters( 'lift_attachment_size', 'full' );
+					$image_size = apply_filters( 'wow_attachment_size', 'full' );
 					echo wp_get_attachment_image( get_the_ID(), $image_size );
 					?>
 

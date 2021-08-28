@@ -1,5 +1,5 @@
 {
-	"name": "liftcreations",
+	"name": "wowwordpress",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
@@ -11,12 +11,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/baonguyenyam/nguyen-wp/wow-theme.git"
+		"url": "git+https://github.com/baonguyenyam/wp-wow-theme.git"
 	},
 	"author": "FullStack VietNam",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/baonguyenyam/nguyen-wp/wow-theme/issues"
+		"url": "https://github.com/baonguyenyam/wp-wow-theme/issues"
 	},
 	"homepage": "https://baonguyenyam.github.io",
 	"dependencies": {

@@ -8,12 +8,12 @@
 
     $tabs = array(
         array(
-            'id'      => 'lift-help-tab-1',
+            'id'      => 'wow-help-tab-1',
             'title'   => __( 'Visit us on web', 'wow-theme-options' ),
             'content' => __( '<p>Visit us on web: <a href="//wow-wp.com" target="_blank">wow-wp.com</a></p>', 'wow-theme-options' )
         ),
         array(
-            'id'      => 'lift-help-tab-2',
+            'id'      => 'wow-help-tab-2',
             'title'   => __( 'Documentation', 'wow-theme-options' ),
             'content' => __( '<p>For full documentation on this field, visit: <a href="//github.com/baonguyenyam/wp-wow-theme/" target="_blank">github.com/baonguyenyam/wp-wow-theme/</a></p>', 'wow-theme-options' )
         )

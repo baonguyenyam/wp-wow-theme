@@ -1,1 +1,1 @@
-{"version":3,"file":"theme-modern.css","sources":["theme-modern.scss"],"sourcesContent":[".wow-theme-modern {\n}\n\n.wow-theme-modern {\n\t&.wow-theme-dark-mode {\n\n\t}\n}\n"],"names":[],"mappings":""}
+{"version":3,"file":"theme-modern.css","sources":["theme-modern.scss"],"sourcesContent":[".wow-theme-modern {\r\n}\r\n\r\n.wow-theme-modern {\r\n\t&.wow-theme-dark-mode {\r\n\r\n\t}\r\n}\r\n"],"names":[],"mappings":""}

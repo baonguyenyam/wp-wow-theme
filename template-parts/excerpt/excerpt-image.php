@@ -12,11 +12,11 @@
 
 // If there is no featured-image, print the first image block found.
 if (
-	! lift_can_show_post_thumbnail() &&
+	! wow_can_show_post_thumbnail() &&
 	has_block( 'core/image', get_the_content() )
 ) {
 
-	lift_print_first_instance_of_block( 'core/image', get_the_content() );
+	wow_print_first_instance_of_block( 'core/image', get_the_content() );
 }
 
 the_excerpt();

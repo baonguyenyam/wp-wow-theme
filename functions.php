@@ -15,7 +15,7 @@ if ( version_compare( $GLOBALS['wp_version'], '5.3', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 }
 
-require get_template_directory() . '/lift_redux_frame.php';
+require get_template_directory() . '/nguyen-app.php';
 require get_template_directory() . '/theme-config/setup.php';
 require get_template_directory() . '/theme-config/sidebar.php';
 require get_template_directory() . '/theme-config/breadcrumb.php';
@@ -35,7 +35,7 @@ require get_template_directory() . '/classes/class-nguyen-svg-icons.php';
 
 // Custom color classes.
 require get_template_directory() . '/classes/class-nguyen-custom-colors.php';
-new LIFT_Theme_Custom_Colors();
+new WOW_Theme_Custom_Colors();
 
 // Enhance the theme by hooking into WordPress.
 require get_template_directory() . '/inc/template-functions.php';
@@ -48,7 +48,7 @@ require get_template_directory() . '/inc/template-tags.php';
 
 // Customizer additions.
 require get_template_directory() . '/classes/class-nguyen-customize.php';
-new LIFT_Theme_Customize();
+new WOW_Theme_Customize();
 
 // Block Patterns.
 require get_template_directory() . '/inc/block-patterns.php';

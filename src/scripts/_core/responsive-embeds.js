@@ -11,7 +11,7 @@
  *
  * @return {void}
  */
-function LIFT___ResponsiveEmbeds() {
+function WOW___ResponsiveEmbeds() {
 	var proportion, parentWidth;
 
 	// Loop iframe elements.
@@ -30,7 +30,7 @@ function LIFT___ResponsiveEmbeds() {
 }
 
 // Run on initial load.
-LIFT___ResponsiveEmbeds();
+WOW___ResponsiveEmbeds();
 
 // Run on resize.
-window.onresize = LIFT___ResponsiveEmbeds;
+window.onresize = WOW___ResponsiveEmbeds;

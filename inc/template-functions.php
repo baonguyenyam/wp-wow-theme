@@ -18,7 +18,7 @@
  * @return array
  */
 
-function lift_body_classes( $classes ) {
+function wow_body_classes( $classes ) {
 	global $wow_theme;
 
 	// Helps detect if JS is enabled or not.
@@ -44,7 +44,7 @@ function lift_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'lift_body_classes' );
+add_filter( 'body_class', 'wow_body_classes' );
 
 /**
  * Adds custom class to the array of posts classes.
@@ -55,12 +55,12 @@ add_filter( 'body_class', 'lift_body_classes' );
  *
  * @return array
  */
-function lift_post_classes( $classes ) {
+function wow_post_classes( $classes ) {
 	$classes[] = 'entry';
 
 	return $classes;
 }
-add_filter( 'post_class', 'lift_post_classes', 10, 3 );
+add_filter( 'post_class', 'wow_post_classes', 10, 3 );
 
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
@@ -69,12 +69,12 @@ add_filter( 'post_class', 'lift_post_classes', 10, 3 );
  *
  * @return void
  */
-function lift_pingback_header() {
+function wow_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 	}
 }
-add_action( 'wp_head', 'lift_pingback_header' );
+add_action( 'wp_head', 'wow_pingback_header' );
 
 /**
  * Remove the `no-js` class from body if JS is supported.
@@ -83,10 +83,10 @@ add_action( 'wp_head', 'lift_pingback_header' );
  *
  * @return void
  */
-function lift_supports_js() {
+function wow_supports_js() {
 	echo '<script>document.body.classList.remove("no-js");</script>';
 }
-add_action( 'wp_footer', 'lift_supports_js' );
+add_action( 'wp_footer', 'wow_supports_js' );
 
 /**
  * Changes comment form default fields.
@@ -97,14 +97,14 @@ add_action( 'wp_footer', 'lift_supports_js' );
  *
  * @return array
  */
-function lift_comment_form_defaults( $defaults ) {
+function wow_comment_form_defaults( $defaults ) {
 
 	// Adjust height of comment form.
 	$defaults['comment_field'] = preg_replace( '/rows="\d+"/', 'rows="5"', $defaults['comment_field'] );
 
 	return $defaults;
 }
-add_filter( 'comment_form_defaults', 'lift_comment_form_defaults' );
+add_filter( 'comment_form_defaults', 'wow_comment_form_defaults' );
 
 /**
  * Determines if post thumbnail can be displayed.
@@ -113,9 +113,9 @@ add_filter( 'comment_form_defaults', 'lift_comment_form_defaults' );
  *
  * @return bool
  */
-function lift_can_show_post_thumbnail() {
+function wow_can_show_post_thumbnail() {
 	return apply_filters(
-		'lift_can_show_post_thumbnail',
+		'wow_can_show_post_thumbnail',
 		! post_password_required() && ! is_attachment() && has_post_thumbnail()
 	);
 }
@@ -127,14 +127,14 @@ function lift_can_show_post_thumbnail() {
  *
  * @return int
  */
-function lift_get_avatar_size() {
+function wow_get_avatar_size() {
 	return 60;
 }
 // TODO: not yet finished 
 /**
  * Creates continue reading text
  */
-function lift_continue_reading_text() {
+function wow_continue_reading_text() {
 	global $wow_theme;
 	if (intval($wow_theme['wow-theme-blog-excerpt-option']) == 1) {
 		$continue_reading = sprintf(
@@ -148,32 +148,32 @@ function lift_continue_reading_text() {
 /**
  * Create the continue reading link for excerpt.
  */
-function lift_continue_reading_link_excerpt() {
+function wow_continue_reading_link_excerpt() {
 	global $wow_theme;
 	global $post;
 	if ( ! is_admin() && intval($wow_theme['wow-theme-blog-excerpt-option']) == 1) {
-		return $wow_theme['wow-theme-blog-excerpt-morestring'].' <a class="more-link" href="' . esc_url( get_permalink($post) ) . '">' . lift_continue_reading_text() . '</a>';
+		return $wow_theme['wow-theme-blog-excerpt-morestring'].' <a class="more-link" href="' . esc_url( get_permalink($post) ) . '">' . wow_continue_reading_text() . '</a>';
 	} else {
 		return '';
 	}
 }
 
 // Filter the excerpt more link.
-add_filter( 'excerpt_more', 'lift_continue_reading_link_excerpt' );
+add_filter( 'excerpt_more', 'wow_continue_reading_link_excerpt' );
 
 /**
  * Create the continue reading link.
  */
-function lift_continue_reading_link() {
+function wow_continue_reading_link() {
 	if ( ! is_admin() && intval($wow_theme['wow-theme-blog-excerpt-option']) == 1) {
-		return '<div class="more-link-container"><a class="more-link" href="' . esc_url( get_permalink() ) . '#more-' . esc_attr( get_the_ID() ) . '">' . lift_continue_reading_text() . '</a></div>';
+		return '<div class="more-link-container"><a class="more-link" href="' . esc_url( get_permalink() ) . '#more-' . esc_attr( get_the_ID() ) . '">' . wow_continue_reading_text() . '</a></div>';
 	}
 }
 
 // Filter the excerpt more link.
-add_filter( 'the_content_more_link', 'lift_continue_reading_link' );
+add_filter( 'the_content_more_link', 'wow_continue_reading_link' );
 
-function lift_excerpt_length() {
+function wow_excerpt_length() {
 	global $wow_theme;
 	if ( ! is_admin() && intval($wow_theme['wow-theme-blog-excerpt-option']) == 1) {
 		return $wow_theme['wow-theme-blog-excerpt-value'];
@@ -181,10 +181,10 @@ function lift_excerpt_length() {
 		return 100000;
 	}
 }
-add_filter( 'excerpt_length', 'lift_excerpt_length');
+add_filter( 'excerpt_length', 'wow_excerpt_length');
 
 
-if ( ! function_exists( 'lift_post_title' ) ) {
+if ( ! function_exists( 'wow_post_title' ) ) {
 	/**
 	 * Add a title to posts and pages that are missing titles.
 	 *
@@ -194,11 +194,11 @@ if ( ! function_exists( 'lift_post_title' ) ) {
 	 *
 	 * @return string
 	 */
-	function lift_post_title( $title ) {
+	function wow_post_title( $title ) {
 		return '' === $title ? esc_html_x( 'Untitled', 'Added to posts and pages that are missing titles', 'wp-wow-theme' ) : $title;
 	}
 }
-add_filter( 'the_title', 'lift_post_title' );
+add_filter( 'the_title', 'wow_post_title' );
 
 /**
  * Gets the SVG code for a given icon.
@@ -211,8 +211,8 @@ add_filter( 'the_title', 'lift_post_title' );
  *
  * @return string
  */
-function lift_get_icon_svg( $group, $icon, $size = 24 ) {
-	return LIFT_Theme_SVG_Icons::get_svg( $group, $icon, $size );
+function wow_get_icon_svg( $group, $icon, $size = 24 ) {
+	return WOW_Theme_SVG_Icons::get_svg( $group, $icon, $size );
 }
 
 /**
@@ -222,12 +222,12 @@ function lift_get_icon_svg( $group, $icon, $size = 24 ) {
  *
  * @return string
  */
-function lift_change_calendar_nav_arrows( $calendar_output ) {
-	$calendar_output = str_replace( '&laquo; ', is_rtl() ? lift_get_icon_svg( 'ui', 'arrow_right' ) : lift_get_icon_svg( 'ui', 'arrow_left' ), $calendar_output );
-	$calendar_output = str_replace( ' &raquo;', is_rtl() ? lift_get_icon_svg( 'ui', 'arrow_left' ) : lift_get_icon_svg( 'ui', 'arrow_right' ), $calendar_output );
+function wow_change_calendar_nav_arrows( $calendar_output ) {
+	$calendar_output = str_replace( '&laquo; ', is_rtl() ? wow_get_icon_svg( 'ui', 'arrow_right' ) : wow_get_icon_svg( 'ui', 'arrow_left' ), $calendar_output );
+	$calendar_output = str_replace( ' &raquo;', is_rtl() ? wow_get_icon_svg( 'ui', 'arrow_left' ) : wow_get_icon_svg( 'ui', 'arrow_right' ), $calendar_output );
 	return $calendar_output;
 }
-add_filter( 'get_calendar', 'lift_change_calendar_nav_arrows' );
+add_filter( 'get_calendar', 'wow_change_calendar_nav_arrows' );
 
 /**
  * Get custom CSS.
@@ -238,14 +238,14 @@ add_filter( 'get_calendar', 'lift_change_calendar_nav_arrows' );
  *
  * @return string
  */
-function lift_get_non_latin_css( $type = 'front-end' ) {
+function wow_get_non_latin_css( $type = 'front-end' ) {
 
 	// Fetch site locale.
 	$locale = get_bloginfo( 'language' );
 
 	// Define fallback fonts for non-latin languages.
 	$font_family = apply_filters(
-		'lift_get_localized_font_family_types',
+		'wow_get_localized_font_family_types',
 		array(
 
 			// Arabic.
@@ -315,7 +315,7 @@ function lift_get_non_latin_css( $type = 'front-end' ) {
 
 	// Define elements to apply fallback fonts to.
 	$elements = apply_filters(
-		'lift_get_localized_font_family_elements',
+		'wow_get_localized_font_family_elements',
 		array(
 			'front-end'      => array( 'body', 'input', 'textarea', 'button', '.button', '.faux-button', '.wp-block-button__link', '.wp-block-file__button', '.has-drop-cap:not(:focus)::first-letter', '.has-drop-cap:not(:focus)::first-letter', '.entry-content .wp-block-archives', '.entry-content .wp-block-categories', '.entry-content .wp-block-cover-image', '.entry-content .wp-block-latest-comments', '.entry-content .wp-block-latest-posts', '.entry-content .wp-block-pullquote', '.entry-content .wp-block-quote.is-large', '.entry-content .wp-block-quote.is-style-large', '.entry-content .wp-block-archives *', '.entry-content .wp-block-categories *', '.entry-content .wp-block-latest-posts *', '.entry-content .wp-block-latest-comments *', '.entry-content p', '.entry-content ol', '.entry-content ul', '.entry-content dl', '.entry-content dt', '.entry-content cite', '.entry-content figcaption', '.entry-content .wp-caption-text', '.comment-content p', '.comment-content ol', '.comment-content ul', '.comment-content dl', '.comment-content dt', '.comment-content cite', '.comment-content figcaption', '.comment-content .wp-caption-text', '.widget_text p', '.widget_text ol', '.widget_text ul', '.widget_text dl', '.widget_text dt', '.widget-content .rssSummary', '.widget-content cite', '.widget-content figcaption', '.widget-content .wp-caption-text' ),
 			'block-editor'   => array( '.editor-styles-wrapper > *', '.editor-styles-wrapper p', '.editor-styles-wrapper ol', '.editor-styles-wrapper ul', '.editor-styles-wrapper dl', '.editor-styles-wrapper dt', '.editor-post-title__block .editor-post-title__input', '.editor-styles-wrapper .wp-block h1', '.editor-styles-wrapper .wp-block h2', '.editor-styles-wrapper .wp-block h3', '.editor-styles-wrapper .wp-block h4', '.editor-styles-wrapper .wp-block h5', '.editor-styles-wrapper .wp-block h6', '.editor-styles-wrapper .has-drop-cap:not(:focus)::first-letter', '.editor-styles-wrapper cite', '.editor-styles-wrapper figcaption', '.editor-styles-wrapper .wp-caption-text' ),
@@ -329,12 +329,12 @@ function lift_get_non_latin_css( $type = 'front-end' ) {
 	}
 
 	// Include file if function doesn't exist.
-	if ( ! function_exists( 'lift_generate_css' ) ) {
+	if ( ! function_exists( 'wow_generate_css' ) ) {
 		require_once get_theme_file_path( 'inc/custom-css.php' ); // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 	}
 
 	// Return the specified styles.
-	return lift_generate_css( // @phpstan-ignore-line.
+	return wow_generate_css( // @phpstan-ignore-line.
 		implode( ',', $elements[ $type ] ),
 		'font-family',
 		implode( ',', $font_family[ $locale ] ),
@@ -356,7 +356,7 @@ function lift_get_non_latin_css( $type = 'front-end' ) {
  *
  * @return bool Returns true if a block was located & printed, otherwise false.
  */
-function lift_print_first_instance_of_block( $block_name, $content = null, $instances = 1 ) {
+function wow_print_first_instance_of_block( $block_name, $content = null, $instances = 1 ) {
 	$instances_count = 0;
 	$blocks_content  = '';
 
@@ -416,7 +416,7 @@ function lift_print_first_instance_of_block( $block_name, $content = null, $inst
  * @param int|WP_Post $post Optional. Post ID or WP_Post object. Default is global $post.
  * @return string HTML content for password form for password protected post.
  */
-function lift_password_form( $post = 0 ) {
+function wow_password_form( $post = 0 ) {
 	$post   = get_post( $post );
 	$label  = 'pwbox-' . ( empty( $post->ID ) ? wp_rand() : $post->ID );
 	$output = '<p class="post-password-message">' . esc_html__( 'This content is password protected. Please enter a password to view.', 'wp-wow-theme' ) . '</p>
@@ -425,7 +425,7 @@ function lift_password_form( $post = 0 ) {
 	';
 	return $output;
 }
-add_filter( 'the_password_form', 'lift_password_form' );
+add_filter( 'the_password_form', 'wow_password_form' );
 
 /**
  * Filters the list of attachment image attributes.
@@ -440,7 +440,7 @@ add_filter( 'the_password_form', 'lift_password_form' );
  *
  * @return array
  */
-function lift_get_attachment_image_attributes( $attr, $attachment, $size ) {
+function wow_get_attachment_image_attributes( $attr, $attachment, $size ) {
 
 	if ( is_admin() ) {
 		return $attr;
@@ -473,4 +473,4 @@ function lift_get_attachment_image_attributes( $attr, $attachment, $size ) {
 
 	return $attr;
 }
-add_filter( 'wp_get_attachment_image_attributes', 'lift_get_attachment_image_attributes', 10, 3 );
+add_filter( 'wp_get_attachment_image_attributes', 'wow_get_attachment_image_attributes', 10, 3 );

@@ -1,1 +1,1 @@
-{"version":3,"file":"theme-monokai.css","sources":["theme-monokai.scss"],"sourcesContent":[".wow-theme-monikai {\n\n}\n\n.wow-theme-monikai {\n\t&.wow-theme-dark-mode {\n\n\t}\n}\n"],"names":[],"mappings":""}
+{"version":3,"file":"theme-monokai.css","sources":["theme-monokai.scss"],"sourcesContent":[".wow-theme-monikai {\r\n\r\n}\r\n\r\n.wow-theme-monikai {\r\n\t&.wow-theme-dark-mode {\r\n\r\n\t}\r\n}\r\n"],"names":[],"mappings":""}

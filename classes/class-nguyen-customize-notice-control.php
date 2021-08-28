@@ -1,6 +1,6 @@
 <?php
 /**
- * Customize API: LIFT_Theme_Customize_Notice_Control class
+ * Customize API: WOW_Theme_Customize_Notice_Control class
  *
  * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
@@ -11,19 +11,19 @@
 /**
  * Customize Notice Control class.
  *
- * @since LIFT 2021
+ * @since WOW 2021
  *
  * @see WP_Customize_Control
  */
-class LIFT_Theme_Customize_Notice_Control extends WP_Customize_Control {
+class WOW_Theme_Customize_Notice_Control extends WP_Customize_Control {
 	/**
 	 * The control type.
 	 *
-	 * @since LIFT 2021
+	 * @since WOW 2021
 	 *
 	 * @var string
 	 */
-	public $type = 'lift-assets-notice';
+	public $type = 'wow-assets-notice';
 
 	/**
 	 * Renders the control content.
@@ -32,7 +32,7 @@ class LIFT_Theme_Customize_Notice_Control extends WP_Customize_Control {
 	 *
 	 * @access public
 	 *
-	 * @since LIFT 2021
+	 * @since WOW 2021
 	 *
 	 * @return void
 	 */
@@ -40,7 +40,7 @@ class LIFT_Theme_Customize_Notice_Control extends WP_Customize_Control {
 		?>
 		<div class="notice notice-warning">
 			<p><?php esc_html_e( 'To access the Dark Mode settings, select a light background color.', 'wp-wow-theme' ); ?></p>
-			<p><a href="<?php echo esc_url( __( 'https://wordpress.org/support/article/lift-assets/#dark-mode-support', 'wp-wow-theme' ) ); ?>">
+			<p><a href="<?php echo esc_url( __( 'https://wordpress.org/support/article/wow-assets/#dark-mode-support', 'wp-wow-theme' ) ); ?>">
 				<?php esc_html_e( 'Learn more about Dark Mode.', 'wp-wow-theme' ); ?>
 			</a></p>
 		</div>

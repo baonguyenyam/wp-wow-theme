@@ -1,6 +1,6 @@
 <?php
 
-if ( ! function_exists( 'lift_setup' ) ) {
+if ( ! function_exists( 'wow_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -8,11 +8,11 @@ if ( ! function_exists( 'lift_setup' ) ) {
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 *
-	 * @since LIFT 2021
+	 * @since WOW 2021
 	 *
 	 * @return void
 	 */
-	function lift_setup() {
+	function wow_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -56,7 +56,7 @@ if ( ! function_exists( 'lift_setup' ) ) {
 		 */
 		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 1568, 9999 );
-		add_image_size( 'lift-thumbnail-size', 220, 180, true );
+		add_image_size( 'wow-thumbnail-size', 220, 180, true );
 
 		register_nav_menus(
 			array(
@@ -115,7 +115,7 @@ if ( ! function_exists( 'lift_setup' ) ) {
 		// Add support for editor styles.
 		add_theme_support( 'editor-styles' );
 		// $background_color = get_theme_mod( 'background_color', 'D1E4DD' );
-		// if ( 127 > LIFT_Theme_Custom_Colors::get_relative_luminance_from_hex( $background_color ) ) {
+		// if ( 127 > WOW_Theme_Custom_Colors::get_relative_luminance_from_hex( $background_color ) ) {
 		// 	add_theme_support( 'dark-editor-style' );
 		// }
 
@@ -309,7 +309,7 @@ if ( ! function_exists( 'lift_setup' ) ) {
 		*/
 		if ( is_customize_preview() ) {
 			require get_template_directory() . '/inc/starter-content.php';
-			add_theme_support( 'starter-content', lift_get_starter_content() );
+			add_theme_support( 'starter-content', wow_get_starter_content() );
 		}
 
 		// Add support for responsive embedded content.
@@ -329,7 +329,7 @@ if ( ! function_exists( 'lift_setup' ) ) {
 		add_theme_support( 'custom-units' );
 	}
 }
-add_action( 'after_setup_theme', 'lift_setup' );
+add_action( 'after_setup_theme', 'wow_setup' );
 
 /**
  * Calculate classes for the main <html> element.
@@ -338,8 +338,8 @@ add_action( 'after_setup_theme', 'lift_setup' );
  *
  * @return void
  */
-function lift_the_html_classes() {
-	$classes = apply_filters( 'lift_html_classes', '' );
+function wow_the_html_classes() {
+	$classes = apply_filters( 'wow_html_classes', '' );
 	if ( ! $classes ) {
 		return;
 	}

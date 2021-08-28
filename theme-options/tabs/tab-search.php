@@ -73,7 +73,7 @@
 				'id'       => 'wow-theme-search-layout-placeholder-value',
                 'type'     => 'text',
                 'title'    => __( 'Placeholder Text', 'wow-theme-options' ),
-                'default'  => 'e.g: lift',
+                'default'  => 'e.g: wow',
             ),
 		),
     ) );
@@ -137,7 +137,7 @@
 				'id'       => 'wow-theme-search-widget-layout-placeholder-value',
                 'type'     => 'text',
                 'title'    => __( 'Placeholder Text', 'wow-theme-options' ),
-                'default'  => 'e.g: lift',
+                'default'  => 'e.g: wow',
             ),
 		),
     ) );
@@ -260,7 +260,7 @@
                     'wow-theme-header-search', '!=', '0',
                 ),
                 'title'    => __( 'Placeholder Text', 'wow-theme-options' ),
-                'default'  => 'e.g: lift',
+                'default'  => 'e.g: wow',
             ),
 		),
     ) );

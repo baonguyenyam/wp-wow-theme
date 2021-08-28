@@ -1,4 +1,4 @@
-var LIFT_APP = {
+var WOW_APP = {
 	// Break points
 	xs: 0,
 	sm: 576,
@@ -6,15 +6,15 @@ var LIFT_APP = {
 	lg: 992,
 	xl: 1200,
 	xxl: 1400,
-	lift_admin_toolbar: function lift_admin_toolbar() {
+	wow_admin_toolbar: function wow_admin_toolbar() {
 		if ($('body.admin-control').length) {
 			$('#page').append('<div id="admin-space"></div>')
 		}
 	},
-	lift_clear_canvas_menu: function lift_clear_canvas_menu(e) {
+	wow_clear_canvas_menu: function wow_clear_canvas_menu(e) {
 		$('header.site-header .menu-offcanvas-'+e).removeAttr('style')
 	},
-	lift_gen_canvas_menu: function lift_gen_canvas_menu(e) {
+	wow_gen_canvas_menu: function wow_gen_canvas_menu(e) {
 		// Off canvas menu toggle
 		var getHeaderNormal = $('header#header').outerHeight(true)
 		if($('header#header .navbar').hasClass('navbar-expand-'+e)){
@@ -25,7 +25,7 @@ var LIFT_APP = {
 			$('header.site-header .menu-offcanvas-'+e).removeAttr('style')
 		}
 	},
-	lift_hover_menu: function lift_hover_menu(e) {
+	wow_hover_menu: function wow_hover_menu(e) {
 		// Menu hover with breakpoint
 		$('header.site-header .navbar-expand-'+e+' #site-navigation li.menu-item-has-children').hover(function(){
 			$(this).addClass('menu-hover')
@@ -33,7 +33,7 @@ var LIFT_APP = {
 			$(this).removeClass('menu-hover')
 		})
 	},
-	lift_fixed_header: function lift_fixed_header() {
+	wow_fixed_header: function wow_fixed_header() {
 		// Fixed header will be add padding to the html element
 		var getHeader = $('header#header.fixed-top').outerHeight(true)
 		if (getHeader) {
@@ -42,70 +42,70 @@ var LIFT_APP = {
 			})
 		}
 	},
-	lift_toggle_ofcanvas: function lift_toggle_ofcanvas() {
+	wow_toggle_ofcanvas: function wow_toggle_ofcanvas() {
 		// When toggle menu scrolled
 		if($('header#header:not(.fixed-top)')) {
 			$('header#header .navbar-toggler.navbar-offcanvas').addClass('collapsed')
 			$('header#header .primary-menu-container').removeClass('open')
 		}
 	},
-	lift_active_header: function lift_active_header() {
+	wow_active_header: function wow_active_header() {
 		// When window is scrolled
 		var st = $(window).scrollTop();
 		if (st > 0) {
 			$('header#header.fixed-top').addClass('active')
-			LIFT_APP.lift_toggle_ofcanvas()
+			WOW_APP.wow_toggle_ofcanvas()
 		} else {
 			$('header#header.fixed-top').removeClass('active')
 		}
 	},
-	lift_canvas_header: function lift_canvas_header() {
-		LIFT_APP.lift_gen_canvas_menu('all')
-		if($(window).width() < LIFT_APP.sm){
-			LIFT_APP.lift_gen_canvas_menu('sm')
+	wow_canvas_header: function wow_canvas_header() {
+		WOW_APP.wow_gen_canvas_menu('all')
+		if($(window).width() < WOW_APP.sm){
+			WOW_APP.wow_gen_canvas_menu('sm')
 		} else {
-			LIFT_APP.lift_clear_canvas_menu('sm')
+			WOW_APP.wow_clear_canvas_menu('sm')
 		}
-		if($(window).width() <= LIFT_APP.md){
-			LIFT_APP.lift_gen_canvas_menu('md')
+		if($(window).width() <= WOW_APP.md){
+			WOW_APP.wow_gen_canvas_menu('md')
 		} else {
-			LIFT_APP.lift_clear_canvas_menu('md')
+			WOW_APP.wow_clear_canvas_menu('md')
 		}
-		if($(window).width() <= LIFT_APP.lg){
-			LIFT_APP.lift_gen_canvas_menu('lg')
+		if($(window).width() <= WOW_APP.lg){
+			WOW_APP.wow_gen_canvas_menu('lg')
 		} else {
-			LIFT_APP.lift_clear_canvas_menu('lg')
+			WOW_APP.wow_clear_canvas_menu('lg')
 		}
-		if($(window).width() <= LIFT_APP.xl){
-			LIFT_APP.lift_gen_canvas_menu('xl')
+		if($(window).width() <= WOW_APP.xl){
+			WOW_APP.wow_gen_canvas_menu('xl')
 		} else {
-			LIFT_APP.lift_clear_canvas_menu('xl')
+			WOW_APP.wow_clear_canvas_menu('xl')
 		}
-		if($(window).width() <= LIFT_APP.xxl){
-			LIFT_APP.lift_gen_canvas_menu('xxl')
+		if($(window).width() <= WOW_APP.xxl){
+			WOW_APP.wow_gen_canvas_menu('xxl')
 		} else {
-			LIFT_APP.lift_clear_canvas_menu('xxl')
+			WOW_APP.wow_clear_canvas_menu('xxl')
 		}
 	},
-	lift_get_header_hover: function lift_get_header_hover() {
+	wow_get_header_hover: function wow_get_header_hover() {
 		// TODO: read this one again 
 		if($(window).width() > 0){
-			LIFT_APP.lift_hover_menu('keep')
+			WOW_APP.wow_hover_menu('keep')
 		}
-		if($(window).width() >= LIFT_APP.sm){
-			LIFT_APP.lift_hover_menu('sm')
+		if($(window).width() >= WOW_APP.sm){
+			WOW_APP.wow_hover_menu('sm')
 		}
-		if($(window).width() >= LIFT_APP.md){
-			LIFT_APP.lift_hover_menu('md')
+		if($(window).width() >= WOW_APP.md){
+			WOW_APP.wow_hover_menu('md')
 		}
-		if($(window).width() >= LIFT_APP.lg){
-			LIFT_APP.lift_hover_menu('lg')
+		if($(window).width() >= WOW_APP.lg){
+			WOW_APP.wow_hover_menu('lg')
 		}
-		if($(window).width() >= LIFT_APP.xl){
-			LIFT_APP.lift_hover_menu('xl')
+		if($(window).width() >= WOW_APP.xl){
+			WOW_APP.wow_hover_menu('xl')
 		}
-		if($(window).width() >= LIFT_APP.xxl){
-			LIFT_APP.lift_hover_menu('xxl')
+		if($(window).width() >= WOW_APP.xxl){
+			WOW_APP.wow_hover_menu('xxl')
 		}
 	}
 }
@@ -113,26 +113,26 @@ var LIFT_APP = {
 ///////////////////////////////////////////////////
 // INIT APP 
 ///////////////////////////////////////////////////
-liftDOMChange(() => {
+wowDOMChange(() => {
 });
 
 $(function() {
-	LIFT_APP.lift_fixed_header()
+	WOW_APP.wow_fixed_header()
 });
 
 $( document ).ready(function() {
-	LIFT_APP.lift_fixed_header()
-	LIFT_APP.lift_canvas_header()
-	LIFT_APP.lift_get_header_hover()
-	LIFT_APP.lift_admin_toolbar()
+	WOW_APP.wow_fixed_header()
+	WOW_APP.wow_canvas_header()
+	WOW_APP.wow_get_header_hover()
+	WOW_APP.wow_admin_toolbar()
 });
 
 $(window).scroll(function () {
-	LIFT_APP.lift_active_header()
+	WOW_APP.wow_active_header()
 });
 
 $(window).resize(function () {
-	LIFT_APP.lift_fixed_header()
-	LIFT_APP.lift_canvas_header()
-	LIFT_APP.lift_get_header_hover()
+	WOW_APP.wow_fixed_header()
+	WOW_APP.wow_canvas_header()
+	WOW_APP.wow_get_header_hover()
 });

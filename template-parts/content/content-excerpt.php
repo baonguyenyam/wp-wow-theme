@@ -20,6 +20,6 @@
     </div><!-- .entry-content -->
 
     <footer class="entry-footer default-max-width">
-        <?php lift_entry_meta_footer(); ?>
+        <?php wow_entry_meta_footer(); ?>
     </footer><!-- .entry-footer -->
 </article><!-- #post-${ID} -->

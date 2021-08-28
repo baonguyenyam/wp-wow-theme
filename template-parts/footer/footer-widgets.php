@@ -67,8 +67,8 @@ if(isset($wow_theme['wow-theme-copyright-row-spacing'])) {
 }
 ?>
 
-<!-- LIFT FOOTER  -->
-<footer id="footer" class="footer lift-footer">
+<!-- WOW FOOTER  -->
+<footer id="footer" class="footer wow-footer">
 	<?php if(is_active_sidebar('footer-sidebar-1') && (isset($footer_enable) && $footer_enable === '1')) {?>
 		<div class="footer-wrapper"<?= isset($footer_row) && $footer_row === '1' ? $build_footer_spacing : ''?>>
 			<div class="container<?= isset($footer_style) && $footer_style === '1' ? '-fluid': ''?>">
@@ -87,7 +87,7 @@ if(isset($wow_theme['wow-theme-copyright-row-spacing'])) {
 		</div>
 	<?php } ?>
 	<?php if(is_active_sidebar('copyright-sidebar-1') && (isset($copyright_enable) && $copyright_enable === '1')) {?>
-		<div id="copyright" class="copyright lift-copyright">
+		<div id="copyright" class="copyright wow-copyright">
 			<div class="copyright-wrapper"<?= isset($copyright_row) && $copyright_row === '1' ? $build_copyright_spacing : ''?>>
 				<div class="container<?= isset($copyright_style) && $copyright_style === '1' ? '-fluid': ''?>">
 					<div class="row<?= isset($copyright_gutters) && $copyright_gutters !== '-1' ? ' gx-'.$copyright_gutters : ''?>">
@@ -107,7 +107,7 @@ if(isset($wow_theme['wow-theme-copyright-row-spacing'])) {
 	<?php } ?>
 </footer>
 
-<!-- LIFT BACK TO TOP -->
+<!-- WOW BACK TO TOP -->
 <?php if($global_backtotop) {?>
 	<?php
 		$displaybtt = 'position-fixed';

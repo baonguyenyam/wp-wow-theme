@@ -7,11 +7,11 @@
 */
 
 if ( file_exists( get_template_directory() . '/docs/info.html' ) ) {
-	$liftHTML = '';
+	$wowHTML = '';
 	Redux_Functions::initWpFilesystem();
 	global $wp_filesystem;
 	
-	$liftHTML = $wp_filesystem->get_contents( get_template_directory() . '/docs/info.html' );
+	$wowHTML = $wp_filesystem->get_contents( get_template_directory() . '/docs/info.html' );
 
 	$section = array(
 		'title'      => __( 'Addons', 'wow-theme-options' ),
@@ -22,7 +22,7 @@ if ( file_exists( get_template_directory() . '/docs/info.html' ) ) {
                 'id'       => 'wow-theme-info-details',
 				'full_width' => true,
 				'type'     => 'raw',
-                'content'  => $liftHTML,
+                'content'  => $wowHTML,
             )
         )
 	);

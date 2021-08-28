@@ -20,6 +20,6 @@ $layout_style = $wow_theme['wow-theme-layout-style'];
 <header class="entry-header">
 	<?php
 	the_title( sprintf( '<h2 class="entry-title default-max-width"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' );
-	lift_post_thumbnail();
+	wow_post_thumbnail();
 	?>
 </header><!-- .entry-header -->

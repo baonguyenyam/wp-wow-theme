@@ -265,7 +265,7 @@ body {
   width: 1px;
   word-wrap: normal !important; }
 
-#content.lift-content .wpb_content_element {
+#content.wow-content .wpb_content_element {
   margin-bottom: 0; }
 
 .widget .nav-link {
@@ -4350,39 +4350,39 @@ footer#footer {
       margin-bottom: -.5rem; }
 
 #content-search .search-form,
-#footer.lift-footer .search-form {
+#footer.wow-footer .search-form {
   display: flex;
   flex-direction: column; }
   #content-search .search-form label,
-  #footer.lift-footer .search-form label {
+  #footer.wow-footer .search-form label {
     margin-right: 5px;
     color: var(--wow-theme-box); }
   #content-search .search-form .search-submit-close,
-  #footer.lift-footer .search-form .search-submit-close {
+  #footer.wow-footer .search-form .search-submit-close {
     display: none; }
   #content-search .search-form .search-submit-toggle,
-  #footer.lift-footer .search-form .search-submit-toggle {
+  #footer.wow-footer .search-form .search-submit-toggle {
     display: none; }
   #content-search .search-form.no-label label,
-  #footer.lift-footer .search-form.no-label label {
+  #footer.wow-footer .search-form.no-label label {
     display: none; }
   #content-search .search-form.no-icon .search-submit i,
-  #footer.lift-footer .search-form.no-icon .search-submit i {
+  #footer.wow-footer .search-form.no-icon .search-submit i {
     display: none; }
   #content-search .search-form.no-icon.no-text .search-submit span,
-  #footer.lift-footer .search-form.no-icon.no-text .search-submit span {
+  #footer.wow-footer .search-form.no-icon.no-text .search-submit span {
     display: block; }
   #content-search .search-form.no-text .search-submit span,
-  #footer.lift-footer .search-form.no-text .search-submit span {
+  #footer.wow-footer .search-form.no-text .search-submit span {
     display: none; }
   #content-search .search-form:not(.no-text):not(.no-icon) .search-submit span,
-  #footer.lift-footer .search-form:not(.no-text):not(.no-icon) .search-submit span {
+  #footer.wow-footer .search-form:not(.no-text):not(.no-icon) .search-submit span {
     margin-right: 10px; }
   #content-search .search-form.search-liner,
-  #footer.lift-footer .search-form.search-liner {
+  #footer.wow-footer .search-form.search-liner {
     position: relative; }
     #content-search .search-form.search-liner .input-group:after,
-    #footer.lift-footer .search-form.search-liner .input-group:after {
+    #footer.wow-footer .search-form.search-liner .input-group:after {
       content: '';
       height: 2px;
       display: block;
@@ -4392,27 +4392,27 @@ footer#footer {
       bottom: 0;
       left: 0; }
     #content-search .search-form.search-liner .search-submit,
-    #footer.lift-footer .search-form.search-liner .search-submit {
+    #footer.wow-footer .search-form.search-liner .search-submit {
       padding-left: 0;
       display: none;
       border: 0;
       background: none; }
       #content-search .search-form.search-liner .search-submit:focus,
-      #footer.lift-footer .search-form.search-liner .search-submit:focus {
+      #footer.wow-footer .search-form.search-liner .search-submit:focus {
         outline: 0;
         box-shadow: none; }
     #content-search .search-form.search-liner .search-field,
-    #footer.lift-footer .search-form.search-liner .search-field {
+    #footer.wow-footer .search-form.search-liner .search-field {
       padding-left: 0;
       display: block;
       border: 0;
       background: none; }
       #content-search .search-form.search-liner .search-field:focus,
-      #footer.lift-footer .search-form.search-liner .search-field:focus {
+      #footer.wow-footer .search-form.search-liner .search-field:focus {
         outline: 0;
         box-shadow: none; }
     #content-search .search-form.search-liner .search-submit-toggle,
-    #footer.lift-footer .search-form.search-liner .search-submit-toggle {
+    #footer.wow-footer .search-form.search-liner .search-submit-toggle {
       display: block;
       border: none;
       margin: 0;
@@ -4427,59 +4427,59 @@ footer#footer {
       -moz-osx-font-smoothing: inherit;
       -webkit-appearance: none; }
       #content-search .search-form.search-liner .search-submit-toggle::-moz-focus-inner,
-      #footer.lift-footer .search-form.search-liner .search-submit-toggle::-moz-focus-inner {
+      #footer.wow-footer .search-form.search-liner .search-submit-toggle::-moz-focus-inner {
         border: 0;
         padding: 0; }
   #content-search .search-form.search-full,
-  #footer.lift-footer .search-form.search-full {
+  #footer.wow-footer .search-form.search-full {
     position: relative; }
     #content-search .search-form.search-full .search-field,
     #content-search .search-form.search-full .search-submit,
-    #footer.lift-footer .search-form.search-full .search-field,
-    #footer.lift-footer .search-form.search-full .search-submit {
+    #footer.wow-footer .search-form.search-full .search-field,
+    #footer.wow-footer .search-form.search-full .search-submit {
       border: 0;
       background: var(--wow-theme-texthover);
       color: var(--wow-theme-border); }
       #content-search .search-form.search-full .search-field:focus,
       #content-search .search-form.search-full .search-submit:focus,
-      #footer.lift-footer .search-form.search-full .search-field:focus,
-      #footer.lift-footer .search-form.search-full .search-submit:focus {
+      #footer.wow-footer .search-form.search-full .search-field:focus,
+      #footer.wow-footer .search-form.search-full .search-submit:focus {
         outline: 0;
         box-shadow: none; }
   #content-search .search-form.search-block,
-  #footer.lift-footer .search-form.search-block {
+  #footer.wow-footer .search-form.search-block {
     position: relative; }
     #content-search .search-form.search-block .input-group,
-    #footer.lift-footer .search-form.search-block .input-group {
+    #footer.wow-footer .search-form.search-block .input-group {
       display: flex;
       flex-direction: column; }
       #content-search .search-form.search-block .input-group > *,
-      #footer.lift-footer .search-form.search-block .input-group > * {
+      #footer.wow-footer .search-form.search-block .input-group > * {
         width: 100%;
         border-radius: 0.25rem; }
       #content-search .search-form.search-block .input-group .search-submit,
-      #footer.lift-footer .search-form.search-block .input-group .search-submit {
+      #footer.wow-footer .search-form.search-block .input-group .search-submit {
         margin-top: .5rem;
         display: flex;
         justify-content: center;
         align-items: center; }
     #content-search .search-form.search-block .search-field:focus,
     #content-search .search-form.search-block .search-submit:focus,
-    #footer.lift-footer .search-form.search-block .search-field:focus,
-    #footer.lift-footer .search-form.search-block .search-submit:focus {
+    #footer.wow-footer .search-form.search-block .search-field:focus,
+    #footer.wow-footer .search-form.search-block .search-submit:focus {
       outline: 0;
       box-shadow: none; }
 
-.lift-pagination {
+.wow-pagination {
   margin: 1rem 0; }
-  .lift-pagination ul, .lift-pagination .page-numbers, .lift-pagination .nav-links {
+  .wow-pagination ul, .wow-pagination .page-numbers, .wow-pagination .nav-links {
     display: flex;
     padding-left: 0;
     margin: .5rem 0;
     list-style: none; }
-    .lift-pagination ul li, .lift-pagination .page-numbers li, .lift-pagination .nav-links li {
+    .wow-pagination ul li, .wow-pagination .page-numbers li, .wow-pagination .nav-links li {
       display: flex; }
-      .lift-pagination ul li a, .lift-pagination ul li .page-numbers, .lift-pagination .page-numbers li a, .lift-pagination .page-numbers li .page-numbers, .lift-pagination .nav-links li a, .lift-pagination .nav-links li .page-numbers {
+      .wow-pagination ul li a, .wow-pagination ul li .page-numbers, .wow-pagination .page-numbers li a, .wow-pagination .page-numbers li .page-numbers, .wow-pagination .nav-links li a, .wow-pagination .nav-links li .page-numbers {
         position: relative;
         display: block;
         color: var(--wow-theme-main);
@@ -4490,31 +4490,31 @@ footer#footer {
         padding: .375rem .75rem;
         margin: 0;
         align-items: center; }
-        .lift-pagination ul li a.current, .lift-pagination ul li .page-numbers.current, .lift-pagination .page-numbers li a.current, .lift-pagination .page-numbers li .page-numbers.current, .lift-pagination .nav-links li a.current, .lift-pagination .nav-links li .page-numbers.current {
+        .wow-pagination ul li a.current, .wow-pagination ul li .page-numbers.current, .wow-pagination .page-numbers li a.current, .wow-pagination .page-numbers li .page-numbers.current, .wow-pagination .nav-links li a.current, .wow-pagination .nav-links li .page-numbers.current {
           background-color: var(--wow-theme-main);
           border-color: var(--wow-theme-main);
           color: var(--wow-theme-white); }
-      .lift-pagination ul li:first-child a, .lift-pagination ul li:first-child .page-numbers, .lift-pagination .page-numbers li:first-child a, .lift-pagination .page-numbers li:first-child .page-numbers, .lift-pagination .nav-links li:first-child a, .lift-pagination .nav-links li:first-child .page-numbers {
+      .wow-pagination ul li:first-child a, .wow-pagination ul li:first-child .page-numbers, .wow-pagination .page-numbers li:first-child a, .wow-pagination .page-numbers li:first-child .page-numbers, .wow-pagination .nav-links li:first-child a, .wow-pagination .nav-links li:first-child .page-numbers {
         border-top-left-radius: .25rem;
         border-bottom-left-radius: .25rem; }
-      .lift-pagination ul li:last-child a, .lift-pagination ul li:last-child .page-numbers, .lift-pagination .page-numbers li:last-child a, .lift-pagination .page-numbers li:last-child .page-numbers, .lift-pagination .nav-links li:last-child a, .lift-pagination .nav-links li:last-child .page-numbers {
+      .wow-pagination ul li:last-child a, .wow-pagination ul li:last-child .page-numbers, .wow-pagination .page-numbers li:last-child a, .wow-pagination .page-numbers li:last-child .page-numbers, .wow-pagination .nav-links li:last-child a, .wow-pagination .nav-links li:last-child .page-numbers {
         border-top-right-radius: .25rem;
         border-bottom-right-radius: .25rem; }
-      .lift-pagination ul li:not(:first-child) a,
-      .lift-pagination ul li:not(:first-child) .page-numbers, .lift-pagination .page-numbers li:not(:first-child) a,
-      .lift-pagination .page-numbers li:not(:first-child) .page-numbers, .lift-pagination .nav-links li:not(:first-child) a,
-      .lift-pagination .nav-links li:not(:first-child) .page-numbers {
+      .wow-pagination ul li:not(:first-child) a,
+      .wow-pagination ul li:not(:first-child) .page-numbers, .wow-pagination .page-numbers li:not(:first-child) a,
+      .wow-pagination .page-numbers li:not(:first-child) .page-numbers, .wow-pagination .nav-links li:not(:first-child) a,
+      .wow-pagination .nav-links li:not(:first-child) .page-numbers {
         margin-left: -1px; }
-      .lift-pagination ul li:hover a:not(.current), .lift-pagination ul li:hover .page-numbers:not(.current), .lift-pagination ul li:focus a:not(.current), .lift-pagination ul li:focus .page-numbers:not(.current), .lift-pagination ul li:active a:not(.current), .lift-pagination ul li:active .page-numbers:not(.current), .lift-pagination .page-numbers li:hover a:not(.current), .lift-pagination .page-numbers li:hover .page-numbers:not(.current), .lift-pagination .page-numbers li:focus a:not(.current), .lift-pagination .page-numbers li:focus .page-numbers:not(.current), .lift-pagination .page-numbers li:active a:not(.current), .lift-pagination .page-numbers li:active .page-numbers:not(.current), .lift-pagination .nav-links li:hover a:not(.current), .lift-pagination .nav-links li:hover .page-numbers:not(.current), .lift-pagination .nav-links li:focus a:not(.current), .lift-pagination .nav-links li:focus .page-numbers:not(.current), .lift-pagination .nav-links li:active a:not(.current), .lift-pagination .nav-links li:active .page-numbers:not(.current) {
+      .wow-pagination ul li:hover a:not(.current), .wow-pagination ul li:hover .page-numbers:not(.current), .wow-pagination ul li:focus a:not(.current), .wow-pagination ul li:focus .page-numbers:not(.current), .wow-pagination ul li:active a:not(.current), .wow-pagination ul li:active .page-numbers:not(.current), .wow-pagination .page-numbers li:hover a:not(.current), .wow-pagination .page-numbers li:hover .page-numbers:not(.current), .wow-pagination .page-numbers li:focus a:not(.current), .wow-pagination .page-numbers li:focus .page-numbers:not(.current), .wow-pagination .page-numbers li:active a:not(.current), .wow-pagination .page-numbers li:active .page-numbers:not(.current), .wow-pagination .nav-links li:hover a:not(.current), .wow-pagination .nav-links li:hover .page-numbers:not(.current), .wow-pagination .nav-links li:focus a:not(.current), .wow-pagination .nav-links li:focus .page-numbers:not(.current), .wow-pagination .nav-links li:active a:not(.current), .wow-pagination .nav-links li:active .page-numbers:not(.current) {
         color: var(--wow-theme-main) !important;
         background-color: var(--wow-theme-light);
         border-color: var(--wow-theme-texthover); }
-  .lift-pagination .nav-links {
+  .wow-pagination .nav-links {
     justify-content: space-between; }
-    .lift-pagination .nav-links a {
+    .wow-pagination .nav-links a {
       display: flex;
       text-decoration: none; }
-      .lift-pagination .nav-links a .meta-nav {
+      .wow-pagination .nav-links a .meta-nav {
         position: relative;
         display: block;
         color: var(--wow-theme-main);
@@ -4526,9 +4526,9 @@ footer#footer {
         margin: 0;
         align-items: center;
         border-radius: 5px; }
-      .lift-pagination .nav-links a .post-title {
+      .wow-pagination .nav-links a .post-title {
         display: none; }
-      .lift-pagination .nav-links a:hover .meta-nav, .lift-pagination .nav-links a:focus .meta-nav, .lift-pagination .nav-links a:active .meta-nav {
+      .wow-pagination .nav-links a:hover .meta-nav, .wow-pagination .nav-links a:focus .meta-nav, .wow-pagination .nav-links a:active .meta-nav {
         background-color: var(--wow-theme-main);
         border-color: var(--wow-theme-main);
         color: var(--wow-theme-white); }
@@ -4562,8 +4562,8 @@ footer#footer {
   padding-left: 0;
   list-style: none; }
 
-#content.lift-content article.post .entry-content .blog-content,
-#content.lift-content article.post .entry-content .sidebar-content {
+#content.wow-content article.post .entry-content .blog-content,
+#content.wow-content article.post .entry-content .sidebar-content {
   padding-bottom: 2rem;
   padding-top: 2rem; }
 
@@ -4591,8 +4591,8 @@ header.page-header {
   header.page-header {
     padding: 3rem 0; } }
 
-#content.lift-content article.post .archive-content .blog-content,
-#content.lift-content article.post .archive-content .sidebar-content {
+#content.wow-content article.post .archive-content .blog-content,
+#content.wow-content article.post .archive-content .sidebar-content {
   padding-bottom: 2rem;
   padding-top: 2rem; }
 

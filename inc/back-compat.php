@@ -19,10 +19,10 @@
  *
  * @return void
  */
-function lift_switch_theme() {
-	add_action( 'admin_notices', 'lift_upgrade_notice' );
+function wow_switch_theme() {
+	add_action( 'admin_notices', 'wow_upgrade_notice' );
 }
-add_action( 'after_switch_theme', 'lift_switch_theme' );
+add_action( 'after_switch_theme', 'wow_switch_theme' );
 
 /**
  * Adds a message for unsuccessful theme switch.
@@ -36,7 +36,7 @@ add_action( 'after_switch_theme', 'lift_switch_theme' );
  *
  * @return void
  */
-function lift_upgrade_notice() {
+function wow_upgrade_notice() {
 	echo '<div class="error"><p>';
 	printf(
 		/* translators: %s: WordPress Version. */
@@ -55,7 +55,7 @@ function lift_upgrade_notice() {
  *
  * @return void
  */
-function lift_customize() {
+function wow_customize() {
 	wp_die(
 		sprintf(
 			/* translators: %s: WordPress Version. */
@@ -68,7 +68,7 @@ function lift_customize() {
 		)
 	);
 }
-add_action( 'load-customize.php', 'lift_customize' );
+add_action( 'load-customize.php', 'wow_customize' );
 
 /**
  * Prevents the Theme Preview from being loaded on WordPress versions prior to 5.3.
@@ -79,7 +79,7 @@ add_action( 'load-customize.php', 'lift_customize' );
  *
  * @return void
  */
-function lift_preview() {
+function wow_preview() {
 	if ( isset( $_GET['preview'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification
 		wp_die(
 			sprintf(
@@ -90,4 +90,4 @@ function lift_preview() {
 		);
 	}
 }
-add_action( 'template_redirect', 'lift_preview' );
+add_action( 'template_redirect', 'wow_preview' );

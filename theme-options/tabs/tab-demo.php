@@ -879,7 +879,7 @@
         ),
     ) );
     Redux::setSection( $opt_name, array(
-        'id'   => 'presentation-divide-lift',
+        'id'   => 'presentation-divide-wow',
         'type' => 'divide',
     ) );
 
@@ -1259,7 +1259,7 @@
                 'title'    => __( 'Images Option (with tiles => true)', 'wow-theme-options' ),
                 'subtitle' => __( 'Select a background pattern.', 'wow-theme-options' ),
                 'default'  => 0,
-                'options'  => $lift_patterns
+                'options'  => $wow_patterns
                 ,
             ),
             array(
@@ -1289,7 +1289,7 @@
                 'options'    => array(
                     '1' => array(
                         'alt'     => 'Preset 1',
-                        'img'     => ReduxFramework::$_url . '../lift/presets/preset1.png',
+                        'img'     => ReduxFramework::$_url . '../wow/presets/preset1.png',
                         'presets' => array(
                             'switch-on'     => 1,
                             'switch-off'    => 1,
@@ -1298,7 +1298,7 @@
                     ),
                     '2' => array(
                         'alt'     => 'Preset 2',
-                        'img'     => ReduxFramework::$_url . '../lift/presets/preset2.png',
+                        'img'     => ReduxFramework::$_url . '../wow/presets/preset2.png',
                         'presets' => '{"opt-slider-label":"1", "opt-slider-text":"10"}'
                     ),
                 ),
@@ -1320,14 +1320,14 @@
                 'options' => array(
                     array(
                         'alt' => 'Preset 1',
-                        'img' => ReduxFramework::$_url . '../lift/presets/preset1.png',
+                        'img' => ReduxFramework::$_url . '../wow/presets/preset1.png',
                     ),
                     array(
                         'alt' => 'Preset 2',
-                        'img' => ReduxFramework::$_url . '../lift/presets/preset2.png',
+                        'img' => ReduxFramework::$_url . '../wow/presets/preset2.png',
                     ),
                 ),
-                'default' => ReduxFramework::$_url . '../lift/presets/preset2.png',
+                'default' => ReduxFramework::$_url . '../wow/presets/preset2.png',
             ),
             
             array(
@@ -1335,8 +1335,8 @@
                 'type'     => 'select_image',
                 'title'    => __( 'Select Image', 'wow-theme-options' ),
                 'subtitle' => __( 'A preview of the selected image will appear underneath the select box.', 'wow-theme-options' ),
-                'options'  => $lift_patterns,
-                'default'  => ReduxFramework::$_url . '../lift/patterns/triangular.png',
+                'options'  => $wow_patterns,
+                'default'  => ReduxFramework::$_url . '../wow/patterns/triangular.png',
             ),
         )
     ) );
@@ -1592,7 +1592,7 @@
                 'title'    => __( 'Standard Raw Field', 'wow-theme-options' ),
                 'subtitle' => __( 'Subtitle', 'wow-theme-options' ),
                 'desc'     => __( 'Description', 'wow-theme-options' ),
-                'content'  => $liftHTML,
+                'content'  => $wowHTML,
             ),
             array(
                 'id'         => 'opt-raw_info_5',
@@ -1601,7 +1601,7 @@
                 'title'      => __( 'Raw Field <code>full_width</code> False', 'wow-theme-options' ),
                 'subtitle'   => __( 'Subtitle', 'wow-theme-options' ),
                 'desc'       => __( 'Description', 'wow-theme-options' ),
-                'content'    => $liftHTML,
+                'content'    => $wowHTML,
             ),
         )
     ) );
@@ -1743,7 +1743,7 @@
             //    // You can pass the current class
             //    // Or pass the class name and method
             //    //'validate_callback' => array(
-            //    //    'Redux_Framework_lift_config',
+            //    //    'Redux_Framework_wow_config',
             //    //    'validate_callback_function'
             //    //),
             //    'default'           => '0'

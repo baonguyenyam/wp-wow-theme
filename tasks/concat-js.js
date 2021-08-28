@@ -7,7 +7,7 @@ module.exports = function (gulp, $, browserSync) {
 				'bower_components/owl.carousel/dist/owl.carousel.min.js',
 				'bower_components/fancybox/dist/jquery.fancybox.min.js',
 			])
-			.pipe($.concat('lift.js'))
+			.pipe($.concat('wow.js'))
 			.pipe(gulp.dest('./dist/js'));
 	});
 };

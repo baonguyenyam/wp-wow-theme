@@ -30,12 +30,12 @@ $post_page_title = $wow_theme['wow-theme-page-style-content-title'];
                 ?>
                 <?php 
                 if(isset($post_page_thumbnail) && ($post_page_thumbnail === '1' || $post_page_thumbnail == 1)){
-                    lift_post_thumbnail();
+                    wow_post_thumbnail();
                 }
                 ?>
                 <?php 
                 if(isset($post_page_breadcrumb) && ($post_page_breadcrumb === '1' || $post_page_breadcrumb == 1)){
-                    lift_get_breadcrumb(); 
+                    wow_get_breadcrumb(); 
                 }?>
 			</div>
 		</div>

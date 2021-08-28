@@ -13,7 +13,7 @@ https://getbootstrap.com/
 
 ## WOW WordPress's Guidelines 
 
-LIFT's website design and development guidelines
+WOW's website design and development guidelines
 
 https://docs.myseo.website/
 

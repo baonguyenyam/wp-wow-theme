@@ -8,20 +8,20 @@
  * @since 2021
  */
 
-if ( ! class_exists( 'LIFT_Theme_Customize' ) ) {
+if ( ! class_exists( 'WOW_Theme_Customize' ) ) {
 	/**
 	 * Customizer Settings.
 	 *
-	 * @since LIFT 2021
+	 * @since WOW 2021
 	 */
-	class LIFT_Theme_Customize {
+	class WOW_Theme_Customize {
 
 		/**
 		 * Constructor. Instantiate the object.
 		 *
 		 * @access public
 		 *
-		 * @since LIFT 2021
+		 * @since WOW 2021
 		 */
 		public function __construct() {
 			add_action( 'customize_register', array( $this, 'register' ) );
@@ -33,7 +33,7 @@ if ( ! class_exists( 'LIFT_Theme_Customize' ) ) {
 		 *
 		 * @access public
 		 *
-		 * @since LIFT 2021
+		 * @since WOW 2021
 		 *
 		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
 		 *
@@ -127,7 +127,7 @@ if ( ! class_exists( 'LIFT_Theme_Customize' ) ) {
 			// include_once get_theme_file_path( 'classes/class-nguyen-customize-color-control.php' ); // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
 			// // Register the custom control.
-			// $wp_customize->register_control_type( 'LIFT_Theme_Customize_Color_Control' );
+			// $wp_customize->register_control_type( 'WOW_Theme_Customize_Color_Control' );
 
 			// // Get the palette from theme-supports.
 			// $palette = get_theme_support( 'editor-color-palette' );
@@ -142,7 +142,7 @@ if ( ! class_exists( 'LIFT_Theme_Customize' ) ) {
 
 			// // Add the control. Overrides the default background-color control.
 			// $wp_customize->add_control(
-			// 	new LIFT_Theme_Customize_Color_Control(
+			// 	new WOW_Theme_Customize_Color_Control(
 			// 		$wp_customize,
 			// 		'background_color',
 			// 		array(
@@ -161,7 +161,7 @@ if ( ! class_exists( 'LIFT_Theme_Customize' ) ) {
 		 *
 		 * @access public
 		 *
-		 * @since LIFT 2021
+		 * @since WOW 2021
 		 *
 		 * @param bool $checked Whether or not a box is checked.
 		 *
@@ -176,7 +176,7 @@ if ( ! class_exists( 'LIFT_Theme_Customize' ) ) {
 		 *
 		 * @access public
 		 *
-		 * @since LIFT 2021
+		 * @since WOW 2021
 		 *
 		 * @return void
 		 */
@@ -189,7 +189,7 @@ if ( ! class_exists( 'LIFT_Theme_Customize' ) ) {
 		 *
 		 * @access public
 		 *
-		 * @since LIFT 2021
+		 * @since WOW 2021
 		 *
 		 * @return void
 		 */

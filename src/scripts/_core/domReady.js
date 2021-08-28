@@ -10,7 +10,7 @@
  'use strict';
 
  (function(funcName, baseObj) {
-    funcName = funcName || "LIFTReady";
+    funcName = funcName || "WOWReady";
     baseObj = baseObj || window;
     var readyList = [];
     var readyFired = false;
@@ -33,7 +33,7 @@
 
     baseObj[funcName] = function(callback, context) {
         if (typeof callback !== "function") {
-            throw new TypeError("callback for LIFTReady(fn) must be a function");
+            throw new TypeError("callback for WOWReady(fn) must be a function");
         }
         if (readyFired) {
             setTimeout(function() {callback(context);}, 1);
@@ -54,4 +54,4 @@
             readyEventHandlersInstalled = true;
         }
     }
-})("LIFTReady", window);
+})("WOWReady", window);

@@ -9,7 +9,7 @@ module.exports = function (gulp, $, browserSync) {
 				'bower_components/owl.carousel/dist/assets/owl.theme.default.min.css',
 				'bower_components/fancybox/dist/jquery.fancybox.min.css',
 			])
-			.pipe($.concat('lift.css'))
+			.pipe($.concat('wow.css'))
 			.pipe(gulp.dest('./dist/css'));
 	});
 };

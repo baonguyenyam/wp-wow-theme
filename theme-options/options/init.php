@@ -8,13 +8,13 @@
 
 use ScssPhp\ScssPhp\Compiler;
 
-add_action('redux/options/' . $opt_name . '/saved',  "lift_compiler_sass"  );
-add_action('redux/options/' . $opt_name . '/saved',  "lift_save_css"  );
-add_action('redux/options/' . $opt_name . '/saved',  "lift_save_js"  );
-add_filter('redux/options/' . $opt_name . '/compiler', 'lift_compiler_css', 10, 3);
+add_action('redux/options/' . $opt_name . '/saved',  "wow_compiler_sass"  );
+add_action('redux/options/' . $opt_name . '/saved',  "wow_save_css"  );
+add_action('redux/options/' . $opt_name . '/saved',  "wow_save_js"  );
+add_filter('redux/options/' . $opt_name . '/compiler', 'wow_compiler_css', 10, 3);
 
-	if ( ! function_exists( 'lift_compiler_css' ) ) {
-		function lift_compiler_css( $options, $css, $changed_values) {
+	if ( ! function_exists( 'wow_compiler_css' ) ) {
+		function wow_compiler_css( $options, $css, $changed_values) {
 			global $wp_filesystem;
 			global $wow_theme;
 
@@ -52,8 +52,8 @@ add_filter('redux/options/' . $opt_name . '/compiler', 'lift_compiler_css', 10, 
 		}
 	}
 
-	if ( ! function_exists( 'lift_compiler_sass' ) ) {
-		function lift_compiler_sass($values) {
+	if ( ! function_exists( 'wow_compiler_sass' ) ) {
+		function wow_compiler_sass($values) {
 			global $wp_filesystem;
 			global $wow_theme;
 		
@@ -86,8 +86,8 @@ add_filter('redux/options/' . $opt_name . '/compiler', 'lift_compiler_css', 10, 
 		}
 	}	
 
-	if ( ! function_exists( 'lift_save_css' ) ) {
-		function lift_save_css($values) {
+	if ( ! function_exists( 'wow_save_css' ) ) {
+		function wow_save_css($values) {
 			global $wp_filesystem;
 			global $wow_theme;
 
@@ -117,8 +117,8 @@ add_filter('redux/options/' . $opt_name . '/compiler', 'lift_compiler_css', 10, 
 		}
 	}
 
-	if ( ! function_exists( 'lift_save_js' ) ) {
-		function lift_save_js($values) {
+	if ( ! function_exists( 'wow_save_js' ) ) {
+		function wow_save_js($values) {
 			global $wp_filesystem;
 			global $wow_theme;
 

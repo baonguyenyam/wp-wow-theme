@@ -18,16 +18,16 @@
  * All icons are assumed to have equal width and height, hence the option
  * to only specify a `$size` parameter in the svg methods.
  *
- * @since LIFT 2021
+ * @since WOW 2021
  */
-class LIFT_Theme_SVG_Icons {
+class WOW_Theme_SVG_Icons {
 
 	/**
 	 * User Interface icons – svg sources.
 	 *
 	 * @access protected
 	 *
-	 * @since LIFT 2021
+	 * @since WOW 2021
 	 *
 	 * @var array
 	 */
@@ -45,7 +45,7 @@ class LIFT_Theme_SVG_Icons {
 	 *
 	 * @access protected
 	 *
-	 * @since LIFT 2021
+	 * @since WOW 2021
 	 *
 	 * @var array
 	 */
@@ -96,7 +96,7 @@ class LIFT_Theme_SVG_Icons {
 	 * By default, each Icon ID is matched against a .com TLD. To override this behavior,
 	 * specify all the domains it covers (including the .com TLD too, if applicable).
 	 *
-	 * @since LIFT 2021
+	 * @since WOW 2021
 	 *
 	 * @var array
 	 */
@@ -151,7 +151,7 @@ class LIFT_Theme_SVG_Icons {
 	 *
 	 * @access public
 	 *
-	 * @since LIFT 2021
+	 * @since WOW 2021
 	 *
 	 * @param string $group the icon group.
 	 * @param string $icon The icon.
@@ -175,11 +175,11 @@ class LIFT_Theme_SVG_Icons {
 		 * The dynamic portion of the hook name, `$group`, refers to
 		 * the name of the group of icons, either "ui" or "social".
 		 *
-		 * @since LIFT 2021
+		 * @since WOW 2021
 		 *
 		 * @param array $arr Array of icons.
 		 */
-		$arr = apply_filters( "lift_svg_icons_{$group}", $arr );
+		$arr = apply_filters( "wow_svg_icons_{$group}", $arr );
 
 		$svg = '';
 		if ( array_key_exists( $icon, $arr ) ) {
@@ -199,7 +199,7 @@ class LIFT_Theme_SVG_Icons {
 	 *
 	 * @access public
 	 *
-	 * @since LIFT 2021
+	 * @since WOW 2021
 	 *
 	 * @param string $uri Social link.
 	 * @param int    $size The icon-size in pixels.
@@ -218,20 +218,20 @@ class LIFT_Theme_SVG_Icons {
 			 * By default, each Icon ID is matched against a .com TLD. To override this behavior,
 			 * specify all the domains it covers (including the .com TLD too, if applicable).
 			 *
-			 * @since LIFT 2021
+			 * @since WOW 2021
 			 *
 			 * @param array $social_icons_map Array of default social icons.
 			 */
-			$map = apply_filters( 'lift_social_icons_map', self::$social_icons_map );
+			$map = apply_filters( 'wow_social_icons_map', self::$social_icons_map );
 
 			/**
 			 * Filters WOW Theme's array of social icons.
 			 *
-			 * @since LIFT 2021
+			 * @since WOW 2021
 			 *
 			 * @param array $social_icons Array of default social icons.
 			 */
-			$social_icons = apply_filters( 'lift_svg_icons_social', self::$social_icons );
+			$social_icons = apply_filters( 'wow_svg_icons_social', self::$social_icons );
 
 			foreach ( array_keys( $social_icons ) as $icon ) {
 				$domains            = array_key_exists( $icon, $map ) ? $map[ $icon ] : array( sprintf( '%s.com', $icon ) );

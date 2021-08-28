@@ -11,22 +11,22 @@
  * @param {boolean} withListeners - Whether we want to add/remove listeners or not.
  * @since Twenty Twenty-One 1.0
  */
-function LIFT_____ToggleAriaExpanded( el, withListeners ) {
+function WOW_____ToggleAriaExpanded( el, withListeners ) {
 	// if ( 'true' !== el.getAttribute( 'aria-expanded' ) ) {
 	// 	// el.setAttribute( 'aria-expanded', 'true' );
-	// 	LIFT_____SubmenuPosition( el.parentElement );
+	// 	WOW_____SubmenuPosition( el.parentElement );
 	// 	if ( withListeners ) {
-	// 		document.addEventListener( 'click', LIFT_____CollapseMenuOnClickOutside );
+	// 		document.addEventListener( 'click', WOW_____CollapseMenuOnClickOutside );
 	// 	}
 	// } else {
 	// 	// el.setAttribute( 'aria-expanded', 'false' );
 	// 	if ( withListeners ) {
-	// 		document.removeEventListener( 'click', LIFT_____CollapseMenuOnClickOutside );
+	// 		document.removeEventListener( 'click', WOW_____CollapseMenuOnClickOutside );
 	// 	}
 	// }
 }
 
-function LIFT_____CollapseMenuOnClickOutside( event ) {
+function WOW_____CollapseMenuOnClickOutside( event ) {
 	if ( ! document.getElementById( 'site-navigation' ).contains( event.target ) ) {
 		document.getElementById( 'site-navigation' ).querySelectorAll( '.sub-menu-toggle' ).forEach( function( button ) {
 			button.setAttribute( 'aria-expanded', 'false' );
@@ -39,7 +39,7 @@ function LIFT_____CollapseMenuOnClickOutside( event ) {
  *
  * @param {Element} li - The li element.
  */
-function LIFT_____SubmenuPosition( li ) {
+function WOW_____SubmenuPosition( li ) {
 	var subMenu = li.querySelector( 'ul.sub-menu' ),
 		rect,
 		right,
@@ -78,7 +78,7 @@ function ___ExpandSubMenu( el ) { // jshint ignore:line
 	} );
 
 	// Toggle aria-expanded on the button.
-	LIFT_____ToggleAriaExpanded( el, true );
+	WOW_____ToggleAriaExpanded( el, true );
 
 	// On tab-away collapse the menu.
 	// el.parentNode.querySelectorAll( 'ul > li:last-child > a' ).forEach( function( linkEl ) {
@@ -104,7 +104,7 @@ function ___ExpandSubMenu( el ) { // jshint ignore:line
 			mobileButton.onclick = function() {
 				wrapper.classList.toggle( id + '-navigation-open' );
 				wrapper.classList.toggle( 'lock-scrolling' );
-				LIFT_____ToggleAriaExpanded( mobileButton );
+				WOW_____ToggleAriaExpanded( mobileButton );
 				mobileButton.focus();
 			};
 		}
@@ -132,7 +132,7 @@ function ___ExpandSubMenu( el ) { // jshint ignore:line
 			if ( escKey ) {
 				event.preventDefault();
 				wrapper.classList.remove( id + '-navigation-open', 'lock-scrolling' );
-				LIFT_____ToggleAriaExpanded( mobileButton );
+				WOW_____ToggleAriaExpanded( mobileButton );
 				mobileButton.focus();
 			}
 
@@ -160,7 +160,7 @@ function ___ExpandSubMenu( el ) { // jshint ignore:line
 			// If target onclick is <a> with # within the href attribute
 			if ( event.target.hash && event.target.hash.includes( '#' ) ) {
 				wrapper.classList.remove( id + '-navigation-open', 'lock-scrolling' );
-				LIFT_____ToggleAriaExpanded( mobileButton );
+				WOW_____ToggleAriaExpanded( mobileButton );
 				// Wait 550 and scroll to the anchor.
 				setTimeout(function () {
 					var anchor = document.getElementById(event.target.hash.slice(1));
@@ -172,7 +172,7 @@ function ___ExpandSubMenu( el ) { // jshint ignore:line
 		document.getElementById( 'site-navigation' ).querySelectorAll( '.menu-wrapper > .menu-item-has-children' ).forEach( function( li ) {
 			li.addEventListener( 'mouseenter', function() {
 				this.querySelector( '.sub-menu-toggle' ).setAttribute( 'aria-expanded', 'true' );
-				LIFT_____SubmenuPosition( li );
+				WOW_____SubmenuPosition( li );
 			} );
 			li.addEventListener( 'mouseleave', function() {
 				this.querySelector( '.sub-menu-toggle' ).setAttribute( 'aria-expanded', 'false' );

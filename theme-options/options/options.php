@@ -10,7 +10,7 @@
      * ---> SET ARGUMENTS
      * For full documentation on arguments, please refer to: https://github.com/ReduxFramework/ReduxFramework/wiki/Arguments
      * */
-	$opt_name = "lift_theme";
+	$opt_name = "wow_theme";
     $theme = wp_get_theme(); // For use with some settings. Not necessary.
 
     $args = array(

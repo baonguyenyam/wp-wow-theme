@@ -3,7 +3,7 @@ module.exports = function (gulp, $, browserSync) {
 	gulp.task('js-min-admin', function () {
 		return gulp.src([
 				'./admin/dist/js/*.js',
-				'!./admin/dist/js/lift.js',
+				'!./admin/dist/js/wow.js',
 			])
 			.pipe($.uglify())
 			.pipe(strip())

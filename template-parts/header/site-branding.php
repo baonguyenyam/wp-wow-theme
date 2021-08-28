@@ -90,8 +90,8 @@ if($detect->isMobile() && !$detect->isTablet()) {
 	<?php else : ?>
 		<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#site-navigation" aria-controls="site-navigation" aria-expanded="false" aria-label="Toggle navigation">
 	<?php endif; ?>
-		<?php echo lift_get_icon_svg( 'ui', 'menu' ); ?>
-		<?php echo lift_get_icon_svg( 'ui', 'close' ); ?>
+		<?php echo wow_get_icon_svg( 'ui', 'menu' ); ?>
+		<?php echo wow_get_icon_svg( 'ui', 'close' ); ?>
     </button>
 
 <!-- TODO: CHECK THIS LINE -->

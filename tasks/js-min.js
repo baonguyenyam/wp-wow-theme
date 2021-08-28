@@ -3,7 +3,7 @@ module.exports = function (gulp, $, browserSync) {
 	gulp.task('js-min', function () {
 		return gulp.src([
 				'./dist/js/*.js',
-				'!./dist/js/lift.js',
+				'!./dist/js/wow.js',
 			])
 			.pipe($.uglify())
 			.pipe(strip())

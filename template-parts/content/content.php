@@ -21,14 +21,14 @@ $layout_style = $wow_theme['wow-theme-layout-style'];
 			<?php the_title( sprintf( '<h2 class="entry-title default-max-width"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		<?php endif; ?>
 
-		<?php lift_post_thumbnail(); ?>
+		<?php wow_post_thumbnail(); ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<div class="container<?= isset($layout_style) && $layout_style === '1' ? '-fluid': ''?>">
 		<?php
 		the_content(
-			lift_continue_reading_text()
+			wow_continue_reading_text()
 		);
 
 		wp_link_pages(
@@ -46,7 +46,7 @@ $layout_style = $wow_theme['wow-theme-layout-style'];
 
 	<footer class="entry-footer default-max-width">
 		<div class="container<?= isset($layout_style) && $layout_style === '1' ? '-fluid': ''?>">
-			<?php lift_entry_meta_footer(); ?>
+			<?php wow_entry_meta_footer(); ?>
 		</div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

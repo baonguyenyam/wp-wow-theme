@@ -13,13 +13,13 @@
 /**
  * Function to return the array of starter content for the theme.
  *
- * Passes it through the `lift_starter_content` filter before returning.
+ * Passes it through the `wow_starter_content` filter before returning.
  *
  * @since WOW Theme 1.0
  *
  * @return array A filtered array of args for the starter_content.
  */
-function lift_get_starter_content() {
+function wow_get_starter_content() {
 
 	// Define and register starter content to showcase the theme on new sites.
 	$starter_content = array(
@@ -38,8 +38,8 @@ function lift_get_starter_content() {
 					<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 					<!-- /wp:spacer -->
 
-					<!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-lifttheme-columns-overlap"} -->
-					<div class="wp-block-columns alignwide are-vertically-aligned-center is-style-lifttheme-columns-overlap"><!-- wp:column {"verticalAlignment":"center"} -->
+					<!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-wowtheme-columns-overlap"} -->
+					<div class="wp-block-columns alignwide are-vertically-aligned-center is-style-wowtheme-columns-overlap"><!-- wp:column {"verticalAlignment":"center"} -->
 					<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"align":"full","sizeSlug":"large"} -->
 					<figure class="wp-block-image alignfull size-large"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/roses-tremieres-hollyhocks-1884.jpg" alt="' . esc_attr__( '&#8220;Roses Trémières&#8221; by Berthe Morisot', 'wp-wow-theme' ) . '"/></figure>
 					<!-- /wp:image -->
@@ -48,8 +48,8 @@ function lift_get_starter_content() {
 					<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 					<!-- /wp:spacer -->
 
-					<!-- wp:image {"align":"full","sizeSlug":"large","className":"is-style-lifttheme-image-frame"} -->
-					<figure class="wp-block-image alignfull size-large is-style-lifttheme-image-frame"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/in-the-bois-de-boulogne.jpg" alt="' . esc_attr__( '&#8220;In the Bois de Boulogne&#8221; by Berthe Morisot', 'wp-wow-theme' ) . '"/></figure>
+					<!-- wp:image {"align":"full","sizeSlug":"large","className":"is-style-wowtheme-image-frame"} -->
+					<figure class="wp-block-image alignfull size-large is-style-wowtheme-image-frame"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/in-the-bois-de-boulogne.jpg" alt="' . esc_attr__( '&#8220;In the Bois de Boulogne&#8221; by Berthe Morisot', 'wp-wow-theme' ) . '"/></figure>
 					<!-- /wp:image --></div>
 					<!-- /wp:column -->
 
@@ -58,8 +58,8 @@ function lift_get_starter_content() {
 					<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 					<!-- /wp:spacer -->
 
-					<!-- wp:image {"sizeSlug":"large","className":"alignfull size-full is-style-lifttheme-border"} -->
-					<figure class="wp-block-image size-large alignfull size-full is-style-lifttheme-border"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/young-woman-in-mauve.jpg" alt="' . esc_attr__( '&#8220;Young Woman in Mauve&#8221; by Berthe Morisot', 'wp-wow-theme' ) . '"/></figure>
+					<!-- wp:image {"sizeSlug":"large","className":"alignfull size-full is-style-wowtheme-border"} -->
+					<figure class="wp-block-image size-large alignfull size-full is-style-wowtheme-border"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/young-woman-in-mauve.jpg" alt="' . esc_attr__( '&#8220;Young Woman in Mauve&#8221; by Berthe Morisot', 'wp-wow-theme' ) . '"/></figure>
 					<!-- /wp:image --></div>
 					<!-- /wp:column --></div>
 					<!-- /wp:columns -->
@@ -104,8 +104,8 @@ function lift_get_starter_content() {
 					<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 					<!-- /wp:spacer -->
 
-					<!-- wp:cover {"overlayColor":"green","contentPosition":"center center","align":"wide","className":"is-style-lifttheme-border"} -->
-					<div class="wp-block-cover alignwide has-green-background-color has-background-dim is-style-lifttheme-border"><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":20} -->
+					<!-- wp:cover {"overlayColor":"green","contentPosition":"center center","align":"wide","className":"is-style-wowtheme-border"} -->
+					<div class="wp-block-cover alignwide has-green-background-color has-background-dim is-style-wowtheme-border"><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":20} -->
 					<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
 					<!-- /wp:spacer -->
 
@@ -120,7 +120,7 @@ function lift_get_starter_content() {
 					<!-- wp:columns -->
 					<div class="wp-block-columns"><!-- wp:column -->
 					<div class="wp-block-column"><!-- wp:paragraph -->
-					<p><a href="https://wordpress.org/support/article/lift-assets/">' . esc_html_x( 'Read the Theme Documentation', 'Theme starter content', 'wp-wow-theme' ) . '</a></p>
+					<p><a href="https://wordpress.org/support/article/wow-assets/">' . esc_html_x( 'Read the Theme Documentation', 'Theme starter content', 'wp-wow-theme' ) . '</a></p>
 					<!-- /wp:paragraph --></div>
 					<!-- /wp:column -->
 
@@ -203,5 +203,5 @@ function lift_get_starter_content() {
 	 *
 	 * @param array $starter_content Array of starter content.
 	 */
-	return apply_filters( 'lift_starter_content', $starter_content );
+	return apply_filters( 'wow_starter_content', $starter_content );
 }

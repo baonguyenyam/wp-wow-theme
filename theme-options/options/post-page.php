@@ -1,11 +1,11 @@
 <?php
 
-function lift_page_options() {
+function wow_page_options() {
 
 	add_meta_box(
-		'lift_page_options_metabox', // metabox ID
+		'wow_page_options_metabox', // metabox ID
 		'Page Options', // title
-		'lift_metabox_callback', // callback function
+		'wow_metabox_callback', // callback function
 		'page', // post type or post types in array
 		'normal', // position (normal, side, advanced)
 		'high' // priority (default, low, high, core)
@@ -13,13 +13,13 @@ function lift_page_options() {
 
 }
 
-function lift_metabox_callback( $post ) {
+function wow_metabox_callback( $post ) {
 
 	$seo_title = get_post_meta( $post->ID, 'seo_title', true );
 	$seo_robots = get_post_meta( $post->ID, 'seo_robots', true );
 
 	// nonce, actually I think it is not necessary here
-	wp_nonce_field( 'lift_randomstr', '_liftonce' );
+	wp_nonce_field( 'wow_randomstr', '_wowonce' );
 
 	echo '<table class="form-table">
 		<tbody>
@@ -42,10 +42,10 @@ function lift_metabox_callback( $post ) {
 	
 }
 
-function lift_page_save_meta( $post_id, $post ) {
+function wow_page_save_meta( $post_id, $post ) {
 
 	// nonce check
-	if ( ! isset( $_POST[ '_liftonce' ] ) || ! wp_verify_nonce( $_POST[ '_liftonce' ], 'lift_randomstr' ) ) {
+	if ( ! isset( $_POST[ '_wowonce' ] ) || ! wp_verify_nonce( $_POST[ '_wowonce' ], 'wow_randomstr' ) ) {
 		return $post_id;
 	}
 
@@ -82,5 +82,5 @@ function lift_page_save_meta( $post_id, $post ) {
 }
 
 
-// add_action( 'admin_menu', 'lift_page_options' );
-// add_action( 'save_post', 'lift_page_save_meta', 10, 2 );
+// add_action( 'admin_menu', 'wow_page_options' );
+// add_action( 'save_post', 'wow_page_save_meta', 10, 2 );
