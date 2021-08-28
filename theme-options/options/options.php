@@ -1,8 +1,8 @@
 <?php
 /**
-* @package LIFT Creations 
+* @package WOW WordPress 
 * @subpackage Theme by Nguyen Pham
-* https://baonguyenyam.github.io/cv
+* https://baonguyenyam.github.io
 * @since 2021
 */
 
@@ -15,7 +15,7 @@
 
     $args = array(
 		'dev_mode' => false,
-		'class' => 'lift-theme-admin',
+		'class' => 'wow-theme-admin',
         // TYPICAL -> Change these values as you need/desire
         'opt_name'             => $opt_name,
         // This is where your data is stored in the database and also becomes your global variable name.
@@ -27,8 +27,8 @@
         //Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only)
         'allow_sub_menu'       => true,
         // Show the sections below the admin menu item or not
-		'menu_title'           => esc_html__( 'LIFT Theme', 'lift-theme-options' ),
-		'page_title'           => esc_html__( 'LIFT Theme', 'lift-theme-options' ),
+		'menu_title'           => esc_html__( 'WOW Theme', 'wow-theme-options' ),
+		'page_title'           => esc_html__( 'WOW Theme', 'wow-theme-options' ),
         // You will need to generate a Google API key to use this feature.
         // Please visit: https://developers.google.com/fonts/docs/developer_api#Auth
         'google_api_key'       => '',
@@ -67,7 +67,7 @@
         // Force your panel to always open to a specific tab (by id)
         'page_icon'            => 'icon-themes',
         // Icon displayed in the admin panel next to your menu_title
-        'page_slug'            => 'lift_theme_options',
+        'page_slug'            => 'wow_theme_options',
         // Page slug used to denote the panel, will be based off page title then menu title then opt_name if not provided
         'save_defaults'        => true,
         // On load save the defaults to DB before user clicks save or not
@@ -84,7 +84,7 @@
         // Global shut-off for dynamic CSS output by the framework. Will also disable google fonts output
         'output_tag'           => true,
         // Allows dynamic CSS to be generated for customizer and google fonts, but stops the dynamic CSS from going to the head
-        'footer_credit'             => 'LIFT Creations - Create something great',
+        'footer_credit'             => 'WOW WordPress - Create something great',
 
         // FUTURE -> Not in use yet, but reserved or partially implemented. Use at your own risk.
         'database'             => '',
@@ -129,13 +129,13 @@
 
 // ADMIN BAR LINKS -> Setup custom links in the admin bar menu as external items.
 $args['admin_bar_links'][] = array(
-	'id'    => 'lift-theme',
-	'href'  => '//github.com/nguyen-wp/lift-theme/',
-	'title' => __( 'Documentation', 'lift-theme-options' ),
+	'id'    => 'wow-theme',
+	'href'  => '//github.com/baonguyenyam/wp-wow-theme/',
+	'title' => __( 'Documentation', 'wow-theme-options' ),
 );
 $args['share_icons'][] = array(
-	'url'   => '//github.com/nguyen-wp/lift-theme/',
-	'title' => __('Visit us on GitHub', 'lift-theme-options' ),
+	'url'   => '//github.com/baonguyenyam/wp-wow-theme/',
+	'title' => __('Visit us on GitHub', 'wow-theme-options' ),
 	'icon'  => 'el el-github',
 );
 
@@ -146,13 +146,13 @@ if ( ! isset( $args['global_variable'] ) || $args['global_variable'] !== false )
 	} else {
 		$v = str_replace( '-', '_', $args['opt_name'] );
 	}
-	$args['intro_text'] = sprintf( __( '<p>As of WP 4.3, the favicon setting is now available in the default WordPress customizer (Appearance > Customize).</p>', 'lift-theme-options' ), $v );
+	$args['intro_text'] = sprintf( __( '<p>As of WP 4.3, the favicon setting is now available in the default WordPress customizer (Appearance > Customize).</p>', 'wow-theme-options' ), $v );
 } else {
-	$args['intro_text'] = __( '<p>This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.</p>', 'lift-theme-options' );
+	$args['intro_text'] = __( '<p>This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.</p>', 'wow-theme-options' );
 }
 
 // Add content after the form.
-$args['footer_text'] = __( '<p>by LIFT Creations - Author <a href="https://baonguyenyam.github.io/cv/" target="_blank">Nguyen Pham</a></p>', 'lift-theme-options' );
+$args['footer_text'] = __( '<p>by WOW WordPress - Author <a href="https://baonguyenyam.github.io/" target="_blank">Nguyen Pham</a></p>', 'wow-theme-options' );
 
 ////////////////////////////////////////////////////////////////////////
 // INIT APP

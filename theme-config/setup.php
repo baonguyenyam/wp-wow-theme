@@ -16,10 +16,10 @@ if ( ! function_exists( 'lift_setup' ) ) {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on LIFT Theme, use a find and replace
-		 * to change 'wp-lift-theme' to the name of your theme in all the template files.
+		 * If you're building a theme based on WOW Theme, use a find and replace
+		 * to change 'wp-wow-theme' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'wp-lift-theme', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'wp-wow-theme', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -60,10 +60,10 @@ if ( ! function_exists( 'lift_setup' ) ) {
 
 		register_nav_menus(
 			array(
-				'primary' => esc_html__( 'Primary menu', 'wp-lift-theme' ),
-				'secondary'  => __( 'Secondary menu', 'wp-lift-theme' ),
-				'top'  => __( 'Top menu', 'wp-lift-theme' ),
-				'social'  => __( 'Social menu', 'wp-lift-theme' ),
+				'primary' => esc_html__( 'Primary menu', 'wp-wow-theme' ),
+				'secondary'  => __( 'Secondary menu', 'wp-wow-theme' ),
+				'top'  => __( 'Top menu', 'wp-wow-theme' ),
+				'social'  => __( 'Social menu', 'wp-wow-theme' ),
 			)
 		);
 
@@ -136,44 +136,44 @@ if ( ! function_exists( 'lift_setup' ) ) {
 			'editor-font-sizes',
 			array(
 				array(
-					'name'      => esc_html__( 'Extra small', 'wp-lift-theme' ),
-					'shortName' => esc_html_x( 'XS', 'Font size', 'wp-lift-theme' ),
+					'name'      => esc_html__( 'Extra small', 'wp-wow-theme' ),
+					'shortName' => esc_html_x( 'XS', 'Font size', 'wp-wow-theme' ),
 					'size'      => 16,
 					'slug'      => 'extra-small',
 				),
 				array(
-					'name'      => esc_html__( 'Small', 'wp-lift-theme' ),
-					'shortName' => esc_html_x( 'S', 'Font size', 'wp-lift-theme' ),
+					'name'      => esc_html__( 'Small', 'wp-wow-theme' ),
+					'shortName' => esc_html_x( 'S', 'Font size', 'wp-wow-theme' ),
 					'size'      => 18,
 					'slug'      => 'small',
 				),
 				array(
-					'name'      => esc_html__( 'Normal', 'wp-lift-theme' ),
-					'shortName' => esc_html_x( 'M', 'Font size', 'wp-lift-theme' ),
+					'name'      => esc_html__( 'Normal', 'wp-wow-theme' ),
+					'shortName' => esc_html_x( 'M', 'Font size', 'wp-wow-theme' ),
 					'size'      => 20,
 					'slug'      => 'normal',
 				),
 				array(
-					'name'      => esc_html__( 'Large', 'wp-lift-theme' ),
-					'shortName' => esc_html_x( 'L', 'Font size', 'wp-lift-theme' ),
+					'name'      => esc_html__( 'Large', 'wp-wow-theme' ),
+					'shortName' => esc_html_x( 'L', 'Font size', 'wp-wow-theme' ),
 					'size'      => 24,
 					'slug'      => 'large',
 				),
 				array(
-					'name'      => esc_html__( 'Extra large', 'wp-lift-theme' ),
-					'shortName' => esc_html_x( 'XL', 'Font size', 'wp-lift-theme' ),
+					'name'      => esc_html__( 'Extra large', 'wp-wow-theme' ),
+					'shortName' => esc_html_x( 'XL', 'Font size', 'wp-wow-theme' ),
 					'size'      => 40,
 					'slug'      => 'extra-large',
 				),
 				array(
-					'name'      => esc_html__( 'Huge', 'wp-lift-theme' ),
-					'shortName' => esc_html_x( 'XXL', 'Font size', 'wp-lift-theme' ),
+					'name'      => esc_html__( 'Huge', 'wp-wow-theme' ),
+					'shortName' => esc_html_x( 'XXL', 'Font size', 'wp-wow-theme' ),
 					'size'      => 96,
 					'slug'      => 'huge',
 				),
 				array(
-					'name'      => esc_html__( 'Gigantic', 'wp-lift-theme' ),
-					'shortName' => esc_html_x( 'XXXL', 'Font size', 'wp-lift-theme' ),
+					'name'      => esc_html__( 'Gigantic', 'wp-wow-theme' ),
+					'shortName' => esc_html_x( 'XXXL', 'Font size', 'wp-wow-theme' ),
 					'size'      => 144,
 					'slug'      => 'gigantic',
 				),
@@ -204,52 +204,52 @@ if ( ! function_exists( 'lift_setup' ) ) {
 			'editor-color-palette',
 			array(
 				array(
-					'name'  => esc_html__( 'Black', 'wp-lift-theme' ),
+					'name'  => esc_html__( 'Black', 'wp-wow-theme' ),
 					'slug'  => 'black',
 					'color' => $black,
 				),
 				array(
-					'name'  => esc_html__( 'Dark gray', 'wp-lift-theme' ),
+					'name'  => esc_html__( 'Dark gray', 'wp-wow-theme' ),
 					'slug'  => 'dark-gray',
 					'color' => $dark_gray,
 				),
 				array(
-					'name'  => esc_html__( 'Gray', 'wp-lift-theme' ),
+					'name'  => esc_html__( 'Gray', 'wp-wow-theme' ),
 					'slug'  => 'gray',
 					'color' => $gray,
 				),
 				array(
-					'name'  => esc_html__( 'Green', 'wp-lift-theme' ),
+					'name'  => esc_html__( 'Green', 'wp-wow-theme' ),
 					'slug'  => 'green',
 					'color' => $green,
 				),
 				array(
-					'name'  => esc_html__( 'Blue', 'wp-lift-theme' ),
+					'name'  => esc_html__( 'Blue', 'wp-wow-theme' ),
 					'slug'  => 'blue',
 					'color' => $blue,
 				),
 				array(
-					'name'  => esc_html__( 'Purple', 'wp-lift-theme' ),
+					'name'  => esc_html__( 'Purple', 'wp-wow-theme' ),
 					'slug'  => 'purple',
 					'color' => $purple,
 				),
 				array(
-					'name'  => esc_html__( 'Red', 'wp-lift-theme' ),
+					'name'  => esc_html__( 'Red', 'wp-wow-theme' ),
 					'slug'  => 'red',
 					'color' => $red,
 				),
 				array(
-					'name'  => esc_html__( 'Orange', 'wp-lift-theme' ),
+					'name'  => esc_html__( 'Orange', 'wp-wow-theme' ),
 					'slug'  => 'orange',
 					'color' => $orange,
 				),
 				array(
-					'name'  => esc_html__( 'Yellow', 'wp-lift-theme' ),
+					'name'  => esc_html__( 'Yellow', 'wp-wow-theme' ),
 					'slug'  => 'yellow',
 					'color' => $yellow,
 				),
 				array(
-					'name'  => esc_html__( 'White', 'wp-lift-theme' ),
+					'name'  => esc_html__( 'White', 'wp-wow-theme' ),
 					'slug'  => 'white',
 					'color' => $white,
 				),
@@ -260,42 +260,42 @@ if ( ! function_exists( 'lift_setup' ) ) {
 			'editor-gradient-presets',
 			array(
 				array(
-					'name'     => esc_html__( 'Purple to yellow', 'wp-lift-theme' ),
+					'name'     => esc_html__( 'Purple to yellow', 'wp-wow-theme' ),
 					'gradient' => 'linear-gradient(160deg, ' . $purple . ' 0%, ' . $yellow . ' 100%)',
 					'slug'     => 'purple-to-yellow',
 				),
 				array(
-					'name'     => esc_html__( 'Yellow to purple', 'wp-lift-theme' ),
+					'name'     => esc_html__( 'Yellow to purple', 'wp-wow-theme' ),
 					'gradient' => 'linear-gradient(160deg, ' . $yellow . ' 0%, ' . $purple . ' 100%)',
 					'slug'     => 'yellow-to-purple',
 				),
 				array(
-					'name'     => esc_html__( 'Green to yellow', 'wp-lift-theme' ),
+					'name'     => esc_html__( 'Green to yellow', 'wp-wow-theme' ),
 					'gradient' => 'linear-gradient(160deg, ' . $green . ' 0%, ' . $yellow . ' 100%)',
 					'slug'     => 'green-to-yellow',
 				),
 				array(
-					'name'     => esc_html__( 'Yellow to green', 'wp-lift-theme' ),
+					'name'     => esc_html__( 'Yellow to green', 'wp-wow-theme' ),
 					'gradient' => 'linear-gradient(160deg, ' . $yellow . ' 0%, ' . $green . ' 100%)',
 					'slug'     => 'yellow-to-green',
 				),
 				array(
-					'name'     => esc_html__( 'Red to yellow', 'wp-lift-theme' ),
+					'name'     => esc_html__( 'Red to yellow', 'wp-wow-theme' ),
 					'gradient' => 'linear-gradient(160deg, ' . $red . ' 0%, ' . $yellow . ' 100%)',
 					'slug'     => 'red-to-yellow',
 				),
 				array(
-					'name'     => esc_html__( 'Yellow to red', 'wp-lift-theme' ),
+					'name'     => esc_html__( 'Yellow to red', 'wp-wow-theme' ),
 					'gradient' => 'linear-gradient(160deg, ' . $yellow . ' 0%, ' . $red . ' 100%)',
 					'slug'     => 'yellow-to-red',
 				),
 				array(
-					'name'     => esc_html__( 'Purple to red', 'wp-lift-theme' ),
+					'name'     => esc_html__( 'Purple to red', 'wp-wow-theme' ),
 					'gradient' => 'linear-gradient(160deg, ' . $purple . ' 0%, ' . $red . ' 100%)',
 					'slug'     => 'purple-to-red',
 				),
 				array(
-					'name'     => esc_html__( 'Red to purple', 'wp-lift-theme' ),
+					'name'     => esc_html__( 'Red to purple', 'wp-wow-theme' ),
 					'gradient' => 'linear-gradient(160deg, ' . $red . ' 0%, ' . $purple . ' 100%)',
 					'slug'     => 'red-to-purple',
 				),
@@ -334,7 +334,7 @@ add_action( 'after_setup_theme', 'lift_setup' );
 /**
  * Calculate classes for the main <html> element.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @return void
  */

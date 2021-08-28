@@ -1,41 +1,41 @@
 <?php
 /**
-* @package LIFT Creations 
+* @package WOW WordPress 
 * @subpackage Theme by Nguyen Pham
-* https://baonguyenyam.github.io/cv
+* https://baonguyenyam.github.io
 * @since 2021
 */
 
 	// -> START Basic Fields
     Redux::setSection( $opt_name, array(
-        'title'            => __( 'Basic Fields', 'lift-theme-options' ),
+        'title'            => __( 'Basic Fields', 'wow-theme-options' ),
         'id'               => 'basic',
-        'desc'             => __( 'These are really basic fields!', 'lift-theme-options' ),
+        'desc'             => __( 'These are really basic fields!', 'wow-theme-options' ),
         'customizer_width' => '400px',
         'icon'             => 'el el-home'
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'            => __( 'Checkbox', 'lift-theme-options' ),
+        'title'            => __( 'Checkbox', 'wow-theme-options' ),
         'id'               => 'basic-checkbox',
         'subsection'       => true,
         'customizer_width' => '450px',
-        'desc'             => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/checkbox/" target="_blank">docs.reduxframework.com/core/fields/checkbox/</a>',
+        'desc'             => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/checkbox/" target="_blank">docs.reduxframework.com/core/fields/checkbox/</a>',
         'fields'           => array(
             array(
                 'id'       => 'opt-checkbox',
                 'type'     => 'checkbox',
-                'title'    => __( 'Checkbox Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Checkbox Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'default'  => '1'// 1 = on | 0 = off
             ),
             array(
                 'id'       => 'opt-multi-check',
                 'type'     => 'checkbox',
-                'title'    => __( 'Multi Checkbox Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Multi Checkbox Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 //Must provide key => value pairs for multi checkbox options
                 'options'  => array(
                     '1' => 'Opt 1',
@@ -52,34 +52,34 @@
             array(
                 'id'       => 'opt-checkbox-data',
                 'type'     => 'checkbox',
-                'title'    => __( 'Multi Checkbox Option (with menu data)', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Multi Checkbox Option (with menu data)', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'data'     => 'menu'
             ),
             array(
                 'id'       => 'opt-checkbox-sidebar',
                 'type'     => 'checkbox',
-                'title'    => __( 'Multi Checkbox Option (with sidebar data)', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Multi Checkbox Option (with sidebar data)', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'data'     => 'sidebars'
             ),
         )
     ) );
     Redux::setSection( $opt_name, array(
-        'title'            => __( 'Radio', 'lift-theme-options' ),
+        'title'            => __( 'Radio', 'wow-theme-options' ),
         'id'               => 'basic-Radio',
         'subsection'       => true,
         'customizer_width' => '500px',
-        'desc'             => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/radio/" target="_blank">docs.reduxframework.com/core/fields/radio/</a>',
+        'desc'             => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/radio/" target="_blank">docs.reduxframework.com/core/fields/radio/</a>',
         'fields'           => array(
             array(
                 'id'       => 'opt-radio',
                 'type'     => 'radio',
-                'title'    => __( 'Radio Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Radio Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 //Must provide key => value pairs for radio options
                 'options'  => array(
                     '1' => 'Opt 1',
@@ -91,25 +91,25 @@
             array(
                 'id'       => 'opt-radio-data',
                 'type'     => 'radio',
-                'title'    => __( 'Radio Option w/ Menu Data', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Radio Option w/ Menu Data', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'data'     => 'menu'
             ),
         )
     ) );
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Sortable', 'lift-theme-options' ),
+        'title'      => __( 'Sortable', 'wow-theme-options' ),
         'id'         => 'basic-Sortable',
         'subsection' => true,
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/sortable/" target="_blank">docs.reduxframework.com/core/fields/sortable/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/sortable/" target="_blank">docs.reduxframework.com/core/fields/sortable/</a>',
         'fields'     => array(
             array(
                 'id'       => 'opt-sortable',
                 'type'     => 'sortable',
-                'title'    => __( 'Sortable Text Option', 'lift-theme-options' ),
-                'subtitle' => __( 'Define and reorder these however you want.', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Sortable Text Option', 'wow-theme-options' ),
+                'subtitle' => __( 'Define and reorder these however you want.', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'label'    => true,
                 'options'  => array(
                     'Text One'   => 'Item 1',
@@ -121,9 +121,9 @@
                 'id'       => 'opt-check-sortable',
                 'type'     => 'sortable',
                 'mode'     => 'checkbox', // checkbox or text
-                'title'    => __( 'Sortable Text Option', 'lift-theme-options' ),
-                'subtitle' => __( 'Define and reorder these however you want.', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Sortable Text Option', 'wow-theme-options' ),
+                'subtitle' => __( 'Define and reorder these however you want.', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'options'  => array(
                     'cb1' => 'Checkbox One',
                     'cb2' => 'Checkbox Two',
@@ -140,8 +140,8 @@
 
 
     Redux::setSection( $opt_name, array(
-        'title'            => __( 'Text', 'lift-theme-options' ),
-        'desc'             => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/text/" target="_blank">docs.reduxframework.com/core/fields/text/</a>',
+        'title'            => __( 'Text', 'wow-theme-options' ),
+        'desc'             => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/text/" target="_blank">docs.reduxframework.com/core/fields/text/</a>',
         'id'               => 'basic-Text',
         'subsection'       => true,
         'customizer_width' => '700px',
@@ -149,17 +149,17 @@
             array(
                 'id'       => 'text-example',
                 'type'     => 'text',
-                'title'    => __( 'Text Field', 'lift-theme-options' ),
-                'subtitle' => __( 'Subtitle', 'lift-theme-options' ),
-                'desc'     => __( 'Field Description', 'lift-theme-options' ),
+                'title'    => __( 'Text Field', 'wow-theme-options' ),
+                'subtitle' => __( 'Subtitle', 'wow-theme-options' ),
+                'desc'     => __( 'Field Description', 'wow-theme-options' ),
                 'default'  => 'Default Text',
             ),
             array(
                 'id'        => 'text-example-hint',
                 'type'      => 'text',
-                'title'     => __( 'Text Field w/ Hint', 'lift-theme-options' ),
-                'subtitle'  => __( 'Subtitle', 'lift-theme-options' ),
-                'desc'      => __( 'Field Description', 'lift-theme-options' ),
+                'title'     => __( 'Text Field w/ Hint', 'wow-theme-options' ),
+                'subtitle'  => __( 'Subtitle', 'wow-theme-options' ),
+                'desc'      => __( 'Field Description', 'wow-theme-options' ),
                 'default'   => 'Default Text',
                 'text_hint' => array(
                     'title'   => 'Hint Title',
@@ -169,9 +169,9 @@
             array(
                 'id'          => 'text-placeholder',
                 'type'        => 'text',
-                'title'       => __( 'Text Field', 'lift-theme-options' ),
-                'subtitle'    => __( 'Subtitle', 'lift-theme-options' ),
-                'desc'        => __( 'Field Description', 'lift-theme-options' ),
+                'title'       => __( 'Text Field', 'wow-theme-options' ),
+                'subtitle'    => __( 'Subtitle', 'wow-theme-options' ),
+                'desc'        => __( 'Field Description', 'wow-theme-options' ),
                 'placeholder' => 'Placeholder Text',
             ),
 
@@ -179,24 +179,24 @@
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Multi Text', 'lift-theme-options' ),
+        'title'      => __( 'Multi Text', 'wow-theme-options' ),
         'id'         => 'basic-Multi Text',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/multi-text/" target="_blank">docs.reduxframework.com/core/fields/multi-text/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/multi-text/" target="_blank">docs.reduxframework.com/core/fields/multi-text/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-multitext',
                 'type'     => 'multi_text',
-                'title'    => __( 'Multi Text Option', 'lift-theme-options' ),
-                'subtitle' => __( 'Field subtitle', 'lift-theme-options' ),
-                'desc'     => __( 'Field Decription', 'lift-theme-options' ),
+                'title'    => __( 'Multi Text Option', 'wow-theme-options' ),
+                'subtitle' => __( 'Field subtitle', 'wow-theme-options' ),
+                'desc'     => __( 'Field Decription', 'wow-theme-options' ),
             ),
         )
     ) );
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Password', 'lift-theme-options' ),
+        'title'      => __( 'Password', 'wow-theme-options' ),
         'id'         => 'basic-Password',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/password/" target="_blank">docs.reduxframework.com/core/fields/password/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/password/" target="_blank">docs.reduxframework.com/core/fields/password/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
@@ -213,17 +213,17 @@
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Textarea', 'lift-theme-options' ),
+        'title'      => __( 'Textarea', 'wow-theme-options' ),
         'id'         => 'basic-Textarea',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/textarea/" target="_blank">docs.reduxframework.com/core/fields/textarea/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/textarea/" target="_blank">docs.reduxframework.com/core/fields/textarea/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-textarea',
                 'type'     => 'textarea',
-                'title'    => __( 'Textarea Option - HTML Validated Custom', 'lift-theme-options' ),
-                'subtitle' => __( 'Subtitle', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Textarea Option - HTML Validated Custom', 'wow-theme-options' ),
+                'subtitle' => __( 'Subtitle', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'default'  => 'Default Text',
             )
         )
@@ -231,30 +231,30 @@
 
     // -> START Editors
     Redux::setSection( $opt_name, array(
-        'title'            => __( 'Editors', 'lift-theme-options' ),
+        'title'            => __( 'Editors', 'wow-theme-options' ),
         'id'               => 'editor',
         'customizer_width' => '500px',
         'icon'             => 'el el-edit',
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'WordPress Editor', 'lift-theme-options' ),
+        'title'      => __( 'WordPress Editor', 'wow-theme-options' ),
         'id'         => 'editor-wordpress',
         //'icon'  => 'el el-home'
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/editor/" target="_blank">docs.reduxframework.com/core/fields/editor/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/editor/" target="_blank">docs.reduxframework.com/core/fields/editor/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-editor',
                 'type'     => 'editor',
-                'title'    => __( 'Editor', 'lift-theme-options' ),
-                'subtitle' => __( 'Use any of the features of WordPress editor inside your panel!', 'lift-theme-options' ),
+                'title'    => __( 'Editor', 'wow-theme-options' ),
+                'subtitle' => __( 'Use any of the features of WordPress editor inside your panel!', 'wow-theme-options' ),
                 'default'  => 'Powered by Redux Framework.',
             ),
             array(
                 'id'      => 'opt-editor-tiny',
                 'type'    => 'editor',
-                'title'   => __( 'Editor w/o Media Button', 'lift-theme-options' ),
+                'title'   => __( 'Editor w/o Media Button', 'wow-theme-options' ),
                 'default' => 'Powered by Redux Framework.',
                 'args'    => array(
                     'wpautop'       => false,
@@ -270,25 +270,25 @@
             array(
                 'id'         => 'opt-editor-full',
                 'type'       => 'editor',
-                'title'      => __( 'Editor - Full Width', 'lift-theme-options' ),
+                'title'      => __( 'Editor - Full Width', 'wow-theme-options' ),
                 'full_width' => true
             ),
         ),
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/editor/" target="_blank">docs.reduxframework.com/core/fields/editor/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/editor/" target="_blank">docs.reduxframework.com/core/fields/editor/</a>',
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'ACE Editor', 'lift-theme-options' ),
+        'title'      => __( 'ACE Editor', 'wow-theme-options' ),
         'id'         => 'editor-ace',
         //'icon'  => 'el el-home'
         'subsection' => true,
-        'desc'       => __( 'For full documentation on the this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/ace-editor/" target="_blank">docs.reduxframework.com/core/fields/ace-editor/</a>',
+        'desc'       => __( 'For full documentation on the this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/ace-editor/" target="_blank">docs.reduxframework.com/core/fields/ace-editor/</a>',
         'fields'     => array(
             array(
                 'id'       => 'opt-ace-editor-css',
                 'type'     => 'ace_editor',
-                'title'    => __( 'CSS Code', 'lift-theme-options' ),
-                'subtitle' => __( 'Paste your CSS code here.', 'lift-theme-options' ),
+                'title'    => __( 'CSS Code', 'wow-theme-options' ),
+                'subtitle' => __( 'Paste your CSS code here.', 'wow-theme-options' ),
                 'mode'     => 'css',
                 'theme'    => 'monokai',
                 'desc'     => 'Possible modes can be found at <a href="' . 'http://' . 'ace.c9.io" target="_blank">' . 'http://' . 'ace.c9.io/</a>.',
@@ -297,8 +297,8 @@
             array(
                 'id'       => 'opt-ace-editor-js',
                 'type'     => 'ace_editor',
-                'title'    => __( 'JS Code', 'lift-theme-options' ),
-                'subtitle' => __( 'Paste your JS code here.', 'lift-theme-options' ),
+                'title'    => __( 'JS Code', 'wow-theme-options' ),
+                'subtitle' => __( 'Paste your JS code here.', 'wow-theme-options' ),
                 'mode'     => 'javascript',
                 'theme'    => 'chrome',
                 'desc'     => 'Possible modes can be found at <a href="' . 'http://' . 'ace.c9.io" target="_blank">' . 'http://' . 'ace.c9.io/</a>.',
@@ -308,8 +308,8 @@
                 'id'         => 'opt-ace-editor-php',
                 'type'       => 'ace_editor',
                 'full_width' => true,
-                'title'      => __( 'PHP Code', 'lift-theme-options' ),
-                'subtitle'   => __( 'Paste your PHP code here.', 'lift-theme-options' ),
+                'title'      => __( 'PHP Code', 'wow-theme-options' ),
+                'subtitle'   => __( 'Paste your PHP code here.', 'wow-theme-options' ),
                 'mode'       => 'php',
                 'theme'      => 'chrome',
                 'desc'       => 'Possible modes can be found at <a href="' . 'http://' . 'ace.c9.io" target="_blank">' . 'http://' . 'ace.c9.io/</a>.',
@@ -323,48 +323,48 @@
 
     // -> START Color Selection
     Redux::setSection( $opt_name, array(
-        'title' => __( 'Color Selection', 'lift-theme-options' ),
+        'title' => __( 'Color Selection', 'wow-theme-options' ),
         'id'    => 'color',
-        'desc'  => __( '', 'lift-theme-options' ),
+        'desc'  => __( '', 'wow-theme-options' ),
         'icon'  => 'el el-brush'
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Color', 'lift-theme-options' ),
+        'title'      => __( 'Color', 'wow-theme-options' ),
         'id'         => 'color-Color',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/color/" target="_blank">docs.reduxframework.com/core/fields/color/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/color/" target="_blank">docs.reduxframework.com/core/fields/color/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-color-title',
                 'type'     => 'color',
                 'output'   => array( '.site-title' ),
-                'title'    => __( 'Site Title Color', 'lift-theme-options' ),
-                'subtitle' => __( 'Pick a title color for the theme (default: #000).', 'lift-theme-options' ),
+                'title'    => __( 'Site Title Color', 'wow-theme-options' ),
+                'subtitle' => __( 'Pick a title color for the theme (default: #000).', 'wow-theme-options' ),
                 'default'  => '#000000',
             ),
             array(
                 'id'       => 'opt-color-footer',
                 'type'     => 'color',
-                'title'    => __( 'Footer Background Color', 'lift-theme-options' ),
-                'subtitle' => __( 'Pick a background color for the footer (default: #dd9933).', 'lift-theme-options' ),
+                'title'    => __( 'Footer Background Color', 'wow-theme-options' ),
+                'subtitle' => __( 'Pick a background color for the footer (default: #dd9933).', 'wow-theme-options' ),
                 'default'  => '#dd9933',
                 'validate' => 'color',
             ),
         ),
     ) );
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Color Gradient', 'lift-theme-options' ),
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/color-gradient/" target="_blank">docs.reduxframework.com/core/fields/color-gradient/</a>',
+        'title'      => __( 'Color Gradient', 'wow-theme-options' ),
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/color-gradient/" target="_blank">docs.reduxframework.com/core/fields/color-gradient/</a>',
         'id'         => 'color-gradient',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-color-header',
                 'type'     => 'color_gradient',
-                'title'    => __( 'Header Gradient Color Option', 'lift-theme-options' ),
-                'subtitle' => __( 'Only color validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Header Gradient Color Option', 'wow-theme-options' ),
+                'subtitle' => __( 'Only color validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'default'  => array(
                     'from' => '#1e73be',
                     'to'   => '#00897e'
@@ -373,16 +373,16 @@
         )
     ) );
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Color RGBA', 'lift-theme-options' ),
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/color-rgba/" target="_blank">docs.reduxframework.com/core/fields/color-rgba/</a>',
+        'title'      => __( 'Color RGBA', 'wow-theme-options' ),
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/color-rgba/" target="_blank">docs.reduxframework.com/core/fields/color-rgba/</a>',
         'id'         => 'color-rgba',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-color-rgba',
                 'type'     => 'color_rgba',
-                'title'    => __( 'Color RGBA', 'lift-theme-options' ),
-                'subtitle' => __( 'Gives you the RGBA color.', 'lift-theme-options' ),
+                'title'    => __( 'Color RGBA', 'wow-theme-options' ),
+                'subtitle' => __( 'Gives you the RGBA color.', 'wow-theme-options' ),
                 'default'  => array(
                     'color' => '#7e33dd',
                     'alpha' => '.8'
@@ -394,17 +394,17 @@
         )
     ) );
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Link Color', 'lift-theme-options' ),
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/link-color/" target="_blank">docs.reduxframework.com/core/fields/link-color/</a>',
+        'title'      => __( 'Link Color', 'wow-theme-options' ),
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/link-color/" target="_blank">docs.reduxframework.com/core/fields/link-color/</a>',
         'id'         => 'color-link',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-link-color',
                 'type'     => 'link_color',
-                'title'    => __( 'Links Color Option', 'lift-theme-options' ),
-                'subtitle' => __( 'Only color validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Links Color Option', 'wow-theme-options' ),
+                'subtitle' => __( 'Only color validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 //'regular'   => false, // Disable Regular Color
                 //'hover'     => false, // Disable Hover Color
                 //'active'    => false, // Disable Active Color
@@ -419,17 +419,17 @@
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Palette Colors', 'lift-theme-options' ),
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/palette-color/" target="_blank">docs.reduxframework.com/core/fields/palette-color/</a>',
+        'title'      => __( 'Palette Colors', 'wow-theme-options' ),
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/palette-color/" target="_blank">docs.reduxframework.com/core/fields/palette-color/</a>',
         'id'         => 'color-palette',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-palette-color',
                 'type'     => 'palette',
-                'title'    => __( 'Palette Color Option', 'lift-theme-options' ),
-                'subtitle' => __( 'Only color validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Palette Color Option', 'wow-theme-options' ),
+                'subtitle' => __( 'Only color validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'default'  => 'red',
                 'palettes' => array(
                     'red'  => array(
@@ -459,14 +459,14 @@
 
     // -> START Design Fields
     Redux::setSection( $opt_name, array(
-        'title' => __( 'Design Fields', 'lift-theme-options' ),
+        'title' => __( 'Design Fields', 'wow-theme-options' ),
         'id'    => 'design',
-        'desc'  => __( '', 'lift-theme-options' ),
+        'desc'  => __( '', 'wow-theme-options' ),
         'icon'  => 'el el-wrench'
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Background', 'lift-theme-options' ),
+        'title'      => __( 'Background', 'wow-theme-options' ),
         'id'         => 'design-background',
         'subsection' => true,
         'fields'     => array(
@@ -474,31 +474,31 @@
                 'id'       => 'opt-background',
                 'type'     => 'background',
                 'output'   => array( 'body' ),
-                'title'    => __( 'Body Background', 'lift-theme-options' ),
-                'subtitle' => __( 'Body background with image, color, etc.', 'lift-theme-options' ),
+                'title'    => __( 'Body Background', 'wow-theme-options' ),
+                'subtitle' => __( 'Body background with image, color, etc.', 'wow-theme-options' ),
                 'default'  => array(
 					'background-color' => '#000',
 				),
             ),
 
         ),
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/background/" target="_blank">docs.reduxframework.com/core/fields/background/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/background/" target="_blank">docs.reduxframework.com/core/fields/background/</a>',
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Border', 'lift-theme-options' ),
+        'title'      => __( 'Border', 'wow-theme-options' ),
         'id'         => 'design-border',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/border/" target="_blank">docs.reduxframework.com/core/fields/border/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/border/" target="_blank">docs.reduxframework.com/core/fields/border/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-header-border',
                 'type'     => 'border',
-                'title'    => __( 'Header Border Option', 'lift-theme-options' ),
-                'subtitle' => __( 'Only color validation can be done on this field type', 'lift-theme-options' ),
+                'title'    => __( 'Header Border Option', 'wow-theme-options' ),
+                'subtitle' => __( 'Only color validation can be done on this field type', 'wow-theme-options' ),
                 'output'   => array( '.site-header' ),
                 // An array of CSS selectors to apply this font style to
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'default'  => array(
                     'border-color'  => '#1e73be',
                     'border-style'  => 'solid',
@@ -511,12 +511,12 @@
             array(
                 'id'       => 'opt-header-border-expanded',
                 'type'     => 'border',
-                'title'    => __( 'Header Border Option', 'lift-theme-options' ),
-                'subtitle' => __( 'Only color validation can be done on this field type', 'lift-theme-options' ),
+                'title'    => __( 'Header Border Option', 'wow-theme-options' ),
+                'subtitle' => __( 'Only color validation can be done on this field type', 'wow-theme-options' ),
                 'output'   => array( '.site-header' ),
                 'all'      => false,
                 // An array of CSS selectors to apply this font style to
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'default'  => array(
                     'border-color'  => '#1e73be',
                     'border-style'  => 'solid',
@@ -530,9 +530,9 @@
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Dimensions', 'lift-theme-options' ),
+        'title'      => __( 'Dimensions', 'wow-theme-options' ),
         'id'         => 'design-dimensions',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/dimensions/" target="_blank">docs.reduxframework.com/core/fields/dimensions/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/dimensions/" target="_blank">docs.reduxframework.com/core/fields/dimensions/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
@@ -540,9 +540,9 @@
                 'type'           => 'dimensions',
                 'units'          => array( 'em', 'px', '%' ),    // You can specify a unit value. Possible: px, em, %
                 'units_extended' => 'true',  // Allow users to select any type of unit
-                'title'          => __( 'Dimensions (Width/Height) Option', 'lift-theme-options' ),
-                'subtitle'       => __( 'Allow your users to choose width, height, and/or unit.', 'lift-theme-options' ),
-                'desc'           => __( 'You can enable or disable any piece of this field. Width, Height, or Units.', 'lift-theme-options' ),
+                'title'          => __( 'Dimensions (Width/Height) Option', 'wow-theme-options' ),
+                'subtitle'       => __( 'Allow your users to choose width, height, and/or unit.', 'wow-theme-options' ),
+                'desc'           => __( 'You can enable or disable any piece of this field. Width, Height, or Units.', 'wow-theme-options' ),
                 'default'        => array(
                     'width'  => 200,
                     'height' => 100,
@@ -553,9 +553,9 @@
                 'type'           => 'dimensions',
                 'units'          => array( 'em', 'px', '%' ),    // You can specify a unit value. Possible: px, em, %
                 'units_extended' => 'true',  // Allow users to select any type of unit
-                'title'          => __( 'Dimensions (Width) Option', 'lift-theme-options' ),
-                'subtitle'       => __( 'Allow your users to choose width, height, and/or unit.', 'lift-theme-options' ),
-                'desc'           => __( 'You can enable or disable any piece of this field. Width, Height, or Units.', 'lift-theme-options' ),
+                'title'          => __( 'Dimensions (Width) Option', 'wow-theme-options' ),
+                'subtitle'       => __( 'Allow your users to choose width, height, and/or unit.', 'wow-theme-options' ),
+                'desc'           => __( 'You can enable or disable any piece of this field. Width, Height, or Units.', 'wow-theme-options' ),
                 'height'         => false,
                 'default'        => array(
                     'width'  => 200,
@@ -566,9 +566,9 @@
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Spacing', 'lift-theme-options' ),
+        'title'      => __( 'Spacing', 'wow-theme-options' ),
         'id'         => 'design-spacing',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/spacing/" target="_blank">docs.reduxframework.com/core/fields/spacing/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/spacing/" target="_blank">docs.reduxframework.com/core/fields/spacing/</a>',
         'subsection' => true,
         'fields'     => array(
 
@@ -588,9 +588,9 @@
                 //'units'         => 'em',      // You can specify a unit value. Possible: px, em, %
                 //'units_extended'=> 'true',    // Allow users to select any type of unit
                 //'display_units' => 'false',   // Set to false to hide the units if the units are specified
-                'title'    => __( 'Padding/Margin Option', 'lift-theme-options' ),
-                'subtitle' => __( 'Allow your users to choose the spacing or margin they want.', 'lift-theme-options' ),
-                'desc'     => __( 'You can enable or disable any piece of this field. Top, Right, Bottom, Left, or Units.', 'lift-theme-options' ),
+                'title'    => __( 'Padding/Margin Option', 'wow-theme-options' ),
+                'subtitle' => __( 'Allow your users to choose the spacing or margin they want.', 'wow-theme-options' ),
+                'desc'     => __( 'You can enable or disable any piece of this field. Top, Right, Bottom, Left, or Units.', 'wow-theme-options' ),
                 'default'  => array(
                     'margin-top'    => '1px',
                     'margin-right'  => '2px',
@@ -613,9 +613,9 @@
                 'units'          => array( 'em', 'px', '%' ),      // You can specify a unit value. Possible: px, em, %
                 'units_extended' => 'true',    // Allow users to select any type of unit
                 //'display_units' => 'false',   // Set to false to hide the units if the units are specified
-                'title'          => __( 'Padding/Margin Option', 'lift-theme-options' ),
-                'subtitle'       => __( 'Allow your users to choose the spacing or margin they want.', 'lift-theme-options' ),
-                'desc'           => __( 'You can enable or disable any piece of this field. Top, Right, Bottom, Left, or Units.', 'lift-theme-options' ),
+                'title'          => __( 'Padding/Margin Option', 'wow-theme-options' ),
+                'subtitle'       => __( 'Allow your users to choose the spacing or margin they want.', 'wow-theme-options' ),
+                'desc'           => __( 'You can enable or disable any piece of this field. Top, Right, Bottom, Left, or Units.', 'wow-theme-options' ),
                 'default'        => array(
                     'margin-top'    => '1px',
                     'margin-right'  => '2px',
@@ -628,44 +628,44 @@
 
     // -> START Media Uploads
     Redux::setSection( $opt_name, array(
-        'title' => __( 'Media Uploads', 'lift-theme-options' ),
+        'title' => __( 'Media Uploads', 'wow-theme-options' ),
         'id'    => 'media',
-        'desc'  => __( '', 'lift-theme-options' ),
+        'desc'  => __( '', 'wow-theme-options' ),
         'icon'  => 'el el-picture'
     ) );
 
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Gallery', 'lift-theme-options' ),
+        'title'      => __( 'Gallery', 'wow-theme-options' ),
         'id'         => 'media-gallery',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/gallery/" target="_blank">docs.reduxframework.com/core/fields/gallery/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/gallery/" target="_blank">docs.reduxframework.com/core/fields/gallery/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-gallery',
                 'type'     => 'gallery',
-                'title'    => __( 'Add/Edit Gallery', 'lift-theme-options' ),
-                'subtitle' => __( 'Create a new Gallery by selecting existing or uploading new images using the WordPress native uploader', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Add/Edit Gallery', 'wow-theme-options' ),
+                'subtitle' => __( 'Create a new Gallery by selecting existing or uploading new images using the WordPress native uploader', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
         )
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Media', 'lift-theme-options' ),
+        'title'      => __( 'Media', 'wow-theme-options' ),
         'id'         => 'media-media',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/media/" target="_blank">docs.reduxframework.com/core/fields/media/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/media/" target="_blank">docs.reduxframework.com/core/fields/media/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-media',
                 'type'     => 'media',
                 'url'      => true,
-                'title'    => __( 'Media w/ URL', 'lift-theme-options' ),
+                'title'    => __( 'Media w/ URL', 'wow-theme-options' ),
                 'compiler' => 'true',
                 //'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
-                'desc'     => __( 'Basic media uploader with disabled URL input field.', 'lift-theme-options' ),
-                'subtitle' => __( 'Upload any media using the WordPress native uploader', 'lift-theme-options' ),
+                'desc'     => __( 'Basic media uploader with disabled URL input field.', 'wow-theme-options' ),
+                'subtitle' => __( 'Upload any media using the WordPress native uploader', 'wow-theme-options' ),
                 'default'  => array( 'url' => 'https://s.wordpress.org/style/images/codeispoetry.png' ),
                 //'hint'      => array(
                 //    'title'     => 'Hint Title',
@@ -675,17 +675,17 @@
             array(
                 'id'       => 'media-no-url',
                 'type'     => 'media',
-                'title'    => __( 'Media w/o URL', 'lift-theme-options' ),
-                'desc'     => __( 'This represents the minimalistic view. It does not have the preview box or the display URL in an input box. ', 'lift-theme-options' ),
-                'subtitle' => __( 'Upload any media using the WordPress native uploader', 'lift-theme-options' ),
+                'title'    => __( 'Media w/o URL', 'wow-theme-options' ),
+                'desc'     => __( 'This represents the minimalistic view. It does not have the preview box or the display URL in an input box. ', 'wow-theme-options' ),
+                'subtitle' => __( 'Upload any media using the WordPress native uploader', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'media-no-preview',
                 'type'     => 'media',
                 'preview'  => false,
-                'title'    => __( 'Media No Preview', 'lift-theme-options' ),
-                'desc'     => __( 'This represents the minimalistic view. It does not have the preview box or the display URL in an input box. ', 'lift-theme-options' ),
-                'subtitle' => __( 'Upload any media using the WordPress native uploader', 'lift-theme-options' ),
+                'title'    => __( 'Media No Preview', 'wow-theme-options' ),
+                'desc'     => __( 'This represents the minimalistic view. It does not have the preview box or the display URL in an input box. ', 'wow-theme-options' ),
+                'subtitle' => __( 'Upload any media using the WordPress native uploader', 'wow-theme-options' ),
                 'hint'     => array(
                     'title'   => 'Test',
                     'content' => 'This is a <b>hint</b> tool-tip for the webFonts field.<br/><br/>Add any HTML based text you like here.',
@@ -694,32 +694,32 @@
             array(
                 'id'         => 'opt-random-upload',
                 'type'       => 'media',
-                'title'      => __( 'Upload Anything - Disabled Mode', 'lift-theme-options' ),
+                'title'      => __( 'Upload Anything - Disabled Mode', 'wow-theme-options' ),
                 'full_width' => true,
                 'mode'       => false,
                 // Can be set to false to allow any media type, or can also be set to any mime type.
-                'desc'       => __( 'Basic media uploader with disabled URL input field.', 'lift-theme-options' ),
-                'subtitle'   => __( 'Upload any media using the WordPress native uploader', 'lift-theme-options' ),
+                'desc'       => __( 'Basic media uploader with disabled URL input field.', 'wow-theme-options' ),
+                'subtitle'   => __( 'Upload any media using the WordPress native uploader', 'wow-theme-options' ),
             ),
         )
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Slides', 'lift-theme-options' ),
+        'title'      => __( 'Slides', 'wow-theme-options' ),
         'id'         => 'additional-slides',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/slides/" target="_blank">docs.reduxframework.com/core/fields/slides/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/slides/" target="_blank">docs.reduxframework.com/core/fields/slides/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'          => 'opt-slides',
                 'type'        => 'slides',
-                'title'       => __( 'Slides Options', 'lift-theme-options' ),
-                'subtitle'    => __( 'Unlimited slides with drag and drop sortings.', 'lift-theme-options' ),
-                'desc'        => __( 'This field will store all slides values into a multidimensional array to use into a foreach loop.', 'lift-theme-options' ),
+                'title'       => __( 'Slides Options', 'wow-theme-options' ),
+                'subtitle'    => __( 'Unlimited slides with drag and drop sortings.', 'wow-theme-options' ),
+                'desc'        => __( 'This field will store all slides values into a multidimensional array to use into a foreach loop.', 'wow-theme-options' ),
                 'placeholder' => array(
-                    'title'       => __( 'This is a title', 'lift-theme-options' ),
-                    'description' => __( 'Description Here', 'lift-theme-options' ),
-                    'url'         => __( 'Give us a link!', 'lift-theme-options' ),
+                    'title'       => __( 'This is a title', 'wow-theme-options' ),
+                    'description' => __( 'Description Here', 'wow-theme-options' ),
+                    'url'         => __( 'Give us a link!', 'wow-theme-options' ),
                 ),
             ),
         )
@@ -727,16 +727,16 @@
 
     // -> START Presentation Fields
     Redux::setSection( $opt_name, array(
-        'title' => __( 'Presentation Fields', 'lift-theme-options' ),
+        'title' => __( 'Presentation Fields', 'wow-theme-options' ),
         'id'    => 'presentation',
-        'desc'  => __( '', 'lift-theme-options' ),
+        'desc'  => __( '', 'wow-theme-options' ),
         'icon'  => 'el el-screen'
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Divide', 'lift-theme-options' ),
+        'title'      => __( 'Divide', 'wow-theme-options' ),
         'id'         => 'presentation-divide',
-        'desc'       => __( 'The spacer to the section menu as seen to the left (after this section block) is the divide "section". Also the divider below is the divide "field".', 'lift-theme-options' ) . '<br />' . __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/divide/" target="_blank">docs.reduxframework.com/core/fields/divide/</a>',
+        'desc'       => __( 'The spacer to the section menu as seen to the left (after this section block) is the divide "section". Also the divider below is the divide "field".', 'wow-theme-options' ) . '<br />' . __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/divide/" target="_blank">docs.reduxframework.com/core/fields/divide/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
@@ -747,45 +747,45 @@
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Info', 'lift-theme-options' ),
+        'title'      => __( 'Info', 'wow-theme-options' ),
         'id'         => 'presentation-info',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/info/" target="_blank">docs.reduxframework.com/core/fields/info/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/info/" target="_blank">docs.reduxframework.com/core/fields/info/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'   => 'opt-info-field',
                 'type' => 'info',
-                'desc' => __( 'This is the info field, if you want to break sections up.', 'lift-theme-options' )
+                'desc' => __( 'This is the info field, if you want to break sections up.', 'wow-theme-options' )
             ),
             array(
                 'id'    => 'opt-notice-info1',
                 'type'  => 'info',
                 'style' => 'info',
-                'title' => __( 'This is a title.', 'lift-theme-options' ),
-                'desc'  => __( 'This is an info field with the <strong>info</strong> style applied. By default the <strong>normal</strong> style is applied.', 'lift-theme-options' )
+                'title' => __( 'This is a title.', 'wow-theme-options' ),
+                'desc'  => __( 'This is an info field with the <strong>info</strong> style applied. By default the <strong>normal</strong> style is applied.', 'wow-theme-options' )
             ),
             array(
                 'id'    => 'opt-info-warning',
                 'type'  => 'info',
                 'style' => 'warning',
-                'title' => __( 'This is a title.', 'lift-theme-options' ),
-                'desc'  => __( 'This is an info field with the <strong>warning</strong> style applied.', 'lift-theme-options' )
+                'title' => __( 'This is a title.', 'wow-theme-options' ),
+                'desc'  => __( 'This is an info field with the <strong>warning</strong> style applied.', 'wow-theme-options' )
             ),
             array(
                 'id'    => 'opt-info-success',
                 'type'  => 'info',
                 'style' => 'success',
                 'icon'  => 'el el-info-circle',
-                'title' => __( 'This is a title.', 'lift-theme-options' ),
-                'desc'  => __( 'This is an info field with the <strong>success</strong> style applied and an icon.', 'lift-theme-options' )
+                'title' => __( 'This is a title.', 'wow-theme-options' ),
+                'desc'  => __( 'This is an info field with the <strong>success</strong> style applied and an icon.', 'wow-theme-options' )
             ),
             array(
                 'id'    => 'opt-info-critical',
                 'type'  => 'info',
                 'style' => 'critical',
                 'icon'  => 'el el-info-circle',
-                'title' => __( 'This is a title.', 'lift-theme-options' ),
-                'desc'  => __( 'This is an info field with the <strong>critical</strong> style applied and an icon.', 'lift-theme-options' )
+                'title' => __( 'This is a title.', 'wow-theme-options' ),
+                'desc'  => __( 'This is an info field with the <strong>critical</strong> style applied and an icon.', 'wow-theme-options' )
             ),
             array(
                 'id'    => 'opt-info-custom',
@@ -793,23 +793,23 @@
                 'style' => 'custom',
                 'color' => 'purple',
                 'icon'  => 'el el-info-circle',
-                'title' => __( 'This is a title.', 'lift-theme-options' ),
-                'desc'  => __( 'This is an info field with the <strong>custom</strong> style applied, color arg passed, and an icon.', 'lift-theme-options' )
+                'title' => __( 'This is a title.', 'wow-theme-options' ),
+                'desc'  => __( 'This is an info field with the <strong>custom</strong> style applied, color arg passed, and an icon.', 'wow-theme-options' )
             ),
             array(
                 'id'     => 'opt-info-normal',
                 'type'   => 'info',
                 'notice' => false,
-                'title'  => __( 'This is a title.', 'lift-theme-options' ),
-                'desc'   => __( 'This is an info non-notice field with the <strong>normal</strong> style applied.', 'lift-theme-options' )
+                'title'  => __( 'This is a title.', 'wow-theme-options' ),
+                'desc'   => __( 'This is an info non-notice field with the <strong>normal</strong> style applied.', 'wow-theme-options' )
             ),
             array(
                 'id'     => 'opt-notice-info',
                 'type'   => 'info',
                 'notice' => false,
                 'style'  => 'info',
-                'title'  => __( 'This is a title.', 'lift-theme-options' ),
-                'desc'   => __( 'This is an info non-notice field with the <strong>info</strong> style applied.', 'lift-theme-options' )
+                'title'  => __( 'This is a title.', 'wow-theme-options' ),
+                'desc'   => __( 'This is an info non-notice field with the <strong>info</strong> style applied.', 'wow-theme-options' )
             ),
             array(
                 'id'     => 'opt-notice-warning',
@@ -817,8 +817,8 @@
                 'notice' => false,
                 'style'  => 'warning',
                 'icon'   => 'el el-info-circle',
-                'title'  => __( 'This is a title.', 'lift-theme-options' ),
-                'desc'   => __( 'This is an info non-notice field with the <strong>warning</strong> style applied and an icon.', 'lift-theme-options' )
+                'title'  => __( 'This is a title.', 'wow-theme-options' ),
+                'desc'   => __( 'This is an info non-notice field with the <strong>warning</strong> style applied and an icon.', 'wow-theme-options' )
             ),
             array(
                 'id'     => 'opt-notice-success',
@@ -826,8 +826,8 @@
                 'notice' => false,
                 'style'  => 'success',
                 'icon'   => 'el el-info-circle',
-                'title'  => __( 'This is a title.', 'lift-theme-options' ),
-                'desc'   => __( 'This is an info non-notice field with the <strong>success</strong> style applied and an icon.', 'lift-theme-options' )
+                'title'  => __( 'This is a title.', 'wow-theme-options' ),
+                'desc'   => __( 'This is an info non-notice field with the <strong>success</strong> style applied and an icon.', 'wow-theme-options' )
             ),
             array(
                 'id'     => 'opt-notice-critical',
@@ -835,36 +835,36 @@
                 'notice' => false,
                 'style'  => 'critical',
                 'icon'   => 'el el-info-circle',
-                'title'  => __( 'This is a title.', 'lift-theme-options' ),
-                'desc'   => __( 'This is an non-notice field with the <strong>critical</strong> style applied and an icon.', 'lift-theme-options' )
+                'title'  => __( 'This is a title.', 'wow-theme-options' ),
+                'desc'   => __( 'This is an non-notice field with the <strong>critical</strong> style applied and an icon.', 'wow-theme-options' )
             ),
         )
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Section', 'lift-theme-options' ),
+        'title'      => __( 'Section', 'wow-theme-options' ),
         'id'         => 'presentation-section',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/section/" target="_blank">docs.reduxframework.com/core/fields/section/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/section/" target="_blank">docs.reduxframework.com/core/fields/section/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'section-start',
                 'type'     => 'section',
-                'title'    => __( 'Section Example', 'lift-theme-options' ),
-                'subtitle' => __( 'With the "section" field you can create indented option sections.', 'lift-theme-options' ),
+                'title'    => __( 'Section Example', 'wow-theme-options' ),
+                'subtitle' => __( 'With the "section" field you can create indented option sections.', 'wow-theme-options' ),
                 'indent'   => true, // Indent all options below until the next 'section' option is set.
             ),
             array(
                 'id'       => 'section-test',
                 'type'     => 'text',
-                'title'    => __( 'Field Title', 'lift-theme-options' ),
-                'subtitle' => __( 'Field Subtitle', 'lift-theme-options' ),
+                'title'    => __( 'Field Title', 'wow-theme-options' ),
+                'subtitle' => __( 'Field Subtitle', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'section-test-media',
                 'type'     => 'media',
-                'title'    => __( 'Field Title', 'lift-theme-options' ),
-                'subtitle' => __( 'Field Subtitle', 'lift-theme-options' ),
+                'title'    => __( 'Field Title', 'wow-theme-options' ),
+                'subtitle' => __( 'Field Subtitle', 'wow-theme-options' ),
             ),
             array(
                 'id'     => 'section-end',
@@ -874,7 +874,7 @@
             array(
                 'id'   => 'section-info',
                 'type' => 'info',
-                'desc' => __( 'And now you can add more fields below and outside of the indent.', 'lift-theme-options' ),
+                'desc' => __( 'And now you can add more fields below and outside of the indent.', 'wow-theme-options' ),
             ),
         ),
     ) );
@@ -885,24 +885,24 @@
 
     // -> START Switch & Button Set
     Redux::setSection( $opt_name, array(
-        'title' => __( 'Switch & Button Set', 'lift-theme-options' ),
+        'title' => __( 'Switch & Button Set', 'wow-theme-options' ),
         'id'    => 'switch_buttonset',
-        'desc'  => __( '', 'lift-theme-options' ),
+        'desc'  => __( '', 'wow-theme-options' ),
         'icon'  => 'el el-cogs'
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Button Set', 'lift-theme-options' ),
+        'title'      => __( 'Button Set', 'wow-theme-options' ),
         'id'         => 'switch_buttonset-set',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/button-set/" target="_blank">docs.reduxframework.com/core/fields/button-set/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/button-set/" target="_blank">docs.reduxframework.com/core/fields/button-set/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-button-set',
                 'type'     => 'button_set',
-                'title'    => __( 'Button Set Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Button Set Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 //Must provide key => value pairs for radio options
                 'options'  => array(
                     '1' => 'Opt 1',
@@ -914,9 +914,9 @@
             array(
                 'id'       => 'opt-button-set-multi',
                 'type'     => 'button_set',
-                'title'    => __( 'Button Set, Multi Select', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Button Set, Multi Select', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'multi'    => true,
                 //Must provide key => value pairs for radio options
                 'options'  => array(
@@ -931,32 +931,32 @@
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Switch', 'lift-theme-options' ),
+        'title'      => __( 'Switch', 'wow-theme-options' ),
         'id'         => 'switch_buttonset-switch',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/switch/" target="_blank">docs.reduxframework.com/core/fields/switch/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/switch/" target="_blank">docs.reduxframework.com/core/fields/switch/</a>',
         'subsection' => true,
         'fields'     => array(
 
             array(
                 'id'       => 'switch-on',
                 'type'     => 'switch',
-                'title'    => __( 'Switch On', 'lift-theme-options' ),
-                'subtitle' => __( 'Look, it\'s on!', 'lift-theme-options' ),
+                'title'    => __( 'Switch On', 'wow-theme-options' ),
+                'subtitle' => __( 'Look, it\'s on!', 'wow-theme-options' ),
                 'default'  => true,
             ),
             array(
                 'id'       => 'switch-off',
                 'type'     => 'switch',
-                'title'    => __( 'Switch Off', 'lift-theme-options' ),
-                'subtitle' => __( 'Look, it\'s on!', 'lift-theme-options' ),
+                'title'    => __( 'Switch Off', 'wow-theme-options' ),
+                'subtitle' => __( 'Look, it\'s on!', 'wow-theme-options' ),
                 //'options' => array('on', 'off'),
                 'default'  => false,
             ),
             array(
                 'id'       => 'switch-parent',
                 'type'     => 'switch',
-                'title'    => __( 'Switch - Nested Children, Enable to show', 'lift-theme-options' ),
-                'subtitle' => __( 'Look, it\'s on! Also hidden child elements!', 'lift-theme-options' ),
+                'title'    => __( 'Switch - Nested Children, Enable to show', 'wow-theme-options' ),
+                'subtitle' => __( 'Look, it\'s on! Also hidden child elements!', 'wow-theme-options' ),
                 'default'  => 0,
                 'on'       => 'Enabled',
                 'off'      => 'Disabled',
@@ -965,18 +965,18 @@
                 'id'       => 'switch-child1',
                 'type'     => 'switch',
                 'required' => array( 'switch-parent', '=', '1' ),
-                'title'    => __( 'Switch - This and the next switch required for patterns to show', 'lift-theme-options' ),
-                'subtitle' => __( 'Also called a "fold" parent.', 'lift-theme-options' ),
-                'desc'     => __( 'Items set with a fold to this ID will hide unless this is set to the appropriate value.', 'lift-theme-options' ),
+                'title'    => __( 'Switch - This and the next switch required for patterns to show', 'wow-theme-options' ),
+                'subtitle' => __( 'Also called a "fold" parent.', 'wow-theme-options' ),
+                'desc'     => __( 'Items set with a fold to this ID will hide unless this is set to the appropriate value.', 'wow-theme-options' ),
                 'default'  => false,
             ),
             array(
                 'id'       => 'switch-child2',
                 'type'     => 'switch',
                 'required' => array( 'switch-parent', '=', '1' ),
-                'title'    => __( 'Switch2 - Enable the above switch and this one for patterns to show', 'lift-theme-options' ),
-                'subtitle' => __( 'Also called a "fold" parent.', 'lift-theme-options' ),
-                'desc'     => __( 'Items set with a fold to this ID will hide unless this is set to the appropriate value.', 'lift-theme-options' ),
+                'title'    => __( 'Switch2 - Enable the above switch and this one for patterns to show', 'wow-theme-options' ),
+                'subtitle' => __( 'Also called a "fold" parent.', 'wow-theme-options' ),
+                'desc'     => __( 'Items set with a fold to this ID will hide unless this is set to the appropriate value.', 'wow-theme-options' ),
                 'default'  => false,
             ),
         )
@@ -984,24 +984,24 @@
 
     // -> START Select Fields
     Redux::setSection( $opt_name, array(
-        'title' => __( 'Select Fields', 'lift-theme-options' ),
+        'title' => __( 'Select Fields', 'wow-theme-options' ),
         'id'    => 'select',
         'icon'  => 'el el-list-alt'
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Select', 'lift-theme-options' ),
+        'title'      => __( 'Select', 'wow-theme-options' ),
         'id'         => 'select-select',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/select/" target="_blank">docs.reduxframework.com/core/fields/select/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/select/" target="_blank">docs.reduxframework.com/core/fields/select/</a>',
         'subsection' => true,
         'fields'     => array(
 
             array(
                 'id'       => 'opt-select',
                 'type'     => 'select',
-                'title'    => __( 'Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 //Must provide key => value pairs for select options
                 'options'  => array(
                     '1' => 'Opt 1',
@@ -1013,17 +1013,17 @@
             array(
                 'id'       => 'opt-select-stylesheet',
                 'type'     => 'select',
-                'title'    => __( 'Theme Stylesheet', 'lift-theme-options' ),
-                'subtitle' => __( 'Select your themes alternative color scheme.', 'lift-theme-options' ),
+                'title'    => __( 'Theme Stylesheet', 'wow-theme-options' ),
+                'subtitle' => __( 'Select your themes alternative color scheme.', 'wow-theme-options' ),
                 'options'  => array( 'default.css' => 'default.css', 'color1.css' => 'color1.css' ),
                 'default'  => 'default.css',
             ),
             array(
                 'id'       => 'opt-select-optgroup',
                 'type'     => 'select',
-                'title'    => __( 'Select Option with optgroup', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Select Option with optgroup', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 //Must provide key => value pairs for select options
                 'options'  => array(
                     'Group 1' => array(
@@ -1046,9 +1046,9 @@
                 'id'       => 'opt-multi-select',
                 'type'     => 'select',
                 'multi'    => true,
-                'title'    => __( 'Multi Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Multi Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 //Must provide key => value pairs for radio options
                 'options'  => array(
                     '1' => 'Opt 1',
@@ -1061,92 +1061,92 @@
             array(
                 'id'   => 'opt-info',
                 'type' => 'info',
-                'desc' => __( 'You can easily add a variety of data from WordPress.', 'lift-theme-options' ),
+                'desc' => __( 'You can easily add a variety of data from WordPress.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-select-categories',
                 'type'     => 'select',
                 'data'     => 'categories',
-                'title'    => __( 'Categories Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Categories Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-select-categories-multi',
                 'type'     => 'select',
                 'data'     => 'categories',
                 'multi'    => true,
-                'title'    => __( 'Categories Multi Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Categories Multi Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-select-pages',
                 'type'     => 'select',
                 'data'     => 'pages',
-                'title'    => __( 'Pages Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Pages Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-multi-select-pages',
                 'type'     => 'select',
                 'data'     => 'pages',
                 'multi'    => true,
-                'title'    => __( 'Pages Multi Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Pages Multi Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-select-tags',
                 'type'     => 'select',
                 'data'     => 'tags',
-                'title'    => __( 'Tags Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Tags Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-multi-select-tags',
                 'type'     => 'select',
                 'data'     => 'tags',
                 'multi'    => true,
-                'title'    => __( 'Tags Multi Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Tags Multi Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-select-menus',
                 'type'     => 'select',
                 'data'     => 'menus',
-                'title'    => __( 'Menus Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Menus Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-multi-select-menus',
                 'type'     => 'select',
                 'data'     => 'menu',
                 'multi'    => true,
-                'title'    => __( 'Menus Multi Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Menus Multi Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-select-post-type',
                 'type'     => 'select',
                 'data'     => 'post_type',
-                'title'    => __( 'Post Type Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Post Type Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-multi-select-post-type',
                 'type'     => 'select',
                 'data'     => 'post_type',
                 'multi'    => true,
-                'title'    => __( 'Post Type Multi Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Post Type Multi Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-multi-select-sortable',
@@ -1154,75 +1154,75 @@
                 'data'     => 'post_type',
                 'multi'    => true,
                 'sortable' => true,
-                'title'    => __( 'Post Type Multi Select Option + Sortable', 'lift-theme-options' ),
-                'subtitle' => __( 'This field also has sortable enabled!', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Post Type Multi Select Option + Sortable', 'wow-theme-options' ),
+                'subtitle' => __( 'This field also has sortable enabled!', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-select-posts',
                 'type'     => 'select',
                 'data'     => 'post',
-                'title'    => __( 'Posts Select Option2', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Posts Select Option2', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-multi-select-posts',
                 'type'     => 'select',
                 'data'     => 'post',
                 'multi'    => true,
-                'title'    => __( 'Posts Multi Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Posts Multi Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-select-roles',
                 'type'     => 'select',
                 'data'     => 'roles',
-                'title'    => __( 'User Role Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'User Role Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-select-capabilities',
                 'type'     => 'select',
                 'data'     => 'capabilities',
                 'multi'    => true,
-                'title'    => __( 'Capabilities Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Capabilities Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-select-elusive',
                 'type'     => 'select',
                 'data'     => 'elusive-icons',
-                'title'    => __( 'Elusive Icons Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'Here\'s a list of all the elusive icons by name and icon.', 'lift-theme-options' ),
+                'title'    => __( 'Elusive Icons Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'Here\'s a list of all the elusive icons by name and icon.', 'wow-theme-options' ),
             ),
             array(
                 'id'       => 'opt-select-users',
                 'type'     => 'select',
                 'data'     => 'users',
-                'title'    => __( 'Users Select Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Users Select Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             ),
         )
     ) );
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Image Select', 'lift-theme-options' ),
+        'title'      => __( 'Image Select', 'wow-theme-options' ),
         'id'         => 'select-image_select',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/image-select/" target="_blank">docs.reduxframework.com/core/fields/image-select/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/image-select/" target="_blank">docs.reduxframework.com/core/fields/image-select/</a>',
         'subsection' => true,
         'fields'     => array(
 
             array(
                 'id'       => 'opt-image-select-layout',
                 'type'     => 'image_select',
-                'title'    => __( 'Images Option for Layout', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This uses some of the built in images, you can use them for layout options.', 'lift-theme-options' ),
+                'title'    => __( 'Images Option for Layout', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This uses some of the built in images, you can use them for layout options.', 'wow-theme-options' ),
                 //Must provide key => value(array:title|img) pairs for radio options
                 'options'  => array(
                     '1' => array(
@@ -1256,8 +1256,8 @@
                 'id'       => 'opt-patterns',
                 'type'     => 'image_select',
                 'tiles'    => true,
-                'title'    => __( 'Images Option (with tiles => true)', 'lift-theme-options' ),
-                'subtitle' => __( 'Select a background pattern.', 'lift-theme-options' ),
+                'title'    => __( 'Images Option (with tiles => true)', 'wow-theme-options' ),
+                'subtitle' => __( 'Select a background pattern.', 'wow-theme-options' ),
                 'default'  => 0,
                 'options'  => $lift_patterns
                 ,
@@ -1265,9 +1265,9 @@
             array(
                 'id'       => 'opt-image-select',
                 'type'     => 'image_select',
-                'title'    => __( 'Images Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Images Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 //Must provide key => value(array:title|img) pairs for radio options
                 'options'  => array(
                     '1' => array( 'title' => 'Opt 1', 'img' => 'images/align-none.png' ),
@@ -1282,10 +1282,10 @@
                 'type'       => 'image_select',
                 'presets'    => true,
                 'full_width' => true,
-                'title'      => __( 'Preset', 'lift-theme-options' ),
-                'subtitle'   => __( 'This allows you to set a json string or array to override multiple preferences in your theme.', 'lift-theme-options' ),
+                'title'      => __( 'Preset', 'wow-theme-options' ),
+                'subtitle'   => __( 'This allows you to set a json string or array to override multiple preferences in your theme.', 'wow-theme-options' ),
                 'default'    => 0,
-                'desc'       => __( 'This allows you to set a json string or array to override multiple preferences in your theme.', 'lift-theme-options' ),
+                'desc'       => __( 'This allows you to set a json string or array to override multiple preferences in your theme.', 'wow-theme-options' ),
                 'options'    => array(
                     '1' => array(
                         'alt'     => 'Preset 1',
@@ -1307,16 +1307,16 @@
     ) );
     
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Select Image', 'lift-theme-options' ),
+        'title'      => __( 'Select Image', 'wow-theme-options' ),
         'id'         => 'select-select_image',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/select-image/" target="_blank">docs.reduxframework.com/core/fields/select-image/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/select-image/" target="_blank">docs.reduxframework.com/core/fields/select-image/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'      => 'opt-select_image-field',
                 'type'    => 'select_image',
-                'title'   => __( 'Select Image', 'lift-theme-options' ),
-                'subtitle' => __( 'A preview of the selected image will appear underneath the select box.', 'lift-theme-options' ),
+                'title'   => __( 'Select Image', 'wow-theme-options' ),
+                'subtitle' => __( 'A preview of the selected image will appear underneath the select box.', 'wow-theme-options' ),
                 'options' => array(
                     array(
                         'alt' => 'Preset 1',
@@ -1333,8 +1333,8 @@
             array(
                 'id'       => 'opt-select-image',
                 'type'     => 'select_image',
-                'title'    => __( 'Select Image', 'lift-theme-options' ),
-                'subtitle' => __( 'A preview of the selected image will appear underneath the select box.', 'lift-theme-options' ),
+                'title'    => __( 'Select Image', 'wow-theme-options' ),
+                'subtitle' => __( 'A preview of the selected image will appear underneath the select box.', 'wow-theme-options' ),
                 'options'  => $lift_patterns,
                 'default'  => ReduxFramework::$_url . '../lift/patterns/triangular.png',
             ),
@@ -1343,24 +1343,24 @@
 
     // -> START Slider / Spinner
     Redux::setSection( $opt_name, array(
-        'title' => __( 'Slider / Spinner', 'lift-theme-options' ),
+        'title' => __( 'Slider / Spinner', 'wow-theme-options' ),
         'id'    => 'slider_spinner',
-        'desc'  => __( '', 'lift-theme-options' ),
+        'desc'  => __( '', 'wow-theme-options' ),
         'icon'  => 'el el-adjust-alt'
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Slider', 'lift-theme-options' ),
+        'title'      => __( 'Slider', 'wow-theme-options' ),
         'id'         => 'slider_spinner-slider',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/slider/" target="_blank">docs.reduxframework.com/core/fields/slider/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/slider/" target="_blank">docs.reduxframework.com/core/fields/slider/</a>',
         'fields'     => array(
 
             array(
                 'id'            => 'opt-slider-label',
                 'type'          => 'slider',
-                'title'         => __( 'Slider Example 1', 'lift-theme-options' ),
-                'subtitle'      => __( 'This slider displays the value as a label.', 'lift-theme-options' ),
-                'desc'          => __( 'Slider description. Min: 1, max: 500, step: 1, default value: 250', 'lift-theme-options' ),
+                'title'         => __( 'Slider Example 1', 'wow-theme-options' ),
+                'subtitle'      => __( 'This slider displays the value as a label.', 'wow-theme-options' ),
+                'desc'          => __( 'Slider description. Min: 1, max: 500, step: 1, default value: 250', 'wow-theme-options' ),
                 'default'       => 250,
                 'min'           => 1,
                 'step'          => 1,
@@ -1370,9 +1370,9 @@
             array(
                 'id'            => 'opt-slider-text',
                 'type'          => 'slider',
-                'title'         => __( 'Slider Example 2 with Steps (5)', 'lift-theme-options' ),
-                'subtitle'      => __( 'This example displays the value in a text box', 'lift-theme-options' ),
-                'desc'          => __( 'Slider description. Min: 0, max: 300, step: 5, default value: 75', 'lift-theme-options' ),
+                'title'         => __( 'Slider Example 2 with Steps (5)', 'wow-theme-options' ),
+                'subtitle'      => __( 'This example displays the value in a text box', 'wow-theme-options' ),
+                'desc'          => __( 'Slider description. Min: 0, max: 300, step: 5, default value: 75', 'wow-theme-options' ),
                 'default'       => 75,
                 'min'           => 0,
                 'step'          => 5,
@@ -1382,9 +1382,9 @@
             array(
                 'id'            => 'opt-slider-select',
                 'type'          => 'slider',
-                'title'         => __( 'Slider Example 3 with two sliders', 'lift-theme-options' ),
-                'subtitle'      => __( 'This example displays the values in select boxes', 'lift-theme-options' ),
-                'desc'          => __( 'Slider description. Min: 0, max: 500, step: 5, slider 1 default value: 100, slider 2 default value: 300', 'lift-theme-options' ),
+                'title'         => __( 'Slider Example 3 with two sliders', 'wow-theme-options' ),
+                'subtitle'      => __( 'This example displays the values in select boxes', 'wow-theme-options' ),
+                'desc'          => __( 'Slider description. Min: 0, max: 500, step: 5, slider 1 default value: 100, slider 2 default value: 300', 'wow-theme-options' ),
                 'default'       => array(
                     1 => 100,
                     2 => 300,
@@ -1398,9 +1398,9 @@
             array(
                 'id'            => 'opt-slider-float',
                 'type'          => 'slider',
-                'title'         => __( 'Slider Example 4 with float values', 'lift-theme-options' ),
-                'subtitle'      => __( 'This example displays float values', 'lift-theme-options' ),
-                'desc'          => __( 'Slider description. Min: 0, max: 1, step: .1, default value: .5', 'lift-theme-options' ),
+                'title'         => __( 'Slider Example 4 with float values', 'wow-theme-options' ),
+                'subtitle'      => __( 'This example displays float values', 'wow-theme-options' ),
+                'desc'          => __( 'Slider description. Min: 0, max: 1, step: .1, default value: .5', 'wow-theme-options' ),
                 'default'       => .5,
                 'min'           => 0,
                 'step'          => .1,
@@ -1414,16 +1414,16 @@
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Spinner', 'lift-theme-options' ),
+        'title'      => __( 'Spinner', 'wow-theme-options' ),
         'id'         => 'slider_spinner-spinner',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/spinner/" target="_blank">docs.reduxframework.com/core/fields/spinner/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/spinner/" target="_blank">docs.reduxframework.com/core/fields/spinner/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'      => 'opt-spinner',
                 'type'    => 'spinner',
-                'title'   => __( 'JQuery UI Spinner Example 1', 'lift-theme-options' ),
-                'desc'    => __( 'JQuery UI spinner description. Min:20, max: 100, step:20, default value: 40', 'lift-theme-options' ),
+                'title'   => __( 'JQuery UI Spinner Example 1', 'wow-theme-options' ),
+                'desc'    => __( 'JQuery UI spinner description. Min:20, max: 100, step:20, default value: 40', 'wow-theme-options' ),
                 'default' => '40',
                 'min'     => '20',
                 'step'    => '20',
@@ -1434,16 +1434,16 @@
 
     // -> START Typography
     Redux::setSection( $opt_name, array(
-        'title'  => __( 'Typography', 'lift-theme-options' ),
+        'title'  => __( 'Typography', 'wow-theme-options' ),
         'id'     => 'typography',
-        'desc'   => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/typography/" target="_blank">docs.reduxframework.com/core/fields/typography/</a>',
+        'desc'   => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/typography/" target="_blank">docs.reduxframework.com/core/fields/typography/</a>',
         'icon'   => 'el el-font',
         'fields' => array(
             array(
                 'id'       => 'opt-typography-body',
                 'type'     => 'typography',
-                'title'    => __( 'Body Font', 'lift-theme-options' ),
-                'subtitle' => __( 'Specify the body font properties.', 'lift-theme-options' ),
+                'title'    => __( 'Body Font', 'wow-theme-options' ),
+                'subtitle' => __( 'Specify the body font properties.', 'wow-theme-options' ),
                 'google'   => true,
                 'output' => array('h1, h2, h3, h4'),
                 'default'  => array(
@@ -1456,7 +1456,7 @@
             array(
                 'id'          => 'opt-typography',
                 'type'        => 'typography',
-                'title'       => __( 'Typography h2.site-description', 'lift-theme-options' ),
+                'title'       => __( 'Typography h2.site-description', 'wow-theme-options' ),
                 //'compiler'      => true,  // Use if you want to hook in your own CSS compiler
                 //'google'      => false,
                 // Disable google fonts. Won't work if you haven't defined your google api key
@@ -1478,7 +1478,7 @@
                 // An array of CSS selectors to apply this font style to dynamically
                 'units'       => 'px',
                 // Defaults to px
-                'subtitle'    => __( 'Typography option with each property can be called individually.', 'lift-theme-options' ),
+                'subtitle'    => __( 'Typography option with each property can be called individually.', 'wow-theme-options' ),
                 'default'     => array(
                     'color'       => '#333',
                     'font-style'  => '700',
@@ -1493,17 +1493,17 @@
 
     // -> START Additional Types
     Redux::setSection( $opt_name, array(
-        'title' => __( 'Additional Types', 'lift-theme-options' ),
+        'title' => __( 'Additional Types', 'wow-theme-options' ),
         'id'    => 'additional',
-        'desc'  => __( '', 'lift-theme-options' ),
+        'desc'  => __( '', 'wow-theme-options' ),
         'icon'  => 'el el-magic',
         //'fields' => array(
         //    array(
         //        'id'              => 'opt-customizer-only-in-section',
         //        'type'            => 'select',
-        //        'title'           => __( 'Customizer Only Option', 'lift-theme-options' ),
-        //        'subtitle'        => __( 'The subtitle is NOT visible in customizer', 'lift-theme-options' ),
-        //        'desc'            => __( 'The field desc is NOT visible in customizer.', 'lift-theme-options' ),
+        //        'title'           => __( 'Customizer Only Option', 'wow-theme-options' ),
+        //        'subtitle'        => __( 'The subtitle is NOT visible in customizer', 'wow-theme-options' ),
+        //        'desc'            => __( 'The field desc is NOT visible in customizer.', 'wow-theme-options' ),
         //        'customizer_only' => true,
         //        //Must provide key => value pairs for select options
         //        'options'         => array(
@@ -1517,25 +1517,25 @@
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Date', 'lift-theme-options' ),
+        'title'      => __( 'Date', 'wow-theme-options' ),
         'id'         => 'additional-date',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/date/" target="_blank">docs.reduxframework.com/core/fields/date/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/date/" target="_blank">docs.reduxframework.com/core/fields/date/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-datepicker',
                 'type'     => 'date',
-                'title'    => __( 'Date Option', 'lift-theme-options' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' )
+                'title'    => __( 'Date Option', 'wow-theme-options' ),
+                'subtitle' => __( 'No validation can be done on this field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' )
             ),
         ),
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Sorter', 'lift-theme-options' ),
+        'title'      => __( 'Sorter', 'wow-theme-options' ),
         'id'         => 'additional-sorter',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/sorter/" target="_blank">docs.reduxframework.com/core/fields/sorter/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/sorter/" target="_blank">docs.reduxframework.com/core/fields/sorter/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
@@ -1581,49 +1581,49 @@
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Raw', 'lift-theme-options' ),
+        'title'      => __( 'Raw', 'wow-theme-options' ),
         'id'         => 'additional-raw',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/raw/" target="_blank">docs.reduxframework.com/core/fields/raw/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/raw/" target="_blank">docs.reduxframework.com/core/fields/raw/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-raw_info_4',
                 'type'     => 'raw',
-                'title'    => __( 'Standard Raw Field', 'lift-theme-options' ),
-                'subtitle' => __( 'Subtitle', 'lift-theme-options' ),
-                'desc'     => __( 'Description', 'lift-theme-options' ),
+                'title'    => __( 'Standard Raw Field', 'wow-theme-options' ),
+                'subtitle' => __( 'Subtitle', 'wow-theme-options' ),
+                'desc'     => __( 'Description', 'wow-theme-options' ),
                 'content'  => $liftHTML,
             ),
             array(
                 'id'         => 'opt-raw_info_5',
                 'type'       => 'raw',
                 'full_width' => false,
-                'title'      => __( 'Raw Field <code>full_width</code> False', 'lift-theme-options' ),
-                'subtitle'   => __( 'Subtitle', 'lift-theme-options' ),
-                'desc'       => __( 'Description', 'lift-theme-options' ),
+                'title'      => __( 'Raw Field <code>full_width</code> False', 'wow-theme-options' ),
+                'subtitle'   => __( 'Subtitle', 'wow-theme-options' ),
+                'desc'       => __( 'Description', 'wow-theme-options' ),
                 'content'    => $liftHTML,
             ),
         )
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title' => __( 'Advanced Features', 'lift-theme-options' ),
+        'title' => __( 'Advanced Features', 'wow-theme-options' ),
         'icon'  => 'el el-thumbs-up',
         // 'submenu' => false, // Setting submenu to false on a given section will hide it from the WordPress sidebar menu!
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Callback', 'lift-theme-options' ),
+        'title'      => __( 'Callback', 'wow-theme-options' ),
         'id'         => 'additional-callback',
-        'desc'       => __( 'For full documentation on this field, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/callback/" target="_blank">docs.reduxframework.com/core/fields/callback/</a>',
+        'desc'       => __( 'For full documentation on this field, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/fields/callback/" target="_blank">docs.reduxframework.com/core/fields/callback/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-custom-callback',
                 'type'     => 'callback',
-                'title'    => __( 'Custom Field Callback', 'lift-theme-options' ),
-                'subtitle' => __( 'This is a completely unique field type', 'lift-theme-options' ),
-                'desc'     => __( 'This is created with a callback function, so anything goes in this field. Make sure to define the function though.', 'lift-theme-options' ),
+                'title'    => __( 'Custom Field Callback', 'wow-theme-options' ),
+                'subtitle' => __( 'This is a completely unique field type', 'wow-theme-options' ),
+                'desc'     => __( 'This is created with a callback function, so anything goes in this field. Make sure to define the function though.', 'wow-theme-options' ),
                 'callback' => 'redux_my_custom_field'
             ),
         )
@@ -1631,17 +1631,17 @@
 
     // -> START Validation
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Field Validation', 'lift-theme-options' ),
+        'title'      => __( 'Field Validation', 'wow-theme-options' ),
         'id'         => 'validation',
-        'desc'       => __( 'For full documentation on validation, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/the-basics/validation/" target="_blank">docs.reduxframework.com/core/the-basics/validation/</a>',
+        'desc'       => __( 'For full documentation on validation, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/the-basics/validation/" target="_blank">docs.reduxframework.com/core/the-basics/validation/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
                 'id'       => 'opt-text-email',
                 'type'     => 'text',
-                'title'    => __( 'Text Option - Email Validated', 'lift-theme-options' ),
-                'subtitle' => __( 'This is a little space under the Field Title in the Options table, additional info is good in here.', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Text Option - Email Validated', 'wow-theme-options' ),
+                'subtitle' => __( 'This is a little space under the Field Title in the Options table, additional info is good in here.', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'validate' => 'email',
                 'msg'      => 'custom error message',
                 'default'  => 'test@test.com',
@@ -1649,61 +1649,61 @@
             array(
                 'id'       => 'opt-text-post-type',
                 'type'     => 'text',
-                'title'    => __( 'Text Option with Data Attributes', 'lift-theme-options' ),
-                'subtitle' => __( 'You can also pass an options array if you want. Set the default to whatever you like.', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Text Option with Data Attributes', 'wow-theme-options' ),
+                'subtitle' => __( 'You can also pass an options array if you want. Set the default to whatever you like.', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'data'     => 'post_type',
             ),
             array(
                 'id'       => 'opt-multi-text',
                 'type'     => 'multi_text',
-                'title'    => __( 'Multi Text Option - Color Validated', 'lift-theme-options' ),
+                'title'    => __( 'Multi Text Option - Color Validated', 'wow-theme-options' ),
                 'validate' => 'color',
-                'subtitle' => __( 'If you enter an invalid color it will be removed. Try using the text "blue" as a color.  ;)', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' )
+                'subtitle' => __( 'If you enter an invalid color it will be removed. Try using the text "blue" as a color.  ;)', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' )
             ),
             array(
                 'id'       => 'opt-text-url',
                 'type'     => 'text',
-                'title'    => __( 'Text Option - URL Validated', 'lift-theme-options' ),
-                'subtitle' => __( 'This must be a URL.', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Text Option - URL Validated', 'wow-theme-options' ),
+                'subtitle' => __( 'This must be a URL.', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'validate' => 'url',
                 'default'  => 'http://reduxframework.com',
             ),
             array(
                 'id'       => 'opt-text-numeric',
                 'type'     => 'text',
-                'title'    => __( 'Text Option - Numeric Validated', 'lift-theme-options' ),
-                'subtitle' => __( 'This must be numeric.', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Text Option - Numeric Validated', 'wow-theme-options' ),
+                'subtitle' => __( 'This must be numeric.', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'validate' => 'numeric',
                 'default'  => '0',
             ),
             array(
                 'id'       => 'opt-text-comma-numeric',
                 'type'     => 'text',
-                'title'    => __( 'Text Option - Comma Numeric Validated', 'lift-theme-options' ),
-                'subtitle' => __( 'This must be a comma separated string of numerical values.', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Text Option - Comma Numeric Validated', 'wow-theme-options' ),
+                'subtitle' => __( 'This must be a comma separated string of numerical values.', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'validate' => 'comma_numeric',
                 'default'  => '0',
             ),
             array(
                 'id'       => 'opt-text-no-special-chars',
                 'type'     => 'text',
-                'title'    => __( 'Text Option - No Special Chars Validated', 'lift-theme-options' ),
-                'subtitle' => __( 'This must be a alpha numeric only.', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Text Option - No Special Chars Validated', 'wow-theme-options' ),
+                'subtitle' => __( 'This must be a alpha numeric only.', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'validate' => 'no_special_chars',
                 'default'  => '0'
             ),
             array(
                 'id'       => 'opt-text-str_replace',
                 'type'     => 'text',
-                'title'    => __( 'Text Option - Str Replace Validated', 'lift-theme-options' ),
-                'subtitle' => __( 'You decide.', 'lift-theme-options' ),
-                'desc'     => __( 'This field\'s default value was changed by a filter hook!', 'lift-theme-options' ),
+                'title'    => __( 'Text Option - Str Replace Validated', 'wow-theme-options' ),
+                'subtitle' => __( 'You decide.', 'wow-theme-options' ),
+                'desc'     => __( 'This field\'s default value was changed by a filter hook!', 'wow-theme-options' ),
                 'validate' => 'str_replace',
                 'str'      => array(
                     'search'      => ' ',
@@ -1714,9 +1714,9 @@
             array(
                 'id'       => 'opt-text-preg_replace',
                 'type'     => 'text',
-                'title'    => __( 'Text Option - Preg Replace Validated', 'lift-theme-options' ),
-                'subtitle' => __( 'You decide.', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Text Option - Preg Replace Validated', 'wow-theme-options' ),
+                'subtitle' => __( 'You decide.', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'validate' => 'preg_replace',
                 'preg'     => array(
                     'pattern'     => '/[^a-zA-Z_ -]/s',
@@ -1727,18 +1727,18 @@
             array(
                 'id'                => 'opt-text-custom_validate',
                 'type'              => 'text',
-                'title'             => __( 'Text Option - Custom Callback Validated', 'lift-theme-options' ),
-                'subtitle'          => __( 'You decide.', 'lift-theme-options' ),
-                'desc'              => __( 'Enter <code>1</code> and click <strong>Save Changes</strong> for an error message, or enter <code>2</code> and click <strong>Save Changes</strong> for a warning message.', 'lift-theme-options' ),
+                'title'             => __( 'Text Option - Custom Callback Validated', 'wow-theme-options' ),
+                'subtitle'          => __( 'You decide.', 'wow-theme-options' ),
+                'desc'              => __( 'Enter <code>1</code> and click <strong>Save Changes</strong> for an error message, or enter <code>2</code> and click <strong>Save Changes</strong> for a warning message.', 'wow-theme-options' ),
                 'validate_callback' => 'redux_validate_callback_function',
                 'default'           => '0'
             ),
             //array(
             //    'id'                => 'opt-text-custom_validate-class',
             //    'type'              => 'text',
-            //    'title'             => __( 'Text Option - Custom Callback Validated - Class', 'lift-theme-options' ),
-            //    'subtitle'          => __( 'You decide.', 'lift-theme-options' ),
-            //    'desc'              => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+            //    'title'             => __( 'Text Option - Custom Callback Validated - Class', 'wow-theme-options' ),
+            //    'subtitle'          => __( 'You decide.', 'wow-theme-options' ),
+            //    'desc'              => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
             //    'validate_callback' => array( 'Class_Name', 'validate_callback_function' ),
             //    // You can pass the current class
             //    // Or pass the class name and method
@@ -1751,27 +1751,27 @@
             array(
                 'id'       => 'opt-textarea-no-html',
                 'type'     => 'textarea',
-                'title'    => __( 'Textarea Option - No HTML Validated', 'lift-theme-options' ),
-                'subtitle' => __( 'All HTML will be stripped', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Textarea Option - No HTML Validated', 'wow-theme-options' ),
+                'subtitle' => __( 'All HTML will be stripped', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'validate' => 'no_html',
                 'default'  => 'No HTML is allowed in here.'
             ),
             array(
                 'id'       => 'opt-textarea-html',
                 'type'     => 'textarea',
-                'title'    => __( 'Textarea Option - HTML Validated', 'lift-theme-options' ),
-                'subtitle' => __( 'HTML Allowed (wp_kses)', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Textarea Option - HTML Validated', 'wow-theme-options' ),
+                'subtitle' => __( 'HTML Allowed (wp_kses)', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'validate' => 'html', //see http://codex.wordpress.org/Function_Reference/wp_kses_post
                 'default'  => 'HTML is allowed in here.'
             ),
             array(
                 'id'           => 'opt-textarea-some-html',
                 'type'         => 'textarea',
-                'title'        => __( 'Textarea Option - HTML Validated Custom', 'lift-theme-options' ),
-                'subtitle'     => __( 'Custom HTML Allowed (wp_kses)', 'lift-theme-options' ),
-                'desc'         => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'        => __( 'Textarea Option - HTML Validated Custom', 'wow-theme-options' ),
+                'subtitle'     => __( 'Custom HTML Allowed (wp_kses)', 'wow-theme-options' ),
+                'desc'         => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'validate'     => 'html_custom',
                 'default'      => '<p>Some HTML is allowed in here.</p>',
                 'allowed_html' => array(
@@ -1787,9 +1787,9 @@
             array(
                 'id'       => 'opt-textarea-js',
                 'type'     => 'textarea',
-                'title'    => __( 'Textarea Option - JS Validated', 'lift-theme-options' ),
-                'subtitle' => __( 'JS will be escaped', 'lift-theme-options' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'lift-theme-options' ),
+                'title'    => __( 'Textarea Option - JS Validated', 'wow-theme-options' ),
+                'subtitle' => __( 'JS will be escaped', 'wow-theme-options' ),
+                'desc'     => __( 'This is the description field, again good for additional info.', 'wow-theme-options' ),
                 'validate' => 'js'
             ),
         )
@@ -1797,9 +1797,9 @@
 
     // -> START Required
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'Field Required / Linking', 'lift-theme-options' ),
+        'title'      => __( 'Field Required / Linking', 'wow-theme-options' ),
         'id'         => 'required',
-        'desc'       => __( 'For full documentation on validation, visit: ', 'lift-theme-options' ) . '<a href="//docs.reduxframework.com/core/the-basics/required/" target="_blank">docs.reduxframework.com/core/the-basics/required/</a>',
+        'desc'       => __( 'For full documentation on validation, visit: ', 'wow-theme-options' ) . '<a href="//docs.reduxframework.com/core/the-basics/required/" target="_blank">docs.reduxframework.com/core/the-basics/required/</a>',
         'subsection' => true,
         'fields'     => array(
             array(
@@ -1903,22 +1903,22 @@
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'      => __( 'WPML Integration', 'lift-theme-options' ),
-        'desc'       => __( 'These fields can be fully translated by WPML (WordPress Multi-Language). This serves as an example for you to implement. For extra details look at our <a href="//docs.reduxframework.com/core/advanced/wpml-integration/" target="_blank">WPML Implementation</a> documentation.', 'lift-theme-options' ),
+        'title'      => __( 'WPML Integration', 'wow-theme-options' ),
+        'desc'       => __( 'These fields can be fully translated by WPML (WordPress Multi-Language). This serves as an example for you to implement. For extra details look at our <a href="//docs.reduxframework.com/core/advanced/wpml-integration/" target="_blank">WPML Implementation</a> documentation.', 'wow-theme-options' ),
         'subsection' => true,
         // 'submenu' => false, // Setting submenu to false on a given section will hide it from the WordPress sidebar menu!
         'fields'     => array(
             array(
                 'id'    => 'wpml-text',
                 'type'  => 'textarea',
-                'title' => __( 'WPML Text', 'lift-theme-options' ),
-                'desc'  => __( 'This string can be translated via WPML.', 'lift-theme-options' ),
+                'title' => __( 'WPML Text', 'wow-theme-options' ),
+                'desc'  => __( 'This string can be translated via WPML.', 'wow-theme-options' ),
             ),
             array(
                 'id'      => 'wpml-multicheck',
                 'type'    => 'checkbox',
-                'title'   => __( 'WPML Multi Checkbox', 'lift-theme-options' ),
-                'desc'    => __( 'You can literally translate the values via key.', 'lift-theme-options' ),
+                'title'   => __( 'WPML Multi Checkbox', 'wow-theme-options' ),
+                'desc'    => __( 'You can literally translate the values via key.', 'wow-theme-options' ),
                 //Must provide key => value pairs for multi checkbox options
                 'options' => array(
                     '1' => 'Option 1',
@@ -1931,16 +1931,16 @@
 
     Redux::setSection( $opt_name, array(
         'icon'            => 'el el-list-alt',
-        'title'           => __( 'Customizer Only', 'lift-theme-options' ),
-        'desc'            => __( '<p class="description">This Section should be visible only in Customizer</p>', 'lift-theme-options' ),
+        'title'           => __( 'Customizer Only', 'wow-theme-options' ),
+        'desc'            => __( '<p class="description">This Section should be visible only in Customizer</p>', 'wow-theme-options' ),
         'customizer_only' => true,
         'fields'          => array(
             array(
                 'id'              => 'opt-customizer-only',
                 'type'            => 'select',
-                'title'           => __( 'Customizer Only Option', 'lift-theme-options' ),
-                'subtitle'        => __( 'The subtitle is NOT visible in customizer', 'lift-theme-options' ),
-                'desc'            => __( 'The field desc is NOT visible in customizer.', 'lift-theme-options' ),
+                'title'           => __( 'Customizer Only Option', 'wow-theme-options' ),
+                'subtitle'        => __( 'The subtitle is NOT visible in customizer', 'wow-theme-options' ),
+                'desc'            => __( 'The field desc is NOT visible in customizer.', 'wow-theme-options' ),
                 'customizer_only' => true,
                 //Must provide key => value pairs for select options
                 'options'         => array(
@@ -2055,8 +2055,8 @@
         function dynamic_section( $sections ) {
             //$sections = array();
             $sections[] = array(
-                'title'  => __( 'Section via hook', 'lift-theme-options' ),
-                'desc'   => __( '<p class="description">This is a section created by adding a filter to the sections array. Can be used by child themes to add/remove sections from the options.</p>', 'lift-theme-options' ),
+                'title'  => __( 'Section via hook', 'wow-theme-options' ),
+                'desc'   => __( '<p class="description">This is a section created by adding a filter to the sections array. Can be used by child themes to add/remove sections from the options.</p>', 'wow-theme-options' ),
                 'icon'   => 'el el-paper-clip',
                 // Leave this as a blank section, no options just some intro text set above.
                 'fields' => array()

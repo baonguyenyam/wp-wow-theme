@@ -153,7 +153,7 @@ header.site-header {
 				&.current-menu-item {
 					> a, 
 					> .nav-link {
-						color: var(--lift-theme-main)
+						color: var(--wow-theme-main)
 					}
 				}
 			}
@@ -247,7 +247,7 @@ header#header .navbar.navbar-expand-all {
 							align-items: center;
 							padding: .25rem 1rem;
 							&:hover {
-								background-color: var(--lift-theme-light)
+								background-color: var(--wow-theme-light)
 							}
 						}
 					}
@@ -283,7 +283,7 @@ header#header .navbar.navbar-expand-all {
 							display: inline-block;
 							height: .5em;
 							width: .5em;
-							box-shadow: 2px -2px 0 0 $lift-theme-gray inset;
+							box-shadow: 2px -2px 0 0 $wow-theme-gray inset;
 							transform: rotate(-45deg) translateY(calc(-50% - .25em));
 							position: absolute;
 							right: .25em;
@@ -301,7 +301,7 @@ header#header .navbar.navbar-expand-all {
 								display: inline-block;
 								height: .5em;
 								width: .5em;
-								box-shadow: 2px -2px 0 0 $lift-theme-gray inset;
+								box-shadow: 2px -2px 0 0 $wow-theme-gray inset;
 								transform: rotate(225deg) translateY(.35em);
 								position: absolute;
 								right: 1em;
@@ -321,7 +321,7 @@ header#header .navbar.navbar-expand-all {
 				&.current-menu-item {
 					> a, 
 					> .nav-link {
-						color: var(--lift-theme-main)
+						color: var(--wow-theme-main)
 					}
 				}
 			}

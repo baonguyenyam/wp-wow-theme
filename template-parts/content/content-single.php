@@ -4,21 +4,21 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
-global $lift_theme;
-$layout_style = $lift_theme['lift-theme-layout-style'];
-$post_sidebar = $lift_theme['lift-theme-blog-style-sidebar'];
-$post_sidebar_position = $lift_theme['lift-theme-blog-style-sidebar-position'];
-$post_sidebar_content_columns = isset($lift_theme['lift-theme-blog-style-content-columns']) ? $lift_theme['lift-theme-blog-style-content-columns'] : 'col-xl-8 col-xxl-9';
-$post_sidebar_columns = isset($lift_theme['lift-theme-blog-style-sidebar-columns']) ? $lift_theme['lift-theme-blog-style-sidebar-columns'] : 'col-xl-4 col-xxl-3';
-$post_post_thumbnail = $lift_theme['lift-theme-blog-style-content-thumbnail'];
-$post_post_nextprev = $lift_theme['lift-theme-blog-style-content-nextprev'];
-$post_post_breadcrumb = $lift_theme['lift-theme-blog-style-breadcrumb'];
+global $wow_theme;
+$layout_style = $wow_theme['wow-theme-layout-style'];
+$post_sidebar = $wow_theme['wow-theme-blog-style-sidebar'];
+$post_sidebar_position = $wow_theme['wow-theme-blog-style-sidebar-position'];
+$post_sidebar_content_columns = isset($wow_theme['wow-theme-blog-style-content-columns']) ? $wow_theme['wow-theme-blog-style-content-columns'] : 'col-xl-8 col-xxl-9';
+$post_sidebar_columns = isset($wow_theme['wow-theme-blog-style-sidebar-columns']) ? $wow_theme['wow-theme-blog-style-sidebar-columns'] : 'col-xl-4 col-xxl-3';
+$post_post_thumbnail = $wow_theme['wow-theme-blog-style-content-thumbnail'];
+$post_post_nextprev = $wow_theme['wow-theme-blog-style-content-nextprev'];
+$post_post_breadcrumb = $wow_theme['wow-theme-blog-style-breadcrumb'];
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -49,10 +49,10 @@ $post_post_breadcrumb = $lift_theme['lift-theme-blog-style-breadcrumb'];
 
 						wp_link_pages(
 							array(
-								'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'wp-lift-theme' ) . '">',
+								'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'wp-wow-theme' ) . '">',
 								'after'    => '</nav>',
 								/* translators: %: Page number. */
-								'pagelink' => esc_html__( 'Page %', 'wp-lift-theme' ),
+								'pagelink' => esc_html__( 'Page %', 'wp-wow-theme' ),
 							)
 						);
 						?>
@@ -72,7 +72,7 @@ $post_post_breadcrumb = $lift_theme['lift-theme-blog-style-breadcrumb'];
 							the_post_navigation(
 								array(
 									/* translators: %s: Parent post link. */
-									'prev_text' => sprintf( __( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'wp-lift-theme' ), '%title' ),
+									'prev_text' => sprintf( __( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'wp-wow-theme' ), '%title' ),
 								)
 							);
 						}
@@ -84,18 +84,18 @@ $post_post_breadcrumb = $lift_theme['lift-theme-blog-style-breadcrumb'];
 					
 						if(!isset($post_post_nextprev) || $post_post_nextprev === '0' || $post_post_nextprev == 0){
 							// Previous/next post navigation.
-							$lift_theme_next = is_rtl() ? lift_get_icon_svg( 'ui', 'arrow_left' ) : lift_get_icon_svg( 'ui', 'arrow_right' );
-							$lift_theme_prev = is_rtl() ? lift_get_icon_svg( 'ui', 'arrow_right' ) : lift_get_icon_svg( 'ui', 'arrow_left' );
+							$wow_theme_next = is_rtl() ? lift_get_icon_svg( 'ui', 'arrow_left' ) : lift_get_icon_svg( 'ui', 'arrow_right' );
+							$wow_theme_prev = is_rtl() ? lift_get_icon_svg( 'ui', 'arrow_right' ) : lift_get_icon_svg( 'ui', 'arrow_left' );
 						
-							$lift_theme_next_label     = esc_html__( 'Next post', 'wp-lift-theme' );
-							$lift_theme_previous_label = esc_html__( 'Previous post', 'wp-lift-theme' );
+							$wow_theme_next_label     = esc_html__( 'Next post', 'wp-wow-theme' );
+							$wow_theme_previous_label = esc_html__( 'Previous post', 'wp-wow-theme' );
 						
 							the_post_navigation(
 								array(
 									'class'				 => 'lift-pagination',
 									'type'				 => 'list',
-									'next_text' => '<p class="meta-nav">' . $lift_theme_next_label . $lift_theme_next . '</p><p class="post-title">%title</p>',
-									'prev_text' => '<p class="meta-nav">' . $lift_theme_prev . $lift_theme_previous_label . '</p><p class="post-title">%title</p>',
+									'next_text' => '<p class="meta-nav">' . $wow_theme_next_label . $wow_theme_next . '</p><p class="post-title">%title</p>',
+									'prev_text' => '<p class="meta-nav">' . $wow_theme_prev . $wow_theme_previous_label . '</p><p class="post-title">%title</p>',
 								)
 							);
 						}

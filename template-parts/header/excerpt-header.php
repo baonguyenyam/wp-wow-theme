@@ -2,9 +2,9 @@
 /**
  * Displays the post header
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
@@ -13,8 +13,8 @@ $post_format = get_post_format();
 if ( 'aside' === $post_format || 'status' === $post_format ) {
 	return;
 }
-global $lift_theme;
-$layout_style = $lift_theme['lift-theme-layout-style'];
+global $wow_theme;
+$layout_style = $wow_theme['wow-theme-layout-style'];
 ?>
 
 <header class="entry-header">

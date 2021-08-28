@@ -2,9 +2,9 @@
 /**
  * Customizer settings for this theme.
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
@@ -83,7 +83,7 @@ if ( ! class_exists( 'LIFT_Theme_Customize' ) ) {
 				array(
 					'type'    => 'checkbox',
 					'section' => 'title_tagline',
-					'label'   => esc_html__( 'Display Site Title & Tagline', 'wp-lift-theme' ),
+					'label'   => esc_html__( 'Display Site Title & Tagline', 'wp-wow-theme' ),
 				)
 			);
 
@@ -93,7 +93,7 @@ if ( ! class_exists( 'LIFT_Theme_Customize' ) ) {
 			// $wp_customize->add_section(
 			// 	'excerpt_settings',
 			// 	array(
-			// 		'title'    => esc_html__( 'Excerpt Settings', 'wp-lift-theme' ),
+			// 		'title'    => esc_html__( 'Excerpt Settings', 'wp-wow-theme' ),
 			// 		'priority' => 120,
 			// 	)
 			// );
@@ -114,10 +114,10 @@ if ( ! class_exists( 'LIFT_Theme_Customize' ) ) {
 			// 	array(
 			// 		'type'    => 'radio',
 			// 		'section' => 'excerpt_settings',
-			// 		'label'   => esc_html__( 'On Archive Pages, posts show:', 'wp-lift-theme' ),
+			// 		'label'   => esc_html__( 'On Archive Pages, posts show:', 'wp-wow-theme' ),
 			// 		'choices' => array(
-			// 			'excerpt' => esc_html__( 'Summary', 'wp-lift-theme' ),
-			// 			'full'    => esc_html__( 'Full text', 'wp-lift-theme' ),
+			// 			'excerpt' => esc_html__( 'Summary', 'wp-wow-theme' ),
+			// 			'full'    => esc_html__( 'Full text', 'wp-wow-theme' ),
 			// 		),
 			// 	)
 			// );
@@ -146,7 +146,7 @@ if ( ! class_exists( 'LIFT_Theme_Customize' ) ) {
 			// 		$wp_customize,
 			// 		'background_color',
 			// 		array(
-			// 			'label'   => esc_html_x( 'Background color', 'Customizer control', 'wp-lift-theme' ),
+			// 			'label'   => esc_html_x( 'Background color', 'Customizer control', 'wp-wow-theme' ),
 			// 			'section' => 'colors',
 			// 			'palette' => $colors,
 			// 		)

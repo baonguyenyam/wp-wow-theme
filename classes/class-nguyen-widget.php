@@ -28,7 +28,7 @@ class lift_Social_Widget extends WP_Widget {
             echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
         }
         echo '<ul class="socialwidget">';
-        // echo esc_html__( $instance['select'], 'wp-lift-theme' );
+        // echo esc_html__( $instance['select'], 'wp-wow-theme' );
         echo '</ul>';
         echo $args['after_widget'];
  
@@ -36,15 +36,15 @@ class lift_Social_Widget extends WP_Widget {
  
     public function form( $instance ) {
  
-        $title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( '', 'wp-lift-theme' );
-        $select = ! empty( $instance['select'] ) ? $instance['select'] : esc_html__( '', 'wp-lift-theme' );
+        $title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( '', 'wp-wow-theme' );
+        $select = ! empty( $instance['select'] ) ? $instance['select'] : esc_html__( '', 'wp-wow-theme' );
         ?>
         <p>
-        <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php echo esc_html__( 'Title:', 'wp-lift-theme' ); ?></label>
+        <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php echo esc_html__( 'Title:', 'wp-wow-theme' ); ?></label>
             <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
         </p>
         <p>
-            <label for="<?php echo esc_attr( $this->get_field_id( 'Select' ) ); ?>"><?php echo esc_html__( 'Select:', 'wp-lift-theme' ); ?></label>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'Select' ) ); ?>"><?php echo esc_html__( 'Select:', 'wp-wow-theme' ); ?></label>
             <select class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'select' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'select' ) ); ?>"><?php echo esc_attr( $select ); ?></select>
         </p>
         <?php

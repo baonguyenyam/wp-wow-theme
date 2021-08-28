@@ -1,10 +1,10 @@
 {
 	"config": {
 		"SEO": {
-			"AppName": "LIFT Creations",
+			"AppName": "WOW WordPress",
 			"mobile_color": "#e9087f",
-			"cfg_name": "LIFT Marketing",
-			"cfg_url": "liftcreations.com",
+			"cfg_name": "WOW WordPress",
+			"cfg_url": "wow-wp.com",
 			"analytics": "UA-XXXXXXXXXXX-1",
 			"seo_lang": "en",
 			"seo_geo": "EN",
@@ -23,7 +23,7 @@
 			"verf_yandex": "bc82adfacdd74cbf"
 		},
 		"favicondist": "./favicon/",
-		"website": "liftcreations.com",
+		"website": "wow-wp.com",
 		"title": "by Nguyen Pham",
 		"author": {
 			"email": "baonguyenyam@gmail.com",

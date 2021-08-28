@@ -11,13 +11,13 @@ Quickly design and customize responsive mobile-first sites with Bootstrap, the w
 
 https://getbootstrap.com/
 
-## LIFT's Guidelines 
+## WOW WordPress's Guidelines 
 
 LIFT's website design and development guidelines
 
 https://docs.myseo.website/
 
-## LIFT SEO Tool
+## SEO Tools
 
 Improve your SEO Performance so you can Rank Higher and Faster
 

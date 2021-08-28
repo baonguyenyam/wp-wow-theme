@@ -1,14 +1,14 @@
 <?php
 /**
-* @package LIFT Creations 
+* @package WOW WordPress 
 * @subpackage Theme by Nguyen Pham
-* https://baonguyenyam.github.io/cv
+* https://baonguyenyam.github.io
 * @since 2021
 */
 
-add_action( 'tgmpa_register', 'lift_theme_options_register_required_plugins' );
+add_action( 'tgmpa_register', 'wow_theme_options_register_required_plugins' );
 
-function lift_theme_options_register_required_plugins() {
+function wow_theme_options_register_required_plugins() {
 	/*
 	 * Array of plugin arrays. Required keys are name and slug.
 	 * If the source is NOT from the .org repo, then source is also required.
@@ -17,58 +17,69 @@ function lift_theme_options_register_required_plugins() {
 
 		// This is an example of how to include a plugin bundled with a theme.
 		array(
-			'name'               => 'LIFT Core', // The plugin name.
-			'slug'               => 'wp-lift-core', // The plugin slug (typically the folder name).
-			'source'             => get_template_directory() . '/plugins/wp-lift-core.zip', // The plugin source.
-			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-			'version'            => '2.7.3', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
-			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
-			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-			'external_url'       => 'https://github.com/nguyen-wp/wp-lift-core', // If set, overrides default API URL and points to an external URL.
-			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
-		),
-		array(
-			'name'               => 'LIFT Addons for Visual Composer', // The plugin name.
-			'slug'               => 'wp-lift-vc-addon', // The plugin slug (typically the folder name).
-			'source'             => get_template_directory() . '/plugins/wp-lift-vc-addon.zip', // The plugin source.
-			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-			'version'            => '5.2.3', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
-			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
-			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-			'external_url'       => 'https://github.com/nguyen-wp/wp-lift-vc-addon', // If set, overrides default API URL and points to an external URL.
-			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
-		),
-		array(
-			'name'               => 'LIFT Blocks', // The plugin name.
-			'slug'               => 'wp-lift-blocks', // The plugin slug (typically the folder name).
-			'source'             => get_template_directory() . '/plugins/wp-lift-blocks.zip', // The plugin source.
+			'name'               => 'WOW Best WP Lightweight', // The plugin name.
+			'slug'               => 'wp-best-wp-lightweight', // The plugin slug (typically the folder name).
+			'source'             => get_template_directory() . '/plugins/wp-best-wp-lightweight.zip', // The plugin source.
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 			'version'            => '1.0.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
 			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
 			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-			'external_url'       => 'https://github.com/nguyen-wp/wp-lift-blocks', // If set, overrides default API URL and points to an external URL.
+			'external_url'       => 'https://github.com/baonguyenyam/wp-best-wp-lightweight', // If set, overrides default API URL and points to an external URL.
 			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
 		),
 		array(
-			'name'               => 'LIFT CleanUp', // The plugin name.
-			'slug'               => 'wp-lift-cleanup', // The plugin slug (typically the folder name).
-			'source'             => get_template_directory() . '/plugins/wp-lift-cleanup.zip', // The plugin source.
+			'name'               => 'WOW Best WP Blocks', // The plugin name.
+			'slug'               => 'wp-best-wp-blocks', // The plugin slug (typically the folder name).
+			'source'             => get_template_directory() . '/plugins/wp-best-wp-blocks.zip', // The plugin source.
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-			'version'            => '2.1.3', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'version'            => '1.0.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
 			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
 			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-			'external_url'       => 'https://github.com/nguyen-wp/wp-lift-cleanup', // If set, overrides default API URL and points to an external URL.
+			'external_url'       => 'https://github.com/baonguyenyam/wp-best-wp-blocks', // If set, overrides default API URL and points to an external URL.
 			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
 		),
 		array(
-			'name'               => 'LIFT Chat', // The plugin name.
-			'slug'               => 'wp-lift-chat', // The plugin slug (typically the folder name).
-			'source'             => get_template_directory() . '/plugins/wp-lift-chat.zip', // The plugin source.
-			'required'           => false, // If false, the plugin is only 'recommended' instead of required.
-			'version'            => '2.2.5', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'name'               => 'WOW Addons for Visual Composer', // The plugin name.
+			'slug'               => 'wp-wow-wp-vc-addon', // The plugin slug (typically the folder name).
+			'source'             => get_template_directory() . '/plugins/wp-wow-wp-vc-addon.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '1.0.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
 			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
 			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-			'external_url'       => 'https://github.com/nguyen-wp/wp-lift-chat', // If set, overrides default API URL and points to an external URL.
+			'external_url'       => 'https://github.com/baonguyenyam/wp-wow-wp-vc-addon', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		),
+		array(
+			'name'               => 'WOW Page Builder', // The plugin name.
+			'slug'               => 'wp-wow-website-builder', // The plugin slug (typically the folder name).
+			'source'             => get_template_directory() . '/plugins/wp-wow-website-builder.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '1.0.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => 'https://github.com/baonguyenyam/wp-wow-website-builder', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		),
+		array(
+			'name'               => 'WOW Best CSS Compiler', // The plugin name.
+			'slug'               => 'wp-best-css-compiler', // The plugin slug (typically the folder name).
+			'source'             => get_template_directory() . '/plugins/wp-best-css-compiler.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '1.0.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => 'https://github.com/baonguyenyam/wp-best-css-compiler', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		),
+		array(
+			'name'               => 'WOW Best Suggestion Boxes', // The plugin name.
+			'slug'               => 'wp-best-suggestion-boxes', // The plugin slug (typically the folder name).
+			'source'             => get_template_directory() . '/plugins/wp-best-suggestion-boxes.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '1.0.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => 'https://github.com/baonguyenyam/wp-best-suggestion-boxes', // If set, overrides default API URL and points to an external URL.
 			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
 		),
 		array(
@@ -165,7 +176,7 @@ function lift_theme_options_register_required_plugins() {
 	 * Only uncomment the strings in the config array if you want to customize the strings.
 	 */
 	$config = array(
-		'id'           => 'lift-theme-options',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+		'id'           => 'wow-theme-options',                 // Unique ID for hashing notices for multiple instances of TGMPA.
 		'default_path' => '',                      // Default absolute path to bundled plugins.
 		'menu'         => 'tgmpa-install-plugins', // Menu slug.
 		'has_notices'  => true,                    // Show admin notices or not.
@@ -176,76 +187,76 @@ function lift_theme_options_register_required_plugins() {
 
 		/*
 		'strings'      => array(
-			'page_title'                      => __( 'Install Required Plugins', 'lift-theme-options' ),
-			'menu_title'                      => __( 'Install Plugins', 'lift-theme-options' ),
+			'page_title'                      => __( 'Install Required Plugins', 'wow-theme-options' ),
+			'menu_title'                      => __( 'Install Plugins', 'wow-theme-options' ),
 			/* translators: %s: plugin name. * /
-			'installing'                      => __( 'Installing Plugin: %s', 'lift-theme-options' ),
+			'installing'                      => __( 'Installing Plugin: %s', 'wow-theme-options' ),
 			/* translators: %s: plugin name. * /
-			'updating'                        => __( 'Updating Plugin: %s', 'lift-theme-options' ),
-			'oops'                            => __( 'Something went wrong with the plugin API.', 'lift-theme-options' ),
+			'updating'                        => __( 'Updating Plugin: %s', 'wow-theme-options' ),
+			'oops'                            => __( 'Something went wrong with the plugin API.', 'wow-theme-options' ),
 			'notice_can_install_required'     => _n_noop(
 				/* translators: 1: plugin name(s). * /
 				'This theme requires the following plugin: %1$s.',
 				'This theme requires the following plugins: %1$s.',
-				'lift-theme-options'
+				'wow-theme-options'
 			),
 			'notice_can_install_recommended'  => _n_noop(
 				/* translators: 1: plugin name(s). * /
 				'This theme recommends the following plugin: %1$s.',
 				'This theme recommends the following plugins: %1$s.',
-				'lift-theme-options'
+				'wow-theme-options'
 			),
 			'notice_ask_to_update'            => _n_noop(
 				/* translators: 1: plugin name(s). * /
 				'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.',
 				'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.',
-				'lift-theme-options'
+				'wow-theme-options'
 			),
 			'notice_ask_to_update_maybe'      => _n_noop(
 				/* translators: 1: plugin name(s). * /
 				'There is an update available for: %1$s.',
 				'There are updates available for the following plugins: %1$s.',
-				'lift-theme-options'
+				'wow-theme-options'
 			),
 			'notice_can_activate_required'    => _n_noop(
 				/* translators: 1: plugin name(s). * /
 				'The following required plugin is currently inactive: %1$s.',
 				'The following required plugins are currently inactive: %1$s.',
-				'lift-theme-options'
+				'wow-theme-options'
 			),
 			'notice_can_activate_recommended' => _n_noop(
 				/* translators: 1: plugin name(s). * /
 				'The following recommended plugin is currently inactive: %1$s.',
 				'The following recommended plugins are currently inactive: %1$s.',
-				'lift-theme-options'
+				'wow-theme-options'
 			),
 			'install_link'                    => _n_noop(
 				'Begin installing plugin',
 				'Begin installing plugins',
-				'lift-theme-options'
+				'wow-theme-options'
 			),
 			'update_link' 					  => _n_noop(
 				'Begin updating plugin',
 				'Begin updating plugins',
-				'lift-theme-options'
+				'wow-theme-options'
 			),
 			'activate_link'                   => _n_noop(
 				'Begin activating plugin',
 				'Begin activating plugins',
-				'lift-theme-options'
+				'wow-theme-options'
 			),
-			'return'                          => __( 'Return to Required Plugins Installer', 'lift-theme-options' ),
-			'plugin_activated'                => __( 'Plugin activated successfully.', 'lift-theme-options' ),
-			'activated_successfully'          => __( 'The following plugin was activated successfully:', 'lift-theme-options' ),
+			'return'                          => __( 'Return to Required Plugins Installer', 'wow-theme-options' ),
+			'plugin_activated'                => __( 'Plugin activated successfully.', 'wow-theme-options' ),
+			'activated_successfully'          => __( 'The following plugin was activated successfully:', 'wow-theme-options' ),
 			/* translators: 1: plugin name. * /
-			'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'lift-theme-options' ),
+			'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'wow-theme-options' ),
 			/* translators: 1: plugin name. * /
-			'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'lift-theme-options' ),
+			'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'wow-theme-options' ),
 			/* translators: 1: dashboard link. * /
-			'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'lift-theme-options' ),
-			'dismiss'                         => __( 'Dismiss this notice', 'lift-theme-options' ),
-			'notice_cannot_install_activate'  => __( 'There are one or more required or recommended plugins to install, update or activate.', 'lift-theme-options' ),
-			'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'lift-theme-options' ),
+			'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'wow-theme-options' ),
+			'dismiss'                         => __( 'Dismiss this notice', 'wow-theme-options' ),
+			'notice_cannot_install_activate'  => __( 'There are one or more required or recommended plugins to install, update or activate.', 'wow-theme-options' ),
+			'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'wow-theme-options' ),
 
 			'nag_type'                        => '', // Determines admin notice type - can only be one of the typical WP notice classes, such as 'updated', 'update-nag', 'notice-warning', 'notice-info' or 'error'. Some of which may not work as expected in older WP versions.
 		),

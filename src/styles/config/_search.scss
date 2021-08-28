@@ -83,7 +83,7 @@
 							width: auto;
 							overflow: visible;
 							background: transparent;
-							color: var(--lift-theme-box);
+							color: var(--wow-theme-box);
 							font: inherit;
 							line-height: normal;
 							-webkit-font-smoothing: inherit;
@@ -101,7 +101,7 @@
 								&:after {
 									display: block;
 									width: 100%;
-									background-color: var(--lift-theme-box);
+									background-color: var(--wow-theme-box);
 								}
 							}
 
@@ -141,7 +141,7 @@
 							width: auto;
 							overflow: visible;
 							background: transparent;
-							color: var(--lift-theme-box);
+							color: var(--wow-theme-box);
 							font: inherit;
 							line-height: normal;
 							-webkit-font-smoothing: inherit;
@@ -164,7 +164,7 @@
 								left: 0;
 								min-width: 200px;
 								border-radius: .25rem;
-								border: 1px solid var(--lift-theme-box);
+								border: 1px solid var(--wow-theme-box);
 								z-index: 99999;
 							}
 						}
@@ -219,7 +219,7 @@
 							width: auto;
 							overflow: visible;
 							background: transparent;
-							color: var(--lift-theme-box);
+							color: var(--wow-theme-box);
 							font: inherit;
 							line-height: normal;
 							-webkit-font-smoothing: inherit;
@@ -239,7 +239,7 @@
 							width: auto;
 							overflow: visible;
 							background: transparent;
-							color: var(--lift-theme-box);
+							color: var(--wow-theme-box);
 							font: inherit;
 							line-height: normal;
 							-webkit-font-smoothing: inherit;
@@ -261,7 +261,7 @@
 							width: 100%;
 							z-index: 999999;
 							overflow: hidden;
-							background: var(--lift-theme-white);
+							background: var(--wow-theme-white);
 							top: 0;
 							left: 0;
 							padding: 2rem;
@@ -273,7 +273,7 @@
 
 							.search-field {
 								display: block;
-								border-bottom: 2px solid var(--lift-theme-box);
+								border-bottom: 2px solid var(--wow-theme-box);
 								padding-left: 0;
 								padding-right: 0;
 								border-radius: 0;
@@ -393,7 +393,7 @@
 								&:after {
 									display: block;
 									width: 100%;
-									background-color: var(--lift-theme-box);
+									background-color: var(--wow-theme-box);
 								}
 							}
 
@@ -457,7 +457,7 @@
 								right: 0;
 								min-width: 200px;
 								border-radius: 0;
-								border: 1px solid var(--lift-theme-box);
+								border: 1px solid var(--wow-theme-box);
 								z-index: 99999;
 							}
 						}
@@ -537,7 +537,7 @@
 						width: 100%;
 						z-index: 999999;
 						overflow: hidden;
-						background: var(--lift-theme-white);
+						background: var(--wow-theme-white);
 						top: 0;
 						left: 0;
 						padding: 2rem;
@@ -549,7 +549,7 @@
 
 						.search-field {
 							display: block;
-							border-bottom: 2px solid var(--lift-theme-box);
+							border-bottom: 2px solid var(--wow-theme-box);
 							padding-left: 0;
 							padding-right: 0;
 							border-radius: 0;
@@ -594,7 +594,7 @@
 
 		label {
 			margin-right: 5px;
-			color: var(--lift-theme-box);
+			color: var(--wow-theme-box);
 		}
 
 		.search-submit-close {
@@ -730,7 +730,7 @@
 		flex-direction: column;
 		label {
 			margin-right: 5px;
-			color: var(--lift-theme-box);
+			color: var(--wow-theme-box);
 		}
 
 		.search-submit-close {
@@ -789,7 +789,7 @@
 					height: 2px;
 					display: block;
 					width: 100%;
-					background-color: var(--lift-theme-box);
+					background-color: var(--wow-theme-box);
 					position: absolute;
 					bottom: 0;
 					left: 0;
@@ -823,7 +823,7 @@
 				width: auto;
 				overflow: visible;
 				background: transparent;
-				color: var(--lift-theme-box);
+				color: var(--wow-theme-box);
 				font: inherit;
 				line-height: normal;
 				-webkit-font-smoothing: inherit;
@@ -841,8 +841,8 @@
 			.search-field,
 			.search-submit {
 				border: 0;
-				background: var(--lift-theme-texthover);
-				color: var(--lift-theme-border);
+				background: var(--wow-theme-texthover);
+				color: var(--wow-theme-border);
 				&:focus {
 					outline: 0;
 					box-shadow: none;

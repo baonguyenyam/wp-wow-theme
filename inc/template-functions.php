@@ -2,16 +2,16 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
 /**
  * Adds custom classes to the array of body classes.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @param array $classes Classes for the body element.
  *
@@ -19,7 +19,7 @@
  */
 
 function lift_body_classes( $classes ) {
-	global $lift_theme;
+	global $wow_theme;
 
 	// Helps detect if JS is enabled or not.
 	$classes[] = 'no-js';
@@ -36,7 +36,7 @@ function lift_body_classes( $classes ) {
 	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		$classes[] = 'no-widgets';
 	}
-	if (intval($lift_theme['lift-theme-global-dev-toolbar']) == 1) {
+	if (intval($wow_theme['wow-theme-global-dev-toolbar']) == 1) {
 		if(!is_admin() && current_user_can('administrator')){
 			$classes[] = 'admin-control';
 		}
@@ -49,7 +49,7 @@ add_filter( 'body_class', 'lift_body_classes' );
 /**
  * Adds custom class to the array of posts classes.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @param array $classes An array of CSS classes.
  *
@@ -65,7 +65,7 @@ add_filter( 'post_class', 'lift_post_classes', 10, 3 );
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @return void
  */
@@ -79,7 +79,7 @@ add_action( 'wp_head', 'lift_pingback_header' );
 /**
  * Remove the `no-js` class from body if JS is supported.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @return void
  */
@@ -91,7 +91,7 @@ add_action( 'wp_footer', 'lift_supports_js' );
 /**
  * Changes comment form default fields.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @param array $defaults The form defaults.
  *
@@ -109,7 +109,7 @@ add_filter( 'comment_form_defaults', 'lift_comment_form_defaults' );
 /**
  * Determines if post thumbnail can be displayed.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @return bool
  */
@@ -123,7 +123,7 @@ function lift_can_show_post_thumbnail() {
 /**
  * Returns the size for avatars used in the theme.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @return int
  */
@@ -135,10 +135,10 @@ function lift_get_avatar_size() {
  * Creates continue reading text
  */
 function lift_continue_reading_text() {
-	global $lift_theme;
-	if (intval($lift_theme['lift-theme-blog-excerpt-option']) == 1) {
+	global $wow_theme;
+	if (intval($wow_theme['wow-theme-blog-excerpt-option']) == 1) {
 		$continue_reading = sprintf(
-			esc_html__( $lift_theme['lift-theme-blog-excerpt-readmore'].' %s', 'wp-lift-theme' ),
+			esc_html__( $wow_theme['wow-theme-blog-excerpt-readmore'].' %s', 'wp-wow-theme' ),
 			the_title( '<span class="screen-reader-text">', '</span>', false )
 		);
 		return $continue_reading;
@@ -149,10 +149,10 @@ function lift_continue_reading_text() {
  * Create the continue reading link for excerpt.
  */
 function lift_continue_reading_link_excerpt() {
-	global $lift_theme;
+	global $wow_theme;
 	global $post;
-	if ( ! is_admin() && intval($lift_theme['lift-theme-blog-excerpt-option']) == 1) {
-		return $lift_theme['lift-theme-blog-excerpt-morestring'].' <a class="more-link" href="' . esc_url( get_permalink($post) ) . '">' . lift_continue_reading_text() . '</a>';
+	if ( ! is_admin() && intval($wow_theme['wow-theme-blog-excerpt-option']) == 1) {
+		return $wow_theme['wow-theme-blog-excerpt-morestring'].' <a class="more-link" href="' . esc_url( get_permalink($post) ) . '">' . lift_continue_reading_text() . '</a>';
 	} else {
 		return '';
 	}
@@ -165,7 +165,7 @@ add_filter( 'excerpt_more', 'lift_continue_reading_link_excerpt' );
  * Create the continue reading link.
  */
 function lift_continue_reading_link() {
-	if ( ! is_admin() && intval($lift_theme['lift-theme-blog-excerpt-option']) == 1) {
+	if ( ! is_admin() && intval($wow_theme['wow-theme-blog-excerpt-option']) == 1) {
 		return '<div class="more-link-container"><a class="more-link" href="' . esc_url( get_permalink() ) . '#more-' . esc_attr( get_the_ID() ) . '">' . lift_continue_reading_text() . '</a></div>';
 	}
 }
@@ -174,9 +174,9 @@ function lift_continue_reading_link() {
 add_filter( 'the_content_more_link', 'lift_continue_reading_link' );
 
 function lift_excerpt_length() {
-	global $lift_theme;
-	if ( ! is_admin() && intval($lift_theme['lift-theme-blog-excerpt-option']) == 1) {
-		return $lift_theme['lift-theme-blog-excerpt-value'];
+	global $wow_theme;
+	if ( ! is_admin() && intval($wow_theme['wow-theme-blog-excerpt-option']) == 1) {
+		return $wow_theme['wow-theme-blog-excerpt-value'];
 	} else {
 		return 100000;
 	}
@@ -188,14 +188,14 @@ if ( ! function_exists( 'lift_post_title' ) ) {
 	/**
 	 * Add a title to posts and pages that are missing titles.
 	 *
-	 * @since LIFT Theme 1.0
+	 * @since WOW Theme 1.0
 	 *
 	 * @param string $title The title.
 	 *
 	 * @return string
 	 */
 	function lift_post_title( $title ) {
-		return '' === $title ? esc_html_x( 'Untitled', 'Added to posts and pages that are missing titles', 'wp-lift-theme' ) : $title;
+		return '' === $title ? esc_html_x( 'Untitled', 'Added to posts and pages that are missing titles', 'wp-wow-theme' ) : $title;
 	}
 }
 add_filter( 'the_title', 'lift_post_title' );
@@ -203,7 +203,7 @@ add_filter( 'the_title', 'lift_post_title' );
 /**
  * Gets the SVG code for a given icon.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @param string $group The icon group.
  * @param string $icon The icon.
@@ -347,7 +347,7 @@ function lift_get_non_latin_css( $type = 'front-end' ) {
 /**
  * Print the first instance of a block in the content, and then break away.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @param string      $block_name The full block type name, or a partial match.
  *                                Example: `core/image`, `core-embed/*`.
@@ -411,7 +411,7 @@ function lift_print_first_instance_of_block( $block_name, $content = null, $inst
 /**
  * Retrieve protected post password form content.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @param int|WP_Post $post Optional. Post ID or WP_Post object. Default is global $post.
  * @return string HTML content for password form for password protected post.
@@ -419,9 +419,9 @@ function lift_print_first_instance_of_block( $block_name, $content = null, $inst
 function lift_password_form( $post = 0 ) {
 	$post   = get_post( $post );
 	$label  = 'pwbox-' . ( empty( $post->ID ) ? wp_rand() : $post->ID );
-	$output = '<p class="post-password-message">' . esc_html__( 'This content is password protected. Please enter a password to view.', 'wp-lift-theme' ) . '</p>
+	$output = '<p class="post-password-message">' . esc_html__( 'This content is password protected. Please enter a password to view.', 'wp-wow-theme' ) . '</p>
 	<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" class="post-password-form" method="post">
-	<label class="post-password-form__label" for="' . esc_attr( $label ) . '">' . esc_html_x( 'Password', 'Post password form', 'wp-lift-theme' ) . '</label><input class="post-password-form__input" name="post_password" id="' . esc_attr( $label ) . '" type="password" size="20" /><input type="submit" class="post-password-form__submit" name="' . esc_attr_x( 'Submit', 'Post password form', 'wp-lift-theme' ) . '" value="' . esc_attr_x( 'Enter', 'Post password form', 'wp-lift-theme' ) . '" /></form>
+	<label class="post-password-form__label" for="' . esc_attr( $label ) . '">' . esc_html_x( 'Password', 'Post password form', 'wp-wow-theme' ) . '</label><input class="post-password-form__input" name="post_password" id="' . esc_attr( $label ) . '" type="password" size="20" /><input type="submit" class="post-password-form__submit" name="' . esc_attr_x( 'Submit', 'Post password form', 'wp-wow-theme' ) . '" value="' . esc_attr_x( 'Enter', 'Post password form', 'wp-wow-theme' ) . '" /></form>
 	';
 	return $output;
 }
@@ -430,7 +430,7 @@ add_filter( 'the_password_form', 'lift_password_form' );
 /**
  * Filters the list of attachment image attributes.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @param array        $attr       Array of attribute values for the image markup, keyed by attribute name.
  *                                 See wp_get_attachment_image().

@@ -2,9 +2,9 @@
 /**
  * Displays header site branding
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
@@ -14,15 +14,15 @@ $description  = get_bloginfo( 'description', 'display' );
 $show_title   = ( true === get_theme_mod( 'display_title_and_tagline', true ) );
 // $header_class = $show_title ? 'site-title' : 'screen-reader-text';
 
-global $lift_theme;
-$header_logo = $lift_theme['lift-theme-header-logo'];
-$header_logo_size = $lift_theme['lift-theme-header-logo-size'];
-$header_logo_mobile = $lift_theme['lift-theme-header-logo-mobile'];
-$header_logo_mobile_size = $lift_theme['lift-theme-header-logo-mobile-size'];
-$header_logo_tablet = $lift_theme['lift-theme-header-logo-tablet'];
-$header_logo_tablet_size = $lift_theme['lift-theme-header-logo-tablet-size'];
-$header_offcanvas = $lift_theme['lift-theme-header-offcanvas'];
-$header_search_sticky = $lift_theme['lift-theme-header-search-sticky'];
+global $wow_theme;
+$header_logo = $wow_theme['wow-theme-header-logo'];
+$header_logo_size = $wow_theme['wow-theme-header-logo-size'];
+$header_logo_mobile = $wow_theme['wow-theme-header-logo-mobile'];
+$header_logo_mobile_size = $wow_theme['wow-theme-header-logo-mobile-size'];
+$header_logo_tablet = $wow_theme['wow-theme-header-logo-tablet'];
+$header_logo_tablet_size = $wow_theme['wow-theme-header-logo-tablet-size'];
+$header_offcanvas = $wow_theme['wow-theme-header-offcanvas'];
+$header_search_sticky = $wow_theme['wow-theme-header-search-sticky'];
 $defaultlogo = isset($header_logo['url']) ? $header_logo['url'] : '';
 $logosrc = '';
 $logosize = '';

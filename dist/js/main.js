@@ -71,11 +71,11 @@ $(window).scroll(function () {
 });
 /**
  * @license
- * Copyright LIFT Creations All Rights Reserved.
+ * Copyright WOW WordPress All Rights Reserved.
  * Coding by Nguyen Pham
  *
  * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://baonguyenyam.github.io/cv
+ * found in the LICENSE file at https://baonguyenyam.github.io
  */
 
 'use strict';
@@ -190,11 +190,11 @@ $(window).scroll(function () {
 })(window);
 /**
  * @license
- * Copyright LIFT Creations All Rights Reserved.
+ * Copyright WOW WordPress All Rights Reserved.
  * Coding by Nguyen Pham
  *
  * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://baonguyenyam.github.io/cv
+ * found in the LICENSE file at https://baonguyenyam.github.io
  */
 
 

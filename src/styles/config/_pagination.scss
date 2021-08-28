@@ -10,18 +10,18 @@
             a, .page-numbers {
                 position: relative;
                 display: block;
-                color: var(--lift-theme-main);
+                color: var(--wow-theme-main);
                 text-decoration: none;
-                background-color: var(--lift-theme-white);
-                border: 1px solid var(--lift-theme-texthover);
+                background-color: var(--wow-theme-white);
+                border: 1px solid var(--wow-theme-texthover);
                 transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
                 padding: .375rem .75rem;
                 margin: 0;
                 align-items: center;
                 &.current {
-                    background-color: var(--lift-theme-main);
-                    border-color: var(--lift-theme-main);
-                    color: var(--lift-theme-white)
+                    background-color: var(--wow-theme-main);
+                    border-color: var(--wow-theme-main);
+                    color: var(--wow-theme-white)
                 }
             }
             &:first-child {
@@ -44,9 +44,9 @@
 			&:focus, 
 			&:active {
 				a:not(.current), .page-numbers:not(.current) {
-                    color: var(--lift-theme-main) !important;
-                    background-color: var(--lift-theme-light);
-                    border-color: var(--lift-theme-texthover);
+                    color: var(--wow-theme-main) !important;
+                    background-color: var(--wow-theme-light);
+                    border-color: var(--wow-theme-texthover);
                 }
 			}
         }
@@ -59,10 +59,10 @@
             .meta-nav {
                 position: relative;
                 display: block;
-                color: var(--lift-theme-main);
+                color: var(--wow-theme-main);
                 text-decoration: none;
-                background-color: var(--lift-theme-white);
-                border: 1px solid var(--lift-theme-texthover);
+                background-color: var(--wow-theme-white);
+                border: 1px solid var(--wow-theme-texthover);
                 transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
                 padding: .375rem .75rem;
                 margin: 0;
@@ -76,9 +76,9 @@
 			&:focus, 
 			&:active {
 				.meta-nav {
-                    background-color: var(--lift-theme-main);
-                    border-color: var(--lift-theme-main);
-                    color: var(--lift-theme-white)
+                    background-color: var(--wow-theme-main);
+                    border-color: var(--wow-theme-main);
+                    color: var(--wow-theme-white)
                 }
 			}
         }

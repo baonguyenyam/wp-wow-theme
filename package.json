@@ -11,12 +11,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/baonguyenyam/nguyen-wp/lift-theme.git"
+		"url": "git+https://github.com/baonguyenyam/nguyen-wp/wow-theme.git"
 	},
 	"author": "FullStack VietNam",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/baonguyenyam/nguyen-wp/lift-theme/issues"
+		"url": "https://github.com/baonguyenyam/nguyen-wp/wow-theme/issues"
 	},
 	"homepage": "https://baonguyenyam.github.io",
 	"dependencies": {

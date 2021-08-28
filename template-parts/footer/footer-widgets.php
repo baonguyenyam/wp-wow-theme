@@ -2,66 +2,66 @@
 /**
  * Displays the footer widget area.
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
-global $lift_theme;
-$footer_col = $lift_theme['lift-theme-footer-columns'];
-$footer_style = $lift_theme['lift-theme-footer-layout-style'];
-$footer_row = $lift_theme['lift-theme-footer-row-option'];
-$footer_gutters = $lift_theme['lift-theme-footer-columns-gutters'];
-$global_backtotop = trim($lift_theme['lift-theme-global-function-backtotop']);
-$global_backtotop_mobile = trim($lift_theme['lift-theme-global-function-backtotop-mobile']);
-$global_backtotop_phalet = trim($lift_theme['lift-theme-global-function-backtotop-phalet']);
-$global_backtotop_tablet = trim($lift_theme['lift-theme-global-function-backtotop-tablet']);
-$global_backtotop_smallpc = trim($lift_theme['lift-theme-global-function-backtotop-smallpc']);
-$copyright_col = $lift_theme['lift-theme-copyright-columns'];
-$copyright_style = $lift_theme['lift-theme-copyright-layout-style'];
-$copyright_row = $lift_theme['lift-theme-copyright-row-option'];
-$copyright_gutters = $lift_theme['lift-theme-copyright-columns-gutters'];
-$copyright_enable = $lift_theme['lift-theme-copyright-enable'];
-$footer_enable = $lift_theme['lift-theme-footer-enable'];
+global $wow_theme;
+$footer_col = $wow_theme['wow-theme-footer-columns'];
+$footer_style = $wow_theme['wow-theme-footer-layout-style'];
+$footer_row = $wow_theme['wow-theme-footer-row-option'];
+$footer_gutters = $wow_theme['wow-theme-footer-columns-gutters'];
+$global_backtotop = trim($wow_theme['wow-theme-global-function-backtotop']);
+$global_backtotop_mobile = trim($wow_theme['wow-theme-global-function-backtotop-mobile']);
+$global_backtotop_phalet = trim($wow_theme['wow-theme-global-function-backtotop-phalet']);
+$global_backtotop_tablet = trim($wow_theme['wow-theme-global-function-backtotop-tablet']);
+$global_backtotop_smallpc = trim($wow_theme['wow-theme-global-function-backtotop-smallpc']);
+$copyright_col = $wow_theme['wow-theme-copyright-columns'];
+$copyright_style = $wow_theme['wow-theme-copyright-layout-style'];
+$copyright_row = $wow_theme['wow-theme-copyright-row-option'];
+$copyright_gutters = $wow_theme['wow-theme-copyright-columns-gutters'];
+$copyright_enable = $wow_theme['wow-theme-copyright-enable'];
+$footer_enable = $wow_theme['wow-theme-footer-enable'];
 
 $build_footer_spacing = '';
-if(isset($lift_theme['lift-theme-footer-row-spacing'])) {
+if(isset($wow_theme['wow-theme-footer-row-spacing'])) {
 	$build_footer_spacing_value = '';
-	$footer_value['footer_row_unit'] = $lift_theme['lift-theme-footer-row-spacing']['unit'];
-	if(isset($lift_theme['lift-theme-footer-row-spacing']['padding-top']) && $lift_theme['lift-theme-footer-row-spacing']['padding-top'] != '') {
-		$build_footer_spacing_value .= 'padding-top:'.$lift_theme['lift-theme-footer-row-spacing']['padding-top'].';';
+	$footer_value['footer_row_unit'] = $wow_theme['wow-theme-footer-row-spacing']['unit'];
+	if(isset($wow_theme['wow-theme-footer-row-spacing']['padding-top']) && $wow_theme['wow-theme-footer-row-spacing']['padding-top'] != '') {
+		$build_footer_spacing_value .= 'padding-top:'.$wow_theme['wow-theme-footer-row-spacing']['padding-top'].';';
 	}
-	if(isset($lift_theme['lift-theme-footer-row-spacing']['padding-bottom']) && $lift_theme['lift-theme-footer-row-spacing']['padding-bottom'] != '') {
-		$build_footer_spacing_value .= 'padding-bottom:'.$lift_theme['lift-theme-footer-row-spacing']['padding-bottom'].';';
+	if(isset($wow_theme['wow-theme-footer-row-spacing']['padding-bottom']) && $wow_theme['wow-theme-footer-row-spacing']['padding-bottom'] != '') {
+		$build_footer_spacing_value .= 'padding-bottom:'.$wow_theme['wow-theme-footer-row-spacing']['padding-bottom'].';';
 	}
-	if(isset($lift_theme['lift-theme-footer-row-spacing']['padding-left']) && $lift_theme['lift-theme-footer-row-spacing']['padding-left'] != '') {
-		$build_footer_spacing_value .= 'padding-left:'.$lift_theme['lift-theme-footer-row-spacing']['padding-left'].';';
+	if(isset($wow_theme['wow-theme-footer-row-spacing']['padding-left']) && $wow_theme['wow-theme-footer-row-spacing']['padding-left'] != '') {
+		$build_footer_spacing_value .= 'padding-left:'.$wow_theme['wow-theme-footer-row-spacing']['padding-left'].';';
 	}
-	if(isset($lift_theme['lift-theme-footer-row-spacing']['padding-right']) && $lift_theme['lift-theme-footer-row-spacing']['padding-right'] != '') {
-		$build_footer_spacing_value .= 'padding-right:'.$lift_theme['lift-theme-footer-row-spacing']['padding-right'].';';
+	if(isset($wow_theme['wow-theme-footer-row-spacing']['padding-right']) && $wow_theme['wow-theme-footer-row-spacing']['padding-right'] != '') {
+		$build_footer_spacing_value .= 'padding-right:'.$wow_theme['wow-theme-footer-row-spacing']['padding-right'].';';
 	}
-	if(isset($lift_theme['lift-theme-footer-row-spacing']['padding-top']) && $lift_theme['lift-theme-footer-row-spacing']['padding-top'] != '' || isset($lift_theme['lift-theme-footer-row-spacing']['padding-bottom']) && $lift_theme['lift-theme-footer-row-spacing']['padding-bottom'] != '' || isset($lift_theme['lift-theme-footer-row-spacing']['padding-left']) && $lift_theme['lift-theme-footer-row-spacing']['padding-left'] != '' || isset($lift_theme['lift-theme-footer-row-spacing']['padding-right']) && $lift_theme['lift-theme-footer-row-spacing']['padding-right'] != '') {
+	if(isset($wow_theme['wow-theme-footer-row-spacing']['padding-top']) && $wow_theme['wow-theme-footer-row-spacing']['padding-top'] != '' || isset($wow_theme['wow-theme-footer-row-spacing']['padding-bottom']) && $wow_theme['wow-theme-footer-row-spacing']['padding-bottom'] != '' || isset($wow_theme['wow-theme-footer-row-spacing']['padding-left']) && $wow_theme['wow-theme-footer-row-spacing']['padding-left'] != '' || isset($wow_theme['wow-theme-footer-row-spacing']['padding-right']) && $wow_theme['wow-theme-footer-row-spacing']['padding-right'] != '') {
 		$build_footer_spacing = ' style="'.$build_footer_spacing_value.'"';
 	}
 }
 $build_copyright_spacing = '';
-if(isset($lift_theme['lift-theme-copyright-row-spacing'])) {
+if(isset($wow_theme['wow-theme-copyright-row-spacing'])) {
 	$build_copyright_spacing_value = '';
-	$copyright_value['copyright_row_unit'] = $lift_theme['lift-theme-copyright-row-spacing']['unit'];
-	if(isset($lift_theme['lift-theme-copyright-row-spacing']['padding-top']) && $lift_theme['lift-theme-copyright-row-spacing']['padding-top'] != '') {
-		$build_copyright_spacing_value .= 'padding-top:'.$lift_theme['lift-theme-copyright-row-spacing']['padding-top'].';';
+	$copyright_value['copyright_row_unit'] = $wow_theme['wow-theme-copyright-row-spacing']['unit'];
+	if(isset($wow_theme['wow-theme-copyright-row-spacing']['padding-top']) && $wow_theme['wow-theme-copyright-row-spacing']['padding-top'] != '') {
+		$build_copyright_spacing_value .= 'padding-top:'.$wow_theme['wow-theme-copyright-row-spacing']['padding-top'].';';
 	}
-	if(isset($lift_theme['lift-theme-copyright-row-spacing']['padding-bottom']) && $lift_theme['lift-theme-copyright-row-spacing']['padding-bottom'] != '') {
-		$build_copyright_spacing_value .= 'padding-bottom:'.$lift_theme['lift-theme-copyright-row-spacing']['padding-bottom'].';';
+	if(isset($wow_theme['wow-theme-copyright-row-spacing']['padding-bottom']) && $wow_theme['wow-theme-copyright-row-spacing']['padding-bottom'] != '') {
+		$build_copyright_spacing_value .= 'padding-bottom:'.$wow_theme['wow-theme-copyright-row-spacing']['padding-bottom'].';';
 	}
-	if(isset($lift_theme['lift-theme-copyright-row-spacing']['padding-left']) && $lift_theme['lift-theme-copyright-row-spacing']['padding-left'] != '') {
-		$build_copyright_spacing_value .= 'padding-left:'.$lift_theme['lift-theme-copyright-row-spacing']['padding-left'].';';
+	if(isset($wow_theme['wow-theme-copyright-row-spacing']['padding-left']) && $wow_theme['wow-theme-copyright-row-spacing']['padding-left'] != '') {
+		$build_copyright_spacing_value .= 'padding-left:'.$wow_theme['wow-theme-copyright-row-spacing']['padding-left'].';';
 	}
-	if(isset($lift_theme['lift-theme-copyright-row-spacing']['padding-right']) && $lift_theme['lift-theme-copyright-row-spacing']['padding-right'] != '') {
-		$build_copyright_spacing_value .= 'padding-right:'.$lift_theme['lift-theme-copyright-row-spacing']['padding-right'].';';
+	if(isset($wow_theme['wow-theme-copyright-row-spacing']['padding-right']) && $wow_theme['wow-theme-copyright-row-spacing']['padding-right'] != '') {
+		$build_copyright_spacing_value .= 'padding-right:'.$wow_theme['wow-theme-copyright-row-spacing']['padding-right'].';';
 	}
-	if(isset($lift_theme['lift-theme-copyright-row-spacing']['padding-top']) && $lift_theme['lift-theme-copyright-row-spacing']['padding-top'] != '' || isset($lift_theme['lift-theme-copyright-row-spacing']['padding-bottom']) && $lift_theme['lift-theme-copyright-row-spacing']['padding-bottom'] != '' || isset($lift_theme['lift-theme-copyright-row-spacing']['padding-left']) && $lift_theme['lift-theme-copyright-row-spacing']['padding-left'] != '' || isset($lift_theme['lift-theme-copyright-row-spacing']['padding-right']) && $lift_theme['lift-theme-copyright-row-spacing']['padding-right'] != '') {
+	if(isset($wow_theme['wow-theme-copyright-row-spacing']['padding-top']) && $wow_theme['wow-theme-copyright-row-spacing']['padding-top'] != '' || isset($wow_theme['wow-theme-copyright-row-spacing']['padding-bottom']) && $wow_theme['wow-theme-copyright-row-spacing']['padding-bottom'] != '' || isset($wow_theme['wow-theme-copyright-row-spacing']['padding-left']) && $wow_theme['wow-theme-copyright-row-spacing']['padding-left'] != '' || isset($wow_theme['wow-theme-copyright-row-spacing']['padding-right']) && $wow_theme['wow-theme-copyright-row-spacing']['padding-right'] != '') {
 		$build_copyright_spacing = ' style="'.$build_copyright_spacing_value.'"';
 	}
 }
@@ -77,7 +77,7 @@ if(isset($lift_theme['lift-theme-copyright-row-spacing'])) {
 						for ($i=1; $i <= $footer_col ; $i++) { 
 					?>
 						<?php if(is_active_sidebar( 'footer-sidebar-'.$i )) {?>
-							<div class="col-12 <?=$lift_theme['lift-theme-footer-columns-'.$i]?>"><?php dynamic_sidebar( 'footer-sidebar-'.$i ); ?></div>
+							<div class="col-12 <?=$wow_theme['wow-theme-footer-columns-'.$i]?>"><?php dynamic_sidebar( 'footer-sidebar-'.$i ); ?></div>
 						<?php } ?>
 					<?php
 						}
@@ -95,7 +95,7 @@ if(isset($lift_theme['lift-theme-copyright-row-spacing'])) {
 							for ($i=1; $i <= $footer_col ; $i++) { 
 						?>
 							<?php if(is_active_sidebar( 'copyright-sidebar-'.$i )) {?>
-								<div class="col-12 <?=$lift_theme['lift-theme-copyright-columns-'.$i]?>"><?php dynamic_sidebar( 'copyright-sidebar-'.$i ); ?></div>
+								<div class="col-12 <?=$wow_theme['wow-theme-copyright-columns-'.$i]?>"><?php dynamic_sidebar( 'copyright-sidebar-'.$i ); ?></div>
 							<?php } ?>
 						<?php
 							}

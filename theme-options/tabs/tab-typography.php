@@ -1,27 +1,27 @@
 <?php
 /**
-* @package LIFT Creations 
+* @package WOW WordPress 
 * @subpackage Theme by Nguyen Pham
-* https://baonguyenyam.github.io/cv
+* https://baonguyenyam.github.io
 * @since 2021
 */
 
     // -> START Footer
     Redux::setSection( $opt_name, array(
-        'title' => __( 'Typography', 'lift-theme-options' ),
-        'id'    => 'lift-theme-typography',
+        'title' => __( 'Typography', 'wow-theme-options' ),
+        'id'    => 'wow-theme-typography',
         'icon'  => 'bi bi-type'
     ) );
 
 	Redux::setSection( $opt_name, array(
-        'title'      => __( 'Body <i style="color:red">(*)</i>', 'lift-theme-options' ),
-        'id'         => 'lift-theme-typography-global',
+        'title'      => __( 'Body <i style="color:red">(*)</i>', 'wow-theme-options' ),
+        'id'         => 'wow-theme-typography-global',
         'subsection' => true,
 		'fields'     => array(
 			array(
-				'id'       => 'lift-theme-typography-global-body',
+				'id'       => 'wow-theme-typography-global-body',
                 'type'     => 'typography',
-				'title'    => __('Typography', 'lift-theme-options'),
+				'title'    => __('Typography', 'wow-theme-options'),
 				'google'      => true, 
 				'font-backup' => true,
 				'output'      => array('html', 'body'),
@@ -40,14 +40,14 @@
     ) );
 	
 	Redux::setSection( $opt_name, array(
-        'title'      => __( 'Header <i style="color:red">(*)</i>', 'lift-theme-options' ),
-        'id'         => 'lift-theme-typography-header',
+        'title'      => __( 'Header <i style="color:red">(*)</i>', 'wow-theme-options' ),
+        'id'         => 'wow-theme-typography-header',
         'subsection' => true,
 		'fields'     => array(
 			array(
-				'id'       => 'lift-theme-typography-header-menu',
+				'id'       => 'wow-theme-typography-header-menu',
                 'type'     => 'typography',
-				'title'    => __('Typography', 'lift-theme-options'),
+				'title'    => __('Typography', 'wow-theme-options'),
 				'google'      => true, 
 				'font-backup' => true,
 				'output'      => array('h2.site-description'),

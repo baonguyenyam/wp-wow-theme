@@ -2,9 +2,9 @@
 /**
  * SVG Icons class
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
@@ -170,7 +170,7 @@ class LIFT_Theme_SVG_Icons {
 		}
 
 		/**
-		 * Filters LIFT Themes's array of icons.
+		 * Filters WOW Themes's array of icons.
 		 *
 		 * The dynamic portion of the hook name, `$group`, refers to
 		 * the name of the group of icons, either "ui" or "social".
@@ -213,7 +213,7 @@ class LIFT_Theme_SVG_Icons {
 			$regex_map = array();
 
 			/**
-			 * Filters LIFT Themes's array of domain mappings for social icons.
+			 * Filters WOW Themes's array of domain mappings for social icons.
 			 *
 			 * By default, each Icon ID is matched against a .com TLD. To override this behavior,
 			 * specify all the domains it covers (including the .com TLD too, if applicable).
@@ -225,7 +225,7 @@ class LIFT_Theme_SVG_Icons {
 			$map = apply_filters( 'lift_social_icons_map', self::$social_icons_map );
 
 			/**
-			 * Filters LIFT Theme's array of social icons.
+			 * Filters WOW Theme's array of social icons.
 			 *
 			 * @since LIFT 2021
 			 *

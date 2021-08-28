@@ -6,15 +6,15 @@
         padding-left: 0;
         list-style: none;
         li {
-            border-top: 1px solid var(--lift-theme-texthover);
+            border-top: 1px solid var(--wow-theme-texthover);
             padding-top: 1rem;
             margin-top: 1rem;
         }
         .comment-edit-link,
         .comment-reply-link {
-            background-color: var(--lift-theme-main);
-            border-color: var(--lift-theme-main);
-            color: var(--lift-theme-white) !important;
+            background-color: var(--wow-theme-main);
+            border-color: var(--wow-theme-main);
+            color: var(--wow-theme-white) !important;
             font-size: .75rem;
             text-transform: uppercase;
             text-decoration: none;

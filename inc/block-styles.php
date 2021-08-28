@@ -4,9 +4,9 @@
  *
  * @link https://developer.wordpress.org/reference/functions/register_block_style/
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
@@ -14,7 +14,7 @@ if ( function_exists( 'register_block_style' ) ) {
 	/**
 	 * Register block styles.
 	 *
-	 * @since LIFT Theme 1.0
+	 * @since WOW Theme 1.0
 	 *
 	 * @return void
 	 */
@@ -24,7 +24,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/columns',
 			array(
 				'name'  => 'lifttheme-columns-overlap',
-				'label' => esc_html__( 'Overlap', 'wp-lift-theme' ),
+				'label' => esc_html__( 'Overlap', 'wp-wow-theme' ),
 			)
 		);
 
@@ -33,7 +33,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/cover',
 			array(
 				'name'  => 'lifttheme-border',
-				'label' => esc_html__( 'Borders', 'wp-lift-theme' ),
+				'label' => esc_html__( 'Borders', 'wp-wow-theme' ),
 			)
 		);
 
@@ -42,7 +42,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/group',
 			array(
 				'name'  => 'lifttheme-border',
-				'label' => esc_html__( 'Borders', 'wp-lift-theme' ),
+				'label' => esc_html__( 'Borders', 'wp-wow-theme' ),
 			)
 		);
 
@@ -51,7 +51,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/image',
 			array(
 				'name'  => 'lifttheme-border',
-				'label' => esc_html__( 'Borders', 'wp-lift-theme' ),
+				'label' => esc_html__( 'Borders', 'wp-wow-theme' ),
 			)
 		);
 
@@ -60,7 +60,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/image',
 			array(
 				'name'  => 'lifttheme-image-frame',
-				'label' => esc_html__( 'Frame', 'wp-lift-theme' ),
+				'label' => esc_html__( 'Frame', 'wp-wow-theme' ),
 			)
 		);
 
@@ -69,7 +69,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/latest-posts',
 			array(
 				'name'  => 'lifttheme-latest-posts-dividers',
-				'label' => esc_html__( 'Dividers', 'wp-lift-theme' ),
+				'label' => esc_html__( 'Dividers', 'wp-wow-theme' ),
 			)
 		);
 
@@ -78,7 +78,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/latest-posts',
 			array(
 				'name'  => 'lifttheme-latest-posts-borders',
-				'label' => esc_html__( 'Borders', 'wp-lift-theme' ),
+				'label' => esc_html__( 'Borders', 'wp-wow-theme' ),
 			)
 		);
 
@@ -87,7 +87,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/media-text',
 			array(
 				'name'  => 'lifttheme-border',
-				'label' => esc_html__( 'Borders', 'wp-lift-theme' ),
+				'label' => esc_html__( 'Borders', 'wp-wow-theme' ),
 			)
 		);
 
@@ -96,7 +96,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/separator',
 			array(
 				'name'  => 'lifttheme-separator-thick',
-				'label' => esc_html__( 'Thick', 'wp-lift-theme' ),
+				'label' => esc_html__( 'Thick', 'wp-wow-theme' ),
 			)
 		);
 
@@ -105,7 +105,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/social-links',
 			array(
 				'name'  => 'lifttheme-social-icons-color',
-				'label' => esc_html__( 'Dark gray', 'wp-lift-theme' ),
+				'label' => esc_html__( 'Dark gray', 'wp-wow-theme' ),
 			)
 		);
 	}

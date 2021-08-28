@@ -2,9 +2,9 @@
 /**
  * Custom Colors Class
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
@@ -143,7 +143,7 @@ class LIFT_Theme_Custom_Colors {
 	 */
 	public function body_class( $classes ) {
 		
-		$classes[] = 'lift-theme';
+		$classes[] = 'wow-theme';
 
 		return $classes;
 	}

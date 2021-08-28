@@ -2,9 +2,9 @@
 /**
  * Displays the site header.
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
@@ -13,36 +13,36 @@ $wrapper_classes .= has_custom_logo() ? ' has-logo' : '';
 $wrapper_classes .= ( true === get_theme_mod( 'display_title_and_tagline', true ) ) ? ' has-title-and-tagline' : '';
 $wrapper_classes .= has_nav_menu( 'primary' ) ? ' has-menu' : '';
 
-global $lift_theme;
-$header_style = $lift_theme['lift-theme-header-layout-style'];
-$header_shadow = $lift_theme['lift-theme-header-shadow'];
-$header_row = $lift_theme['lift-theme-header-row-option'];
-$header_menu_toggle = $lift_theme['lift-theme-header-menu-toggle'];
-$header_fixed = $lift_theme['lift-theme-header-fixed'];
-$header_kind = $lift_theme['lift-theme-header-kind'];
-$header_search_type = $lift_theme['lift-theme-header-search-type'];
-$header_second_align = $lift_theme['lift-theme-header-second-align'];
-$header_offcanvas = $lift_theme['lift-theme-header-offcanvas'];
-$header_search_sticky = $lift_theme['lift-theme-header-search-sticky'];
-$header_secondary_menu = isset($lift_theme['lift-theme-header-second']) && $lift_theme['lift-theme-header-second'] === '1' ? ' has-secondary-menu' : '';
+global $wow_theme;
+$header_style = $wow_theme['wow-theme-header-layout-style'];
+$header_shadow = $wow_theme['wow-theme-header-shadow'];
+$header_row = $wow_theme['wow-theme-header-row-option'];
+$header_menu_toggle = $wow_theme['wow-theme-header-menu-toggle'];
+$header_fixed = $wow_theme['wow-theme-header-fixed'];
+$header_kind = $wow_theme['wow-theme-header-kind'];
+$header_search_type = $wow_theme['wow-theme-header-search-type'];
+$header_second_align = $wow_theme['wow-theme-header-second-align'];
+$header_offcanvas = $wow_theme['wow-theme-header-offcanvas'];
+$header_search_sticky = $wow_theme['wow-theme-header-search-sticky'];
+$header_secondary_menu = isset($wow_theme['wow-theme-header-second']) && $wow_theme['wow-theme-header-second'] === '1' ? ' has-secondary-menu' : '';
 
 $build_header_spacing = '';
-if(isset($lift_theme['lift-theme-header-row-spacing'])) {
+if(isset($wow_theme['wow-theme-header-row-spacing'])) {
 	$build_header_spacing_value = '';
-	$header_value['header_row_unit'] = $lift_theme['lift-theme-header-row-spacing']['unit'];
-	if(isset($lift_theme['lift-theme-header-row-spacing']['padding-top']) && $lift_theme['lift-theme-header-row-spacing']['padding-top'] != '') {
-		$build_header_spacing_value .= 'padding-top:'.$lift_theme['lift-theme-header-row-spacing']['padding-top'].';';
+	$header_value['header_row_unit'] = $wow_theme['wow-theme-header-row-spacing']['unit'];
+	if(isset($wow_theme['wow-theme-header-row-spacing']['padding-top']) && $wow_theme['wow-theme-header-row-spacing']['padding-top'] != '') {
+		$build_header_spacing_value .= 'padding-top:'.$wow_theme['wow-theme-header-row-spacing']['padding-top'].';';
 	}
-	if(isset($lift_theme['lift-theme-header-row-spacing']['padding-bottom']) && $lift_theme['lift-theme-header-row-spacing']['padding-bottom'] != '') {
-		$build_header_spacing_value .= 'padding-bottom:'.$lift_theme['lift-theme-header-row-spacing']['padding-bottom'].';';
+	if(isset($wow_theme['wow-theme-header-row-spacing']['padding-bottom']) && $wow_theme['wow-theme-header-row-spacing']['padding-bottom'] != '') {
+		$build_header_spacing_value .= 'padding-bottom:'.$wow_theme['wow-theme-header-row-spacing']['padding-bottom'].';';
 	}
-	if(isset($lift_theme['lift-theme-header-row-spacing']['padding-left']) && $lift_theme['lift-theme-header-row-spacing']['padding-left'] != '') {
-		$build_header_spacing_value .= 'padding-left:'.$lift_theme['lift-theme-header-row-spacing']['padding-left'].';';
+	if(isset($wow_theme['wow-theme-header-row-spacing']['padding-left']) && $wow_theme['wow-theme-header-row-spacing']['padding-left'] != '') {
+		$build_header_spacing_value .= 'padding-left:'.$wow_theme['wow-theme-header-row-spacing']['padding-left'].';';
 	}
-	if(isset($lift_theme['lift-theme-header-row-spacing']['padding-right']) && $lift_theme['lift-theme-header-row-spacing']['padding-right'] != '') {
-		$build_header_spacing_value .= 'padding-right:'.$lift_theme['lift-theme-header-row-spacing']['padding-right'].';';
+	if(isset($wow_theme['wow-theme-header-row-spacing']['padding-right']) && $wow_theme['wow-theme-header-row-spacing']['padding-right'] != '') {
+		$build_header_spacing_value .= 'padding-right:'.$wow_theme['wow-theme-header-row-spacing']['padding-right'].';';
 	}
-	if(isset($lift_theme['lift-theme-header-row-spacing']['padding-top']) && $lift_theme['lift-theme-header-row-spacing']['padding-top'] != '' || isset($lift_theme['lift-theme-header-row-spacing']['padding-bottom']) && $lift_theme['lift-theme-header-row-spacing']['padding-bottom'] != '' || isset($lift_theme['lift-theme-header-row-spacing']['padding-left']) && $lift_theme['lift-theme-header-row-spacing']['padding-left'] != '' || isset($lift_theme['lift-theme-header-row-spacing']['padding-right']) && $lift_theme['lift-theme-header-row-spacing']['padding-right'] != '') {
+	if(isset($wow_theme['wow-theme-header-row-spacing']['padding-top']) && $wow_theme['wow-theme-header-row-spacing']['padding-top'] != '' || isset($wow_theme['wow-theme-header-row-spacing']['padding-bottom']) && $wow_theme['wow-theme-header-row-spacing']['padding-bottom'] != '' || isset($wow_theme['wow-theme-header-row-spacing']['padding-left']) && $wow_theme['wow-theme-header-row-spacing']['padding-left'] != '' || isset($wow_theme['wow-theme-header-row-spacing']['padding-right']) && $wow_theme['wow-theme-header-row-spacing']['padding-right'] != '') {
 		$build_header_spacing = ' style="'.$build_header_spacing_value.'"';
 	}
 }

@@ -4,14 +4,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
-global $lift_theme;
-$layout_style = $lift_theme['lift-theme-layout-style'];
+global $wow_theme;
+$layout_style = $wow_theme['wow-theme-layout-style'];
 ?>
 <!-- TODO: need improve  -->
 <section class="no-results not-found">
@@ -23,7 +23,7 @@ $layout_style = $lift_theme['lift-theme-layout-style'];
                 <?php
 					printf(
 						/* translators: %s: Search term. */
-						esc_html__( 'Results for "%s"', 'wp-lift-theme' ),
+						esc_html__( 'Results for "%s"', 'wp-wow-theme' ),
 						'<span class="page-description search-term">' . esc_html( get_search_query() ) . '</span>'
 					);
 					?>
@@ -31,7 +31,7 @@ $layout_style = $lift_theme['lift-theme-layout-style'];
 
             <?php else : ?>
 
-            <h1 class="page-title"><?php esc_html_e( 'Nothing here', 'wp-lift-theme' ); ?></h1>
+            <h1 class="page-title"><?php esc_html_e( 'Nothing here', 'wp-wow-theme' ); ?></h1>
 
             <?php endif; ?>
         </div>
@@ -47,7 +47,7 @@ $layout_style = $lift_theme['lift-theme-layout-style'];
 				printf(
 					'<p>' . wp_kses(
 						/* translators: %s: Link to WP admin new post page. */
-						__( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'wp-lift-theme' ),
+						__( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'wp-wow-theme' ),
 						array(
 							'a' => array(
 								'href' => array(),
@@ -60,13 +60,13 @@ $layout_style = $lift_theme['lift-theme-layout-style'];
 
                 <?php elseif ( is_search() ) : ?>
 
-                <p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'wp-lift-theme' ); ?>
+                <p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'wp-wow-theme' ); ?>
                 </p>
                 <?php get_template_part( 'template-parts/content/content-search' ); ?>
 
                 <?php else : ?>
 
-                <p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'wp-lift-theme' ); ?>
+                <p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'wp-wow-theme' ); ?>
                 </p>
                 <?php get_template_part( 'template-parts/content/content-search' ); ?>
 

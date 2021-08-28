@@ -2,9 +2,9 @@
 /**
  * The template for displaying author info below posts.
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
@@ -17,7 +17,7 @@
 			<?php
 			printf(
 				/* translators: %s: Author name. */
-				esc_html__( 'By %s', 'wp-lift-theme' ),
+				esc_html__( 'By %s', 'wp-wow-theme' ),
 				get_the_author()
 			);
 			?>
@@ -29,7 +29,7 @@
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 				sprintf(
 					/* translators: %s: Author name. */
-					esc_html__( 'View all of %s\'s posts.', 'wp-lift-theme' ),
+					esc_html__( 'View all of %s\'s posts.', 'wp-wow-theme' ),
 					get_the_author()
 				)
 			);

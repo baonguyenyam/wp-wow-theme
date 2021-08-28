@@ -2,9 +2,9 @@
 /**
  * Displays the site navigation.
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
@@ -12,8 +12,8 @@
 
 <?php 
 
-global $lift_theme;
-$header_search = $lift_theme['lift-theme-header-search'];
+global $wow_theme;
+$header_search = $wow_theme['wow-theme-header-search'];
 
 ?>
 

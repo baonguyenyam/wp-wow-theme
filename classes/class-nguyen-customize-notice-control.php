@@ -2,9 +2,9 @@
 /**
  * Customize API: LIFT_Theme_Customize_Notice_Control class
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
@@ -39,9 +39,9 @@ class LIFT_Theme_Customize_Notice_Control extends WP_Customize_Control {
 	public function render_content() {
 		?>
 		<div class="notice notice-warning">
-			<p><?php esc_html_e( 'To access the Dark Mode settings, select a light background color.', 'wp-lift-theme' ); ?></p>
-			<p><a href="<?php echo esc_url( __( 'https://wordpress.org/support/article/lift-assets/#dark-mode-support', 'wp-lift-theme' ) ); ?>">
-				<?php esc_html_e( 'Learn more about Dark Mode.', 'wp-lift-theme' ); ?>
+			<p><?php esc_html_e( 'To access the Dark Mode settings, select a light background color.', 'wp-wow-theme' ); ?></p>
+			<p><a href="<?php echo esc_url( __( 'https://wordpress.org/support/article/lift-assets/#dark-mode-support', 'wp-wow-theme' ) ); ?>">
+				<?php esc_html_e( 'Learn more about Dark Mode.', 'wp-wow-theme' ); ?>
 			</a></p>
 		</div>
 		<?php

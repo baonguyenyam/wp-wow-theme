@@ -7,9 +7,9 @@
  *
  * @link https://make.wordpress.org/themes/2020/07/06/printing-navigation-block-html-from-a-legacy-menu-in-themes/
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
@@ -17,7 +17,7 @@
  * Add a button to top-level menu items that has sub-menus.
  * An icon is added using CSS depending on the value of aria-expanded.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @param string $output Nav menu item start element.
  * @param object $item   Nav menu item.
@@ -40,7 +40,7 @@ function lift_add_sub_menu_toggle( $output, $item, $depth, $args ) {
 		$output .= '<button class="sub-menu-toggle menu-toggle" aria-expanded="false" onClick="___ExpandSubMenu(this)">';
 		$output .= '<span class="icon-plus">' . lift_get_icon_svg( 'ui', 'plus', 18 ) . '</span>';
 		$output .= '<span class="icon-minus">' . lift_get_icon_svg( 'ui', 'minus', 18 ) . '</span>';
-		$output .= '<span class="screen-reader-text">' . esc_html__( 'Open menu', 'wp-lift-theme' ) . '</span>';
+		$output .= '<span class="screen-reader-text">' . esc_html__( 'Open menu', 'wp-wow-theme' ) . '</span>';
 		$output .= '</button>';
 	}
 	return $output;
@@ -50,7 +50,7 @@ add_filter( 'walker_nav_menu_start_el', 'lift_add_sub_menu_toggle', 10, 4 );
 /**
  * Detects the social network from a URL and returns the SVG code for its icon.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @param string $uri Social link.
  * @param int    $size The icon size in pixels.
@@ -87,7 +87,7 @@ add_filter( 'walker_nav_menu_start_el', 'lift_nav_menu_social_icons', 10, 4 );
 /**
  * Filters the arguments for a single nav menu item.
  *
- * @since LIFT Theme 1.0
+ * @since WOW Theme 1.0
  *
  * @param stdClass $args  An object of wp_nav_menu() arguments.
  * @param WP_Post  $item  Menu item data object.

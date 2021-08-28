@@ -9,7 +9,7 @@
 function lift_scripts() {
 	// Note, the is_IE global variable is defined by WordPress and is used
 	// to detect if the current browser is internet explorer.
-	global $is_IE, $wp_scripts, $lift_theme;;
+	global $is_IE, $wp_scripts, $wow_theme;;
 	
 	// Responsive embeds script.
 	wp_enqueue_script(
@@ -33,7 +33,7 @@ function lift_scripts() {
 		true
 	);
 
-	if (!is_admin() && current_user_can('administrator') && intval($lift_theme['lift-theme-global-dev-toogle-tag']) == 1) {
+	if (!is_admin() && current_user_can('administrator') && intval($wow_theme['wow-theme-global-dev-toogle-tag']) == 1) {
 		wp_enqueue_script(
 			'lift-assets-admin-tool',
 			get_template_directory_uri() . '/dist/js/admin-tool.js',

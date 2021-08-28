@@ -1,15 +1,15 @@
 <?php
 /**
-* @package LIFT Creations 
+* @package WOW WordPress 
 * @subpackage Theme by Nguyen Pham
-* https://baonguyenyam.github.io/cv
+* https://baonguyenyam.github.io
 * @since 2021
 */
 
 get_header();
 
-global $lift_theme;
-$layout_style = $lift_theme['lift-theme-layout-style'];
+global $wow_theme;
+$layout_style = $wow_theme['wow-theme-layout-style'];
 
 // Start the loop.
 while ( have_posts() ) {
@@ -45,10 +45,10 @@ while ( have_posts() ) {
 
 				wp_link_pages(
 					array(
-						'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'wp-lift-theme' ) . '">',
+						'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'wp-wow-theme' ) . '">',
 						'after'    => '</nav>',
 						/* translators: %: Page number. */
-						'pagelink' => esc_html__( 'Page %', 'wp-lift-theme' ),
+						'pagelink' => esc_html__( 'Page %', 'wp-wow-theme' ),
 					)
 				);
 				?>
@@ -63,7 +63,7 @@ while ( have_posts() ) {
 					echo '<span class="posted-on">';
 					printf(
 						/* translators: %s: Parent post. */
-						esc_html__( 'Published in %s', 'wp-lift-theme' ),
+						esc_html__( 'Published in %s', 'wp-wow-theme' ),
 						'<a href="' . esc_url( get_the_permalink( wp_get_post_parent_id( $post ) ) ) . '">' . esc_html( get_the_title( wp_get_post_parent_id( $post ) ) ) . '</a>'
 					);
 					echo '</span>';
@@ -72,7 +72,7 @@ while ( have_posts() ) {
 					edit_post_link(
 						sprintf(
 							/* translators: %s: Name of current post. Only visible to screen readers. */
-							esc_html__( 'Edit %s', 'wp-lift-theme' ),
+							esc_html__( 'Edit %s', 'wp-wow-theme' ),
 							'<span class="screen-reader-text">' . get_the_title() . '</span>'
 						),
 						'<div class="edit-link admintoolbar">',
@@ -85,7 +85,7 @@ while ( have_posts() ) {
 				if ( $metadata ) {
 					printf(
 						'<span class="full-size-link"><span class="screen-reader-text">%1$s</span><a href="%2$s">%3$s &times; %4$s</a></span>',
-						esc_html_x( 'Full size', 'Used before full size attachment link.', 'wp-lift-theme' ), // phpcs:ignore WordPress.Security.EscapeOutput
+						esc_html_x( 'Full size', 'Used before full size attachment link.', 'wp-wow-theme' ), // phpcs:ignore WordPress.Security.EscapeOutput
 						esc_url( wp_get_attachment_url() ),
 						absint( $metadata['width'] ),
 						absint( $metadata['height'] )
@@ -97,7 +97,7 @@ while ( have_posts() ) {
 					edit_post_link(
 						sprintf(
 							/* translators: %s: Name of current post. Only visible to screen readers. */
-							esc_html__( 'Edit %s', 'wp-lift-theme' ),
+							esc_html__( 'Edit %s', 'wp-wow-theme' ),
 							'<span class="screen-reader-text">' . get_the_title() . '</span>'
 						),
 						'<div class="edit-link admintoolbar">',

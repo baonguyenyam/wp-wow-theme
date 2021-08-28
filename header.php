@@ -2,9 +2,9 @@
 /**
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
@@ -21,7 +21,7 @@
 <?php wp_body_open(); ?>
 <!-- LIFT WRAPPER -->
 <div id="page" class="site lift-wrapper">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-lift-theme' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-wow-theme' ); ?></a>
 	<?php get_template_part( 'template-parts/header/site-header' ); ?>
 
 	<!-- LIFT CONTENT -->

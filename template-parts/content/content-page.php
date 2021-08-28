@@ -4,17 +4,17 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
-global $lift_theme;
-$layout_style = $lift_theme['lift-theme-layout-style'];
-$post_page_breadcrumb = $lift_theme['lift-theme-page-style-breadcrumb'];
-$post_page_thumbnail = $lift_theme['lift-theme-page-style-content-thumbnail'];
-$post_page_title = $lift_theme['lift-theme-page-style-content-title'];
+global $wow_theme;
+$layout_style = $wow_theme['wow-theme-layout-style'];
+$post_page_breadcrumb = $wow_theme['wow-theme-page-style-breadcrumb'];
+$post_page_thumbnail = $wow_theme['wow-theme-page-style-content-thumbnail'];
+$post_page_title = $wow_theme['wow-theme-page-style-content-title'];
 // TODO: CHANGE HEADER BLOCK 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -48,10 +48,10 @@ $post_page_title = $lift_theme['lift-theme-page-style-content-title'];
 		
 		wp_link_pages(
 			array(
-				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'wp-lift-theme' ) . '">',
+				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'wp-wow-theme' ) . '">',
 				'after'    => '</nav>',
 				/* translators: %: Page number. */
-				'pagelink' => esc_html__( 'Page %', 'wp-lift-theme' ),
+				'pagelink' => esc_html__( 'Page %', 'wp-wow-theme' ),
 				)
 			);
         ?>
@@ -64,7 +64,7 @@ $post_page_title = $lift_theme['lift-theme-page-style-content-title'];
 				edit_post_link(
 					sprintf(
 						/* translators: %s: Name of current post. Only visible to screen readers. */
-						esc_html__( 'Edit %s', 'wp-lift-theme' ),
+						esc_html__( 'Edit %s', 'wp-wow-theme' ),
 						'<span class="screen-reader-text">' . get_the_title() . '</span>'
 					),
 					'<div class="edit-link admintoolbar">',

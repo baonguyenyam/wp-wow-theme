@@ -2,19 +2,19 @@
 /**
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package LIFT Creations 
+ * @package WOW WordPress 
  * @subpackage Theme by Nguyen Pham
- * https://baonguyenyam.github.io/cv
+ * https://baonguyenyam.github.io
  * @since 2021
  */
 
-global $lift_theme;
-$layout_style = $lift_theme['lift-theme-layout-style'];
-$archive_sidebar = $lift_theme['lift-theme-blog-style-archive-sidebar'];
-$archive_sidebar_position = $lift_theme['lift-theme-blog-style-archive-sidebar-position'];
-$archive_sidebar_content_columns = isset($lift_theme['lift-theme-blog-style-archive-content-columns']) ? $lift_theme['lift-theme-blog-style-archive-content-columns'] : 'col-xl-8 col-xxl-9';
-$archive_sidebar_columns = isset($lift_theme['lift-theme-blog-style-archive-sidebar-columns']) ? $lift_theme['lift-theme-blog-style-archive-sidebar-columns'] : 'col-xl-4 col-xxl-3';
-$archive_breadcrumb = $lift_theme['lift-theme-blog-style-archive-breadcrumb'];
+global $wow_theme;
+$layout_style = $wow_theme['wow-theme-layout-style'];
+$archive_sidebar = $wow_theme['wow-theme-blog-style-archive-sidebar'];
+$archive_sidebar_position = $wow_theme['wow-theme-blog-style-archive-sidebar-position'];
+$archive_sidebar_content_columns = isset($wow_theme['wow-theme-blog-style-archive-content-columns']) ? $wow_theme['wow-theme-blog-style-archive-content-columns'] : 'col-xl-8 col-xxl-9';
+$archive_sidebar_columns = isset($wow_theme['wow-theme-blog-style-archive-sidebar-columns']) ? $wow_theme['wow-theme-blog-style-archive-sidebar-columns'] : 'col-xl-4 col-xxl-3';
+$archive_breadcrumb = $wow_theme['wow-theme-blog-style-archive-breadcrumb'];
 
 
 get_header();
@@ -27,7 +27,7 @@ if ( have_posts() ) {
 				<?php
 				printf(
 					/* translators: %s: Search term. */
-					esc_html__( 'Results for "%s"', 'wp-lift-theme' ),
+					esc_html__( 'Results for "%s"', 'wp-wow-theme' ),
 					'<span class="page-description search-term">' . esc_html( get_search_query() ) . '</span>'
 				);
 				?>
@@ -40,7 +40,7 @@ if ( have_posts() ) {
 							'We found %d result for your search.',
 							'We found %d results for your search.',
 							(int) $wp_query->found_posts,
-							'wp-lift-theme'
+							'wp-wow-theme'
 						)
 					),
 					(int) $wp_query->found_posts
